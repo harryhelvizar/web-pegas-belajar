@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="<?= base_url('assets/login/') ?>images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/login/') ?>vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/login/') ?>vendor/bootstrap/css/bootstrap.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/login/') ?>fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -26,132 +27,57 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login200">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="<?= base_url('assets/login/') ?>images/img-01.png" alt="IMG">
+				</div>
+
 				<form class="login100-form validate-form">
-					<span class="login200-form-title">
-						Identitas diri siswa
+					<span class="login100-form-title">
+						Form pendaftaran
 					</span>
 
-					<div class="form-group">
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-								<input class="input200" type="text" name="email" placeholder="nama lengkap">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "name is required">
-								<input class="input200" type="text" name="pass" placeholder="nama pengguna">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "email is required">
-								<input class="input200" type="email" name="pass" placeholder="email">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "password is required">
-								<input class="input200" type="password" name="pass" placeholder="password">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-lock" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="text" name="pass" placeholder="nomor telepon">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="date" name="pass">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="text" name="pass" placeholder="asal sekolah">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="text" name="pass" placeholder="nomor induk">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="select" name="pass" placeholder="kabupaten">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="wrap-input200 validate-input" data-validate = "Password is required">
-								<input class="input200" type="select" name="pass" placeholder="kode kelas">
-								<span class="focus-input200"></span>
-								<span class="symbol-input200">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="container-login100-form-btn">
-								<button class="login100-form-btn">
-									Daftar
-								</button>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="text-center p-t-15">
-							<span>Sudah punya akun?</span>
-								<a class="txt2" href="<?= base_url('auth/login')?>">
-									Login disini
-									<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-
+					<div class="wrap-input100 validate-input" data-validate = "Valid nama lengkap is required: jono doko">
+						<input class="input100" type="text" name="nama" placeholder="nama lengkap">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
 					</div>
 
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email/Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<!-- <div class="container-login100-form-btn"> -->
+						<div class="row p-t-12">
+							<div class="col">
+								<a href="" class="login100-form-btn btn-primary">daftar</a>
+							</div>
+							<div class="col">
+								<a href="" class="login200-form-btn btn-danger">cancel</a>
+							</div>		
+						</div>
+					<!-- </div> -->
+
+					<div class="text-center p-t-50">
+					<span>Sudah punya akun?</span>
+						<a class="txt2" href="<?= base_url('auth/login')?>">
+							Login disini
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
 				</form>
 			</div>
 		</div>
