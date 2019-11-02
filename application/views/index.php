@@ -9,8 +9,6 @@
        
     </div><!-- .hero-content -->
 
-
-
     <section class="about-section">
         <div class="container">
             <div class="row">

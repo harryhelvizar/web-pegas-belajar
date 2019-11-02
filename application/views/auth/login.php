@@ -32,11 +32,11 @@
 
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
-						Member Login
+						Login untuk masuk
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email" placeholder="Email/Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -66,9 +66,10 @@
 						</a>
 					</div>
 
-					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
-							Create your Account
+					<div class="text-center p-t-50">
+					<span>Belum punya akun?</span>
+						<a class="txt2" href="<?= base_url('auth/register')?>">
+							Buat akun disini
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
