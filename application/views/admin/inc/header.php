@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/admin/') ?>assets/images/favicon.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/admin/') ?>assets/images/favicon.png"> -->
     <title><?= $title; ?></title>
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/admin/') ?>assets/libs/flot/css/float-chart.css" rel="stylesheet">
