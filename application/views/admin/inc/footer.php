@@ -1,5 +1,5 @@
 <footer class="footer text-center">
-    All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+    All Rights Reserved <?= date('Y') ?>. Designed and Developed by <a href="https://pigidev.com">PigiDev</a>.
 </footer>
 <!-- ============================================================== -->
 <!-- End footer -->
