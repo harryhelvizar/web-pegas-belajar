@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>pegas</title>
+    <title>pegas-home</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

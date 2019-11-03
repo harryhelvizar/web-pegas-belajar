@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>register pegas</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -66,7 +66,7 @@
 								<a href="" class="login100-form-btn btn-primary">daftar</a>
 							</div>
 							<div class="col">
-								<a href="" class="login200-form-btn btn-danger">cancel</a>
+								<a href="<?= base_url('front')?>" class="login200-form-btn btn-danger">cancel</a>
 							</div>		
 						</div>
 					<!-- </div> -->

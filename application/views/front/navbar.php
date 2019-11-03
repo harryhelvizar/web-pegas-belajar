@@ -13,16 +13,10 @@
                         </div><!-- .col -->
 
                         <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                            <div class="header-bar-search">
-                                <form class="flex align-items-stretch">
-                                    <input type="search" placeholder="pencarian">
-                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div><!-- .header-bar-search -->
 
                             <div class="header-bar-menu">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="#">Register</a></li>
+                                    <li><a href="<?= base_url('auth/register')?>">Register</a></li>
                                     <li><a href="<?= base_url('auth/login')?>">Login</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
@@ -46,7 +40,7 @@
                                     <li class="current-menu-item"><a href="index.html">Beranda</a></li>
                                     <li><a href="#">Tes</a></li>
                                     <li><a href="#">Tentang</a></li>
-                                    <li><a href="contact.html">Kontak</a></li>
+                                    <li><a href="#">Kontak</a></li>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
