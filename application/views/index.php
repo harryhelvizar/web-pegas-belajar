@@ -9,39 +9,25 @@
        
     </div><!-- .hero-content -->
 
-    <section class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 align-content-lg-stretch">
-                    <header class="heading">
-                        <h3 class="entry-title">Kenali gaya belajarmu!!</h3>
+    <div class="milestones">
+		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/')?>images/milestones.jpg" data-speed="0.8"></div>
+		<div class="mt-10">
 
-                    </header><!-- .heading -->
+				<div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                        <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
+                        <a href="#" class="btn btn-primary">mulai</a>
+                    </div>			
+                </div>
+                
+		</div>
+    </div>
 
-                    <div class="entry-content ezuca-stats">
-                        <div class="stats-wrap flex flex-wrap justify-content-lg-between">
-                            <button type="submit" class="btn btn-success mt-4">Siswa</button>
-                        </div><!-- .stats-wrap -->
-                    </div><!-- .ezuca-stats -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6 flex align-content-center mt-5 mt-lg-0">
-                    <div class="ezuca-video position-relative">
-                        <div class="video-play-btn position-absolute">
-                            <img src="<?= base_url('assets/')?>images/video-icon.png" alt="Video Play">
-                        </div><!-- .video-play-btn -->
-
-                        <img src="<?= base_url('assets/')?>images/belajar.jpg" alt="">
-                    </div><!-- .ezuca-video -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .about-section -->
-
-
-    <div class="icon-boxes">
+    <div class="icon-boxes pt-10">
             <header class="heading">
-                    <h2 class="entry-title text-center mt-4 ">Informasi Gaya Belajar</h2>
+                    <h2 class="entry-title text-center mt-50 ">Informasi Gaya Belajar</h2>
             </header><!-- .heading -->
         <div class="container-fluid">
             <div class="flex flex-wrap align-items-stretch">
@@ -121,7 +107,6 @@
     </div><!-- .icon-boxes -->
 
 
-</style>
     <div class="milestones">
     <header class="statistik">
             <h2 class="entry-title text-center">Statistik Pengguna</h2>
