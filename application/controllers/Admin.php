@@ -16,4 +16,11 @@ class Admin extends CI_Controller
         $data['title'] = 'Login Admin';
         $this->load->view('admin/login', $data);
     }
+
+    public function soal(){
+        $data['title'] = 'Soal - Pegas Belajar';
+        $data['contents'] = 'admin/soal/index';
+        $this->load->view('admin/index', $data);
+    }
+
 }

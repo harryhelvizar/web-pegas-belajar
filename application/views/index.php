@@ -18,7 +18,7 @@
                     <div class="col-6"></div>
                     <div class="col-6">
                         <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
-                        <a href="#" class="btn btn-primary">mulai</a>
+                        <a href="<?= base_url('soal')?>" class="btn btn-primary">mulai</a>
                     </div>			
                 </div>
                 

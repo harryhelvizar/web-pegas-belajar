@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-9 col-lg-3">
                             <div class="site-branding">
-                                <h1 class="site-title"><a href="index.html" rel="home">Pegas<span>belajar</span></a></h1>
+                                <h1 class="site-title"><a href="<?= base_url('front')?>" rel="home">Pegas<span>belajar</span></a></h1>
                             </div><!-- .site-branding -->
                         </div><!-- .col -->
 
