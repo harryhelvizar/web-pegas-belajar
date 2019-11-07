@@ -65,6 +65,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <ul>
                                 <li>Email: info.deertcreative@gmail.com</li>
                                 <li>Phone: (+88) 111 555 666</li>
+                                <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....','<div class="fa fa-whatsapp btn btn-sm btn-success"> tanya via whatsapp</div>')?>
                                 <li>Address: 40 Baria Sreet 133/2 NewYork City, US</li>
                             </ul>
                         </div><!-- .foot-contact -->
