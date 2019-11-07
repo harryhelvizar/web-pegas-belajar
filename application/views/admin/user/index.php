@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
+            <?= $this->session->flashdata('message'); ?>
             <div class="card-body">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
             </div>
@@ -11,24 +12,24 @@
                         <th scope="col">Nama</th>
                         <th scope="col">Username</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Foto</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                            <a href="" class="badge badge-success">edit</a>
-                            <a href="" class="badge badge-danger">hapus</a>
-                        </td>
-                    </tr>
-
-                </tbody>
+                <?php $no = 1 ?>
+                <?php foreach ($admin as $admin) : ?>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><?= $no++ ?></th>
+                            <td><?= $admin->nama ?></td>
+                            <td><?= $admin->username ?></td>
+                            <td><?= $admin->email ?></td>
+                            <td>
+                                <a href="" class="badge badge-success">edit</a>
+                                <a href="" class="badge badge-danger">hapus</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                <?php endforeach; ?>
             </table>
         </div>
 
@@ -47,31 +48,38 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form>
-
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-                    </div>
-
+            <?= form_open_multipart('user/tambah') ?>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap">
+                    <?= form_error('nama', '<small class="text-danger pl-3">', '</small>') ?>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                    <?= form_error('username', '<small class="text-danger pl-3">', '</small>') ?>
                 </div>
 
-            </form>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email">
+                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>') ?>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>') ?>
+                </div>
+
+                <div class="form-group">
+                    <input type="file" class="form-control-file" id="foto" name="foto">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+
+            <?= form_close() ?>
         </div>
     </div>
 </div>
