@@ -38,7 +38,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Learn From The Experts</h2>
+                        <h2 class="entry-title">DIVERGEN</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -56,7 +56,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Book Library & Store</h2>
+                        <h2 class="entry-title">ASIMILASI</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -74,7 +74,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Best Course Online</h2>
+                        <h2 class="entry-title">KOVERGEN</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -92,7 +92,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Best Industry Leaders</h2>
+                        <h2 class="entry-title">AKOMODASI</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
