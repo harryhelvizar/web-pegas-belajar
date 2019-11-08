@@ -1,34 +1,35 @@
-<?php $this->load->view('front/header')?>
+<?php $this->load->view('front/header') ?>
+
 <body>
     <div class="hero-content">
 
-    <?php $this->load->view('front/navbar')?>
+        <?php $this->load->view('front/navbar') ?>
 
 
-    <?php $this->load->view('front/slider')?>
-       
+        <?php $this->load->view('front/slider') ?>
+
     </div><!-- .hero-content -->
 
     <div class="milestones">
-		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/')?>images/milestones.jpg" data-speed="0.8"></div>
-		<div class="mt-10">
+        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/milestones.jpg" data-speed="0.8"></div>
+        <div class="mt-10">
 
-				<div class="row">
-                    <div class="col-6"></div>
-                    <div class="col-6">
-                        <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
-                        <a href="<?= base_url('soal')?>" class="btn btn-primary">mulai</a>
-                    </div>			
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
+                    <a href="<?= base_url('soal') ?>" class="btn btn-primary">mulai</a>
                 </div>
-                
-		</div>
+            </div>
+
+        </div>
     </div>
 
     <div class="icon-boxes pt-10">
-            <header class="heading">
-                    <h2 class="entry-title text-center mt-50 ">Informasi Gaya Belajar</h2>
-            </header><!-- .heading -->
+        <header class="heading">
+            <h2 class="entry-title text-center mt-50 ">Informasi Gaya Belajar</h2>
+        </header><!-- .heading -->
         <div class="container-fluid">
             <div class="flex flex-wrap align-items-stretch">
                 <div class="icon-box">
@@ -108,52 +109,52 @@
 
 
     <div class="milestones">
-    <header class="statistik">
+        <header class="statistik">
             <h2 class="entry-title text-center">Statistik Pengguna</h2>
-    </header><!-- .heading -->
+        </header><!-- .heading -->
 
-		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/')?>images/milestones.jpg" data-speed="0.8"></div>
-		<div class="container">
+        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/milestones.jpg" data-speed="0.8"></div>
+        <div class="container">
 
-			<div class="row milestones_container">
+            <div class="row milestones_container">
 
-				<!-- Milestone -->
-				<div class="col-lg-4 milestone_col">
-					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="<?= base_url('assets/')?>images/milestone_2.svg" alt=""></div>
-						<div class="milestone_counter" data-end-value="7286">0</div>
-						<div class="milestone_text">Students</div>
-					</div>
-				</div>
+                <!-- Milestone -->
+                <div class="col-lg-4 milestone_col">
+                    <div class="milestone text-center">
+                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_2.svg" alt=""></div>
+                        <div class="milestone_counter" data-end-value="7286"><?= $siswa ?></div>
+                        <div class="milestone_text">Students</div>
+                    </div>
+                </div>
 
-				<!-- Milestone -->
-				<div class="col-lg-4 milestone_col">
-					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="<?= base_url('assets/')?>images/milestone_3.svg" alt=""></div>
-						<div class="milestone_counter" data-end-value="257">0</div>
-						<div class="milestone_text">Teachers</div>
-					</div>
-				</div>
+                <!-- Milestone -->
+                <div class="col-lg-4 milestone_col">
+                    <div class="milestone text-center">
+                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_3.svg" alt=""></div>
+                        <div class="milestone_counter" data-end-value="257"><?= $admin ?></div>
+                        <div class="milestone_text">Teachers</div>
+                    </div>
+                </div>
 
-				<!-- Milestone -->
-				<div class="col-lg-4 milestone_col">
-					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="<?= base_url('assets/')?>images/milestone_4.svg" alt=""></div>
-						<div class="milestone_counter" data-end-value="39">0</div>
-						<div class="milestone_text">Total</div>
-					</div>
-				</div>
+                <!-- Milestone -->
+                <div class="col-lg-4 milestone_col">
+                    <div class="milestone text-center">
+                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_4.svg" alt=""></div>
+                        <div class="milestone_counter" data-end-value="39"><?= $siswa + $admin ?></div>
+                        <div class="milestone_text">Total</div>
+                    </div>
+                </div>
 
-			</div>
-		</div>
+            </div>
+        </div>
     </div>
 
 
     <section class="testimonial-section">
-    <div class="text-center mt-15">
-        <h2>TESTIMONI</h2>
-    </div>
+        <div class="text-center mt-15">
+            <h2>TESTIMONI</h2>
+        </div>
         <!-- Swiper -->
         <div class="swiper-container testimonial-slider">
             <div class="swiper-wrapper">
@@ -162,7 +163,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 order-2 order-lg-1 flex align-items-center mt-5 mt-lg-0">
                                 <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/')?>images/user-1.jpg" alt="">
+                                    <img src="<?= base_url('assets/') ?>images/user-1.jpg" alt="">
                                 </figure><!-- .user-avatar -->
                             </div><!-- .col -->
 
@@ -184,7 +185,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 order-2 order-lg-1 flex align-items-center mt-5 mt-lg-0">
                                 <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/')?>images/user-2.jpg" alt="">
+                                    <img src="<?= base_url('assets/') ?>images/user-2.jpg" alt="">
                                 </figure><!-- .user-avatar -->
                             </div><!-- .col -->
 
@@ -206,7 +207,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 flex order-2 order-lg-1 align-items-center mt-5 mt-lg-0">
                                 <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/')?>images/user-3.jpg" alt="">
+                                    <img src="<?= base_url('assets/') ?>images/user-3.jpg" alt="">
                                 </figure><!-- .user-avatar -->
                             </div><!-- .col -->
 
@@ -237,9 +238,9 @@
 
     <div class="maps">
         <div class="container text-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.930832731168!2d119.48096673553762!3d-5.133808876818806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f4200901921392b!2sMasjid%20Ali%20Hizaam!5e0!3m2!1sid!2sid!4v1573119822663!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.930832731168!2d119.48096673553762!3d-5.133808876818806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f4200901921392b!2sMasjid%20Ali%20Hizaam!5e0!3m2!1sid!2sid!4v1573119822663!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-    </div> 
+    </div>
 
     <!-- contak -->
     <div class="container">
@@ -277,4 +278,4 @@
     </div><!-- .container -->
 
 
-    <?php $this->load->view('front/footer')?>
+    <?php $this->load->view('front/footer') ?>
