@@ -8,6 +8,7 @@ class Siswa extends CI_Controller
     {
         $data['title'] = 'Siswa - Pegas Belajar';
         $data['contents'] = 'admin/siswa/index';
+        $data['siswa'] = $this->db->get('siswa')->result();
         $this->load->view('admin/index', $data);
     }
 }

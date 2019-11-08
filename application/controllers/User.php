@@ -47,8 +47,8 @@ class User extends CI_Controller
             //     $config['source_image']     = './assets/img/profile/' . $data_gambar['upload_data']['file_name'];
             //     $config['create_thumb']     = TRUE;
             //     $config['maintain_ratio']     = TRUE;
-            //     $config['width']             = 2024;
-            //     $config['height']           = 2024;
+            //     $config['width']             = 100;
+            //     $config['height']           = 100;
 
             //     $this->load->library('image_lib', $config);
 
