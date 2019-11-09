@@ -4,7 +4,7 @@
         <div class="card card-hover">
             <div class="box bg-cyan text-center text-white">
                 <i class="fa fa-user m-b-5 font-16"></i>
-                <h5 class="m-b-0 m-t-5">2540</h5>
+                <h5 class="m-b-0 m-t-5"><?= $admin + $siswa ?></h5>
                 <small class="font-light">Total Users</small>
             </div>
         </div>
@@ -14,7 +14,7 @@
         <div class="card card-hover">
             <div class="box bg-success text-center text-white">
                 <i class="fa fa-user m-b-5 font-16"></i>
-                <h5 class="m-b-0 m-t-5">2540</h5>
+                <h5 class="m-b-0 m-t-5"><?= $siswa ?></h5>
                 <small class="font-light">Siswa</small>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="card card-hover">
             <div class="box bg-info text-center text-white">
                 <i class="fa fa-user m-b-5 font-16"></i>
-                <h5 class="m-b-0 m-t-5">2540</h5>
+                <h5 class="m-b-0 m-t-5"><?= $admin ?></h5>
                 <small class="font-light">Admin</small>
             </div>
         </div>

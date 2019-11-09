@@ -6,11 +6,7 @@ class Soal extends CI_Controller
 
     public function index()
     {
-        $this->load->view('soal');
+        $data['title'] = 'Soal - Pegas Belajar';
+        $this->load->view('soal', $data);
     }
-
-    // public function so()
-    // {
-    //     $this->load->view('soal');
-    // }
 }

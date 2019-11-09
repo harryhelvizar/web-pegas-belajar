@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>register pegas</title>
+	<title><?= $title ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -121,7 +121,7 @@
 
 					<div class="text-center p-t-50">
 						<span>Sudah punya akun?</span>
-						<a class="txt2" href="<?= base_url('auth/login') ?>">
+						<a class="txt2" href="<?= base_url('siswa/auth') ?>">
 							Login disini
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
