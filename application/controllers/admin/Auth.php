@@ -5,9 +5,6 @@ class Auth extends CI_Controller
 {
     public function index()
     {
-        // $data['title'] = 'Login - Pegas Belajar';
-        // $data['contents'] = 'admin/login';
-        // $this->load->view('admin/login', $data);
         // pengecekan session user
         // apabila sdah login jika kembali ke halaman login akan diarahkan ke halaman user
         if ($this->session->userdata('email')) {
@@ -20,10 +17,8 @@ class Auth extends CI_Controller
         if ($this->form_validation->run() == false) {
             $data['title'] = "User Login";
             $this->load->view('admin/login', $data);
-            // echo "gagal";
         } else {
             $this->_login();
-            // echo "berhasil";
         }
     }
 

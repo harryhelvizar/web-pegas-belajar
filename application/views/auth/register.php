@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title><?= $title ?></title>
+	<title><?= $title; ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -33,7 +33,7 @@
 					<img src="<?= base_url('assets/login/') ?>images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" method="post" action="<?= base_url('auth/register') ?>">
+				<form class="login100-form validate-form" method="post" action="<?= base_url('siswa/auth/register') ?>">
 					<span class="login100-form-title">
 						Form pendaftaran
 					</span>

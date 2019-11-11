@@ -26,7 +26,7 @@ class Auth extends CI_Controller
                 'nama' => htmlspecialchars($this->input->post('nama', true)), //'true' untuk menghindari XSS (Cross-site scripting)
                 'username' => htmlspecialchars($this->input->post('username', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
-                'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+                'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
                 'nis' => htmlspecialchars($this->input->post('nis', true)),
                 'asal_sekolah' => htmlspecialchars($this->input->post('asal_sekolah', true)),
                 'kabupaten' => htmlspecialchars($this->input->post('kabupaten', true)),
@@ -34,7 +34,7 @@ class Auth extends CI_Controller
                 'tempat_lahir' => htmlspecialchars($this->input->post('tempat_lahir', true)),
                 'tanggal_lahir' => htmlspecialchars($this->input->post('tanggal_lahir', true)),
                 'foto' => 'deafult.jpg',
-                'date_created' => time()
+                'date_created' => time("Y/m/d H:iP")
 
             ];
 
