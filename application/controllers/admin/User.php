@@ -32,7 +32,7 @@ class User extends CI_Controller
                 'username' => htmlspecialchars($this->input->post('username', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
                 'foto' => 'default.jpg',
-                'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+                'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
                 'role_id' => 1,
                 'is_active' => 1,
                 'date_created' => time()
@@ -42,7 +42,7 @@ class User extends CI_Controller
             // menambahkan data ke tabel user
             $this->db->insert('admin', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been registered!</div>');
-            redirect('user');
+            redirect('admin/user');
         }
     }
 }

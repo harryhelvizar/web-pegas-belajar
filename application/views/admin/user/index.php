@@ -48,7 +48,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <?= form_open_multipart('user/tambah') ?>
+            <?= form_open_multipart('admin/user/tambah') ?>
             <div class="modal-body">
                 <div class="form-group">
                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap">
