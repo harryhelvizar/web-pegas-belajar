@@ -8,7 +8,6 @@ class Auth extends CI_Controller
         # code...
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim');
-        $this->form_validation->set_rules('username', 'Username', 'required|trim');
         $this->form_validation->set_rules('password', 'Password', 'required|trim');
 
         if ($this->form_validation->run() == false) {
@@ -58,5 +57,22 @@ class Auth extends CI_Controller
     {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
+
+        $siswa = $this->db->get_where('siswa', ['email' => $email])->row_array();
+
+        if ($siswa) {
+            if (password_verify($password, $siswa['password'])) {
+                $data = ['email' => $user['email']];
+
+                $this->session->set_userdata($data);
+                redirect('front');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
+                redirect('siswa/auth');
+            }
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
+            redirect('siswa/auth');
+        }
     }
 }

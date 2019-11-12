@@ -8,27 +8,32 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Username</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Foto</th>
+                        <th scope="col">Soal</th>
+                        <th scope="col">Jawaban A</th>
+                        <th scope="col">Jawaban B</th>
+                        <th scope="col">Jawaban C</th>
+                        <th scope="col">Jawaban D</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                            <a href="" class="badge badge-success">edit</a>
-                            <a href="" class="badge badge-danger">hapus</a>
-                        </td>
-                    </tr>
+                <?php $no = 1; ?>
+                <?php foreach ($soal as $soal) : ?>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><?= $no++ ?></th>
+                            <td><?= $soal->soal ?></td>
+                            <td><?= $soal->jawab_a ?></td>
+                            <td><?= $soal->jawab_b ?></td>
+                            <td><?= $soal->jawab_c ?></td>
+                            <td><?= $soal->jawab_d ?></td>
+                            <td>
+                                <a href="" class="badge badge-success">edit</a>
+                                <a href="" class="badge badge-danger">hapus</a>
+                            </td>
+                        </tr>
 
-                </tbody>
+                    </tbody>
+                <?php endforeach; ?>
             </table>
         </div>
 
@@ -51,7 +56,11 @@
 
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap">
+                        <!-- <textarea class="ckeditor" name="soal" id="soal" cols="30" rows="10"></textarea> -->
+                        <!-- <input type="text" class="form-control" name="soal" id="soal" placeholder="Soal"> -->
+                        <div id="editor" style="height: 300px;">
+
+                        </div>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" name="username" id="username" placeholder="Username">
