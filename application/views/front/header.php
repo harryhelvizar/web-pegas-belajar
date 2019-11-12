@@ -8,14 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type='text/javascript' src='<?= base_url('assets/')?>js/jquery.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/')?>js/swiper.min.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/')?>js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/')?>js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/')?>js/custom.js'></script>
 
-<!--     
+
+    <!--     
     <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="

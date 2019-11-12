@@ -6,7 +6,7 @@
                     <div class="foot-about">
                         <a class="foot-logo" href="#">
                             <!-- <img src="images/foot-logo.png" alt=""> -->
-                            <h1 class="site-title"><a href="<?= base_url('front')?>" rel="home"><img src="<?= base_url('assets/')?>/images/pegas.png" alt=""></a></h1>
+                            <h1 class="site-title"><a href="<?= base_url('front') ?>" rel="home"><img src="<?= base_url('assets/') ?>/images/pegas.png" alt=""></a></h1>
 
                             <!-- <h1 class="site-title"><a href="index.html" rel="home" style="color: black;">Pegas<span>belajar</span></a></h1> -->
                         </a>
@@ -117,6 +117,12 @@
 <script src="<?= base_url('assets/') ?>plugins/video-js/video.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/video-js/Youtube.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/swiper.min.js'></script>
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
 
 
 
