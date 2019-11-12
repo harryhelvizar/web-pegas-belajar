@@ -34,7 +34,7 @@
             <div class="flex flex-wrap align-items-stretch">
                 <div class="icon-box">
                     <div class="icon">
-                        <span class="ti-user"></span>
+                        <span class="ti-book"></span>
                     </div><!-- .icon -->
 
                     <header class="entry-header">
@@ -52,7 +52,7 @@
 
                 <div class="icon-box">
                     <div class="icon">
-                        <span class="ti-folder"></span>
+                        <span class="ti-book"></span>
                     </div><!-- .icon -->
 
                     <header class="entry-header">
@@ -88,7 +88,7 @@
 
                 <div class="icon-box">
                     <div class="icon">
-                        <span class="ti-world"></span>
+                        <span class="ti-book"></span>
                     </div><!-- .icon -->
 
                     <header class="entry-header">
