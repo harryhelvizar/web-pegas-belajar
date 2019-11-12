@@ -58,7 +58,7 @@
                     <div class="form-group">
                         <!-- <textarea class="ckeditor" name="soal" id="soal" cols="30" rows="10"></textarea> -->
                         <!-- <input type="text" class="form-control" name="soal" id="soal" placeholder="Soal"> -->
-                        <div id="editor" style="height: 300px;">
+                        <div class="form-control" id="editor" style="height: 300px;">
 
                         </div>
                     </div>
