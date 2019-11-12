@@ -86,7 +86,7 @@ a:hover, a:active {
 .header-bar-email .fa {
     margin-right: 12px;
     font-size: 20px;
-    color: #19c880;
+    color: #11bee9;
 }
 
 .header-bar-text p {
@@ -131,7 +131,7 @@ a:hover, a:active {
     height: 50px;
     border: 0;
     color: #fff;
-    background: #19c880;
+    background: #11bee9;
     cursor: pointer;
     outline: none;
 }
@@ -208,7 +208,7 @@ a:hover, a:active {
 }
 
 .site-title a span {
-    color: #19c880;
+    color: #47b0ec;
 }
 
 @media screen and (min-width: 576px){
@@ -320,7 +320,7 @@ a:hover, a:active {
 
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {
-    color: #19c880;
+    color: #11bee9;
 }
 
 /*
@@ -660,8 +660,8 @@ a:hover, a:active {
 
 a.btn {
     padding: 16px 48px;
-    border: 2px solid #34d986;
-    border-radius: 0;
+    /* border: 2px solid #34d986; */
+    border-radius: 10;
     font-size: 13px;
     font-weight: bold;
     line-height: 1;
@@ -673,7 +673,7 @@ a.btn {
 
 a.btn:hover {
     color: #fff;
-    background: #34d986;
+    background: #f77931;
 }
 
 /*
@@ -2631,6 +2631,16 @@ ul.author-social-profile li:hover .fa {
         padding-left: 40px;
     }
 }
+
+/* soal */
+.kerja-soal{
+    background-color: rgba(21, 20, 33, 0.795);
+}
+.kerja-soal .soal{
+    color: white;
+}
+
+/* akhir soal */
 
 /*--------------------------------------------------------------
 # Footer

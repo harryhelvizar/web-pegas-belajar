@@ -19,6 +19,7 @@
                 <div class="col-6"></div>
                 <div class="col-6">
                     <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
+                    
                     <a href="<?= base_url('soal') ?>" class="btn btn-primary">mulai</a>
                 </div>
             </div>
@@ -238,7 +239,7 @@
 
     <div class="maps">
         <div class="container text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.930832731168!2d119.48096673553762!3d-5.133808876818806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f4200901921392b!2sMasjid%20Ali%20Hizaam!5e0!3m2!1sid!2sid!4v1573119822663!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.930832731168!2d119.48096673553762!3d-5.133808876818806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f4200901921392b!2sMasjid%20Ali%20Hizaam!5e0!3m2!1sid!2sid!4v1573119822663!5m2!1sid!2sid" width="1200" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </div>
 
