@@ -6,8 +6,17 @@ class Auth extends CI_Controller
     public function index()
     {
         # code...
-        $data['title'] = 'Login Siswa - Pegas Belajar';
-        $this->load->view('auth/login', $data);
+
+        $this->form_validation->set_rules('email', 'Email', 'required|trim');
+        $this->form_validation->set_rules('username', 'Username', 'required|trim');
+        $this->form_validation->set_rules('password', 'Password', 'required|trim');
+
+        if ($this->form_validation->run() == false) {
+            $data['title'] = 'Login Siswa - Pegas Belajar';
+            $this->load->view('auth/login', $data);
+        } else {
+            $this->_login();
+        }
     }
 
     public function register()
@@ -43,5 +52,11 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been registered!</div>');
             redirect('front');
         }
+    }
+
+    private function _login()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
     }
 }

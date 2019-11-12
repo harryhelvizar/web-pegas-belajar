@@ -6,7 +6,7 @@ class Auth extends CI_Controller
     public function index()
     {
         // pengecekan session user
-        // apabila sdah login jika kembali ke halaman login akan diarahkan ke halaman user
+        // apabila sdah login jika kembali ke halaman login akan diarahkan ke halaman dashboard
         if ($this->session->userdata('email')) {
             redirect('admin/dashboard');
         }
