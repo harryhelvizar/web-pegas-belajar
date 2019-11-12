@@ -30,6 +30,10 @@
 
     <div class="kerja-soal">
         <div class="container">
+            <br>
+            <div class="soal">
+                <h2 style="color:white;">Bola bundar tidak kotak dan tidak persegi, apakah kamu setuju?</h2>
+            </div>
 
             <br>
 

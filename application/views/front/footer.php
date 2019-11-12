@@ -105,16 +105,6 @@
     <!-- .footer-bar -->
 </footer><!-- .site-footer -->
 
-
-
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/swiper.min.js'></script>
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/masonry.pkgd.min.js'></script>
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.collapsible.min.js'></script>
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
-
-
-<script src="<?= base_url('assets/') ?>js/jquery-3.2.1.min.js"></script>
 <script src="<?= base_url('assets/') ?>css/bootstrap4/popper.js"></script>
 <script src="<?= base_url('assets/') ?>css/bootstrap4/bootstrap.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/greensock/TweenMax.min.js"></script>
@@ -127,7 +117,7 @@
 <script src="<?= base_url('assets/') ?>plugins/video-js/video.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/video-js/Youtube.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
-<script src="<?= base_url('assets/') ?>js/custom.js"></script>
+
 
 
 </body>
