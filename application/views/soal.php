@@ -1,3 +1,4 @@
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type='text/javascript' src="<?= base_url('assets/')?>js/jquery-3.2.1.min.js"></script>
 <script type='text/javascript' src='<?= base_url('assets/')?>js/jquery.js'></script>
@@ -17,31 +18,19 @@
 <body>
     <div class="hero-content">
 
-        <?php $this->load->view('front/navbar')?>
-       
+        <?php $this->load->view('front/navbar') ?>
+
     </div><!-- .hero-content -->
 
     <div class="milestones">
-		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
-		<div class="parallax_background" data-parallax="scroll" data-image-src="<?= base_url('assets/')?>images/slide1.jpg" data-speed="0.8"></div>
-		<div class="mt-10">
-
-				<div class="row">
-                    <div class="col">
-                        <br class="pt-70">
-                    </div>			
-                </div>
-                
-		</div>
+        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
+        <div class="parallax_background" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/slide1.jpg" data-speed="0.8">
+        </div>
     </div>
 
     <div class="kerja-soal">
         <div class="container">
-            <div class="row">
-                <div class="col judul-soal mt-3">
-                    <h2 class="text-center" style="color:white;">Berikan nilai yang jujur untuk hasil yang memuaskan</h2><br>
-                </div>
-            </div>
+
             <br>
 
             <div class="row">
@@ -49,15 +38,16 @@
                         <input class="btn btn-primary" type="button" id="btn1" value="_">
                         </button>
                     </div>
-                    <div class="col-md-10 soal"> <p>text soal yang ingin dikerjakan</p> </div>
+                    <div class="col-md-10 soal"> <p style="color:white;">text soal yang ingin dikerjakan</p> </div>
             </div>
+
             <br>
             <div class="row">
                     <div class="col-md-1">
                         <input class="btn btn-primary" type="button" id="btn2" value="_">
                         </button>
                     </div>
-                    <div class="col-md-10 soal"> <p>text soal yang ingin dikerjakan</p> </div>
+                    <div class="col-md-10 soal"> <p style="color:white;">text soal yang ingin dikerjakan</p> </div>
             </div>
             <br>
             <div class="row">
@@ -65,7 +55,7 @@
                         <input class="btn btn-primary" type="button" id="btn3" value="_">
                         </button>
                     </div>
-                    <div class="col-md-10 soal"> <p>text soal yang ingin dikerjakan</p> </div>
+                    <div class="col-md-10 soal"> <p style="color:white;">text soal yang ingin dikerjakan</p> </div>
             </div>
             <br>
             <div class="row">
@@ -73,7 +63,19 @@
                         <input class="btn btn-primary" type="button" id="btn4" value="_">
                         </button>
                     </div>
-                    <div class="col-md-10 soal"> <p>text soal yang ingin dikerjakan</p> </div>
+                    <div class="col-md-10 soal"> <p style="color:white;">text soal yang ingin dikerjakan</p> </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mb-5">Selanjutnya</button>
+            <button type="button" class="btn btn-danger mb-5">Reset</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p style="color:white;">Jawab :</p>
+                        <p style="color:white;">Soal ke : 1 - 20</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -110,6 +112,3 @@
             i--;
         })
     </script>
-
-
-

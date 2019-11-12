@@ -1,25 +1,21 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller
+class Auth extends CI_Controller
 {
-
     public function index()
     {
-        $data['title'] = 'Dashboard - Pegas Belajar';
-        $data['contents'] = 'admin/dashboard';
-        $this->load->view('admin/index', $data);
-    }
+        // pengecekan session user
+        // apabila sdah login jika kembali ke halaman login akan diarahkan ke halaman dashboard
+        if ($this->session->userdata('email')) {
+            redirect('admin/dashboard');
+        }
 
-    public function login()
-    {
-        // menentukan rules 
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
-        $this->form_validation->set_rules('password', 'Password', 'required|trim');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
-        // cek validasi
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Login Admin';
+            $data['title'] = "User Login";
             $this->load->view('admin/login', $data);
         } else {
             $this->_login();
@@ -33,45 +29,42 @@ class Admin extends CI_Controller
 
         $user = $this->db->get_where('admin', ['email' => $email])->row_array();
 
-        // jika usernya ada
         if ($user) {
-            // usernya aktif
+            // jika email aktif
             if ($user['is_active'] == 1) {
                 // cek password
                 if (password_verify($password, $user['password'])) {
-                    // jika password benar
                     $data = [
                         'email' => $user['email'],
                         'role_id' => $user['role_id']
                     ];
 
-                    // menyimpan data di session
                     $this->session->set_userdata($data);
                     if ($user['role_id'] == 1) {
-                        redirect('admin');
+                        redirect('admin/dashboard');
                     } else {
-
-                        redirect('admin/login');
+                        redirect('admin/auth');
                     }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
-                    redirect('admin/login');
+                    redirect('admin/auth');
                 }
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not activated!</div>');
-                redirect('admin/login');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This Email has not been activated!</div>');
+                redirect('admin/auth');
             }
         } else {
-
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
-            redirect('admin/login');
+            redirect('admin/auth');
         }
     }
 
-    public function soal()
+    public function logout()
     {
-        $data['title'] = 'Soal - Pegas Belajar';
-        $data['contents'] = 'admin/soal/index';
-        $this->load->view('admin/index', $data);
+        $this->session->unset_userdata('email');
+        $this->session->unset_userdata('role_id');
+
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been logged out!</div>');
+        redirect('admin/auth');
     }
 }

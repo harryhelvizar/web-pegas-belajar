@@ -23,8 +23,14 @@
                     <div class="text-center p-t-20 p-b-20">
                         <h3 class="text-white">PegasBelajar</h3>
                     </div>
+                    <?php if (validation_errors()) : ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?= validation_errors(); ?>
+                        </div>
+                    <?php endif; ?>
+                    <?= $this->session->flashdata('message'); ?>
                     <!-- Form -->
-                    <form class="form-horizontal m-t-20" id="loginform" method="post" action="<?= base_url('admin/login') ?>">
+                    <form class="form-horizontal m-t-20" id="loginform" method="post" action="<?= base_url('admin/auth') ?>">
                         <div class="row p-b-30">
                             <div class="col-12">
                                 <div class="input-group mb-3">

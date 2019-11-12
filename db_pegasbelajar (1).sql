@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2019 at 01:09 PM
+-- Generation Time: Nov 11, 2019 at 04:33 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -45,11 +45,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `nama`, `username`, `email`, `password`, `foto`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'Lalu Abdurrahman', 'lalurahman', 'lalurahmanms@gmail.com', '$2y$10$j6wwg2PAtoFoC8Qs9fWNE.cFK8qfBGHgIL9kSFPLHe3wuYLxvpn.q', 'default.jpg', 1, 1, '0000-00-00 00:00:00'),
-(2, 'rahman', 'rahman', 'rahman@gmail.com', '$2y$10$5Qt6qDm3yB8UOcP6/HB.9OEe2qQnQKF0uOdOmLUpBuzrC9P8ugh8C', 'default.jpg', 1, 1, '0000-00-00 00:00:00'),
-(3, 'lalu', 'lalu', 'lalu@gmail.com', '$2y$10$V42qNNFlSVNXDTElJTNDIO4neFqdfFk1Cfne7ZWFmIzfwgGoYglU2', 'default.jpg', 1, 1, '0000-00-00 00:00:00'),
-(4, 'saya', 'saya', 'saya@mail.com', '$2y$10$Y610/JXC82jt6ndasUZ6Gu6RvT19gLBjWZGDtIlSKums7FnjB6AYC', 'default.jpg', 1, 1, '0000-00-00 00:00:00'),
-(5, 'kita', 'kita', 'kita@gmail.com', '$2y$10$4JmbtxvwtlxTpjjan.mBPupfnaAC/gpGzbFhLNGI/5CrG9pc74j8O', 'default.jpg', 1, 1, '0000-00-00 00:00:00');
+(6, 'Lalu Abdurrahman', 'lalurahman', 'lalurahmanms@gmail.com', '$2y$10$GT8E7yjmXZuMuV9TO7qLC.dVeFdzVGu7U2rxJc3/SRvQTuUIanV8S', 'default.jpg', 1, 1, '0000-00-00 00:00:00'),
+(7, 'admin', 'admin', 'admin@gmail.com', '$2y$10$Qiybl7M5ag7glzaoJQUqfeY.r2qkM.8xa79pchtALtzE4vRQJ6oCG', 'default.jpg', 1, 1, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -97,9 +94,7 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id`, `nama`, `username`, `email`, `password`, `nis`, `asal_sekolah`, `kabupaten`, `no_hp`, `tempat_lahir`, `tanggal_lahir`, `foto`, `date_created`) VALUES
-(1, 'Lalu Abdurrahman', 'lalurahman', 'lalurahm@gmail.com', '$2y$10$41vzXuMMoGm04nqCeS.4Ye31crJ6NH68H9fFHCLTNzmW/dhQ80qfO', '111232', 'pi', 'Makassar', '085256999428', 'Makassar', '', 'deafult.jpg', '0000-00-00 00:00:00'),
-(2, 'Harry Helvizar', 'harry', 'harry@gmail.com', '$2y$10$7pJJwsDdU7Oa2nauU0oriuhz/K2npIxpiMHaC.BQenw.K76owa33O', '34234', 'PI', 'Makassar', '085256999456', 'Makassar', '2019-11-11', 'deafult.jpg', '0000-00-00 00:00:00'),
-(3, 'Aswar Kasim', 'aswar', 'aswar@gmail.com', '$2y$10$hlB.GNhwnA0/NaZUYbEz/uFOBpsecXLJNhSNO/iN94ZXcDtRT6c7K', '32342', 'PI', 'Makassar', '085256999778', 'Makassar', '2019-11-14', 'deafult.jpg', '0000-00-00 00:00:00');
+(4, 'Lalu Abdurrahman', 'lalurahman', 'lalurahman@gmail.com', '$2y$10$vwlLbfpPTazdce9FhdBLBOX45jxfRf/KdFA5m8ymk2dTBrple9LJq', '123', 'PI', 'Makassar', '085256999428', 'Makassar', '2019-11-06', 'deafult.jpg', '2019-11-11 15:17:47');
 
 --
 -- Indexes for dumped tables
@@ -131,7 +126,7 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `admin_role`
@@ -143,7 +138,7 @@ ALTER TABLE `admin_role`
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

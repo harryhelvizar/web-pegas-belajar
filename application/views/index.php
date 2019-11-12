@@ -10,8 +10,7 @@
 
     </div><!-- .hero-content -->
 
-    <div class="milestones">
-        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
+    <!-- <div class="milestones">
         <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/milestones.jpg" data-speed="0.8"></div>
         <div class="mt-10">
 
@@ -25,7 +24,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <div class="icon-boxes pt-10">
         <header class="heading">

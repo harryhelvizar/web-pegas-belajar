@@ -604,7 +604,7 @@ a:hover, a:active {
     position: relative;
     padding-left: 10px;
     margin-left: 5px;
-    color: #757686;
+    color: #ffffff;
 }
 
 .course-date::before {
@@ -623,7 +623,7 @@ a:hover, a:active {
 .course-cost {
     font-size: 24px;
     font-weight: 700;
-    color: #19c880;
+    color: #3f99ee;
 }
 
 .course-cost .price-drop {
@@ -643,7 +643,7 @@ a:hover, a:active {
 
 .course-ratings {
     font-size: 13px;
-    color: #c0c1cd;
+    color: #eff0fc;
 }
 
 .course-ratings span {
@@ -667,13 +667,13 @@ a.btn {
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #383749;
+    color: #ffffff;
     text-decoration: none;
 }
 
 a.btn:hover {
-    color: #fff;
-    background: #f77931;
+    color: rgb(15, 35, 61);
+    background: rgb(79, 206, 223);
 }
 
 /*
@@ -2592,13 +2592,13 @@ ul.author-social-profile li:hover .fa {
     letter-spacing: 0.1rem;
     outline: none;
     cursor: pointer;
-    background: #19c880;
+    background: #19aec8;
 }
 
 .contact-info p {
     margin-top: 24px;
     line-height: 1.8;
-    color: #757686;
+    color: #19aec8;
 }
 
 .contact-info ul {
@@ -2608,17 +2608,17 @@ ul.author-social-profile li:hover .fa {
 .contact-info li {
     margin-top: 32px;
     font-size: 24px;
-    color: #383749;
+    color: #60c1ee;
 }
 
 .contact-info li span {
     display: block;
     font-size: 18px;
-    color: #c0c1cd;
+    color: #3054f5;
 }
 
 .contact-info li a {
-    color: #636363;
+    color: #60c1ee;
     text-decoration: navajowhite;
 }
 
@@ -2634,11 +2634,10 @@ ul.author-social-profile li:hover .fa {
 
 /* soal */
 .kerja-soal{
-    background-color: rgba(21, 20, 33, 0.795);
+    /* background-color: rgba(21, 20, 33, 0.795); */
+    background: rgba(12, 38, 77, 0.966);
 }
-.kerja-soal .soal{
-    color: white;
-}
+
 
 /* akhir soal */
 
@@ -2647,24 +2646,24 @@ ul.author-social-profile li:hover .fa {
 --------------------------------------------------------------*/
 .footer-widgets {
     padding: 60px 0;
-    color: #757686;
+    color: #ffffff;
 }
 
 .foot-about p {
     margin-top: 40px;
     font-size: 16px;
     line-height: 1.6;
-    color: #757686;
+    color: #ffffff;
 }
 
 p.footer-copyright {
-    color: #c0c1cd;
+    color: #ffffff;
 }
 
 .footer-widgets h2 {
     margin-bottom: 40px;
     font-size: 20px;
-    color: #383749;
+    color: #ffffff;
 }
 
 .footer-widgets ul {
@@ -2678,7 +2677,7 @@ p.footer-copyright {
 }
 
 .footer-widgets ul li a {
-    color: #757686;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -2745,7 +2744,7 @@ p.footer-copyright {
 }
 
 .footer-bar-nav ul li a {
-    color: #757686;
+    color: #ffffff;
     text-decoration: none;
 }
 
