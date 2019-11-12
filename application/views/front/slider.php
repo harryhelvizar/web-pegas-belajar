@@ -6,6 +6,7 @@
                            <header class="entry-header">
                                <!-- <h4>Get started with online courses</h4> -->
                                <h1>Gaya belajar itu unik<br />Kenali gaya belajarmu<br>Disini!</h1>
+                               <a href="<?= base_url('soal') ?>" class="btn btn-primary">mulai</a>
                            </header><!-- .entry-header -->
 
                            <!-- <div class="entry-content">

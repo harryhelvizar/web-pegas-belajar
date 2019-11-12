@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer" style="background:#002347;">
     <div class="footer-widgets">
         <div class="container">
             <div class="row">
@@ -6,7 +6,9 @@
                     <div class="foot-about">
                         <a class="foot-logo" href="#">
                             <!-- <img src="images/foot-logo.png" alt=""> -->
-                            <h1 class="site-title"><a href="index.html" rel="home" style="color: black;">Pegas<span>belajar</span></a></h1>
+                            <h1 class="site-title"><a href="<?= base_url('front')?>" rel="home"><img src="<?= base_url('assets/')?>/images/pegas.png" alt=""></a></h1>
+
+                            <!-- <h1 class="site-title"><a href="index.html" rel="home" style="color: black;">Pegas<span>belajar</span></a></h1> -->
                         </a>
 
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p>
