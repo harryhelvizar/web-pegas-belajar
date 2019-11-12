@@ -43,4 +43,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/main_styles.css">
 
+    <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
+    <script type='text/javascript' src='<?= base_url('assets/') ?>js/swiper.min.js'></script>
+    <script type='text/javascript' src='<?= base_url('assets/') ?>js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.collapsible.min.js'></script>
+
+    <script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
+
 </head>
