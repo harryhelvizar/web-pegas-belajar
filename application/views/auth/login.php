@@ -32,13 +32,18 @@
 					<img src="<?= base_url('assets/login/') ?>images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post" action="<?= base_url('siswa/auth') ?>">
 					<span class="login100-form-title">
 						Login untuk masuk
 					</span>
+					<?php if (validation_errors()) : ?>
+						<div class="alert alert-danger" role="alert">
+							<?= validation_errors(); ?>
+						</div>
+					<?php endif; ?>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email/Username">
+						<input class="input100" type="text" name="email" id="email" placeholder="Email/Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -46,7 +51,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" id="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -54,7 +59,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Login
 						</button>
 					</div>
