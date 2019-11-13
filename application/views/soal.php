@@ -1,6 +1,5 @@
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
 
 <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
@@ -9,8 +8,6 @@
 <script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
 
 <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
-
-
 
 <?php $this->load->view('front/header') ?>
 
