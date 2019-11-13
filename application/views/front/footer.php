@@ -36,21 +36,21 @@
                     </div><!-- .quick-links -->
                 </div><!-- .col -->
                 <style>
-                .sosial-media{
-                    height: 30px;
-                    width: 50px;
-                    padding-top:8px;
-                }
+                    .sosial-media {
+                        height: 30px;
+                        width: 50px;
+                        padding-top: 8px;
+                    }
                 </style>
                 <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
                     <div class="foot-contact text-center">
                         <h2 class="text-center">Social Media</h2>
 
-                            <div class="fa fa-facebook btn btn-primary sosial-media"></div>
-                            <div class="fa fa-instagram btn btn-danger sosial-media"></div>
-                            <div class="fa fa-twitter btn btn-primary sosial-media"></div>
-                            <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fa fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
-                            
+                        <div class="fa fa-facebook btn btn-primary sosial-media"></div>
+                        <div class="fa fa-instagram btn btn-danger sosial-media"></div>
+                        <div class="fa fa-twitter btn btn-primary sosial-media"></div>
+                        <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fa fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
+
                     </div><!-- .foot-contact -->
                 </div><!-- .col -->
 
@@ -98,7 +98,7 @@
 <script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
+
 
 
 
