@@ -65,8 +65,10 @@
                     </div>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary mb-5">Selanjutnya</button>
-                <button type="button" class="btn btn-danger mb-5">Reset</button>
+                <!-- <button type="submit" class="btn btn-primary mb-5">Selanjutnya</button> -->
+                <!-- <button type="button" class="btn btn-danger mb-5" id="reset">Reset</button> -->
+                <a href="" class="btn btn-primary mb-5 btn-sm" role="button">Selanjutnya</a>
+                <a href="" class="btn btn-danger mb-5 btn-sm" role="button">Reset</a>
 
                 <div class="container">
                     <div class="row">
