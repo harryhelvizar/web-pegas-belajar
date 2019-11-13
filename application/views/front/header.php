@@ -29,6 +29,7 @@
 
     <link href="<?= base_url('assets/') ?>plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
 
+    <link href="<?= base_url('assets/fontawesome') ?>/css/all.css" rel="stylesheet">
 
     <!-- ElegantFonts CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/elegant-fonts.css">

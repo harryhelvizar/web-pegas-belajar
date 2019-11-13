@@ -40,16 +40,18 @@
                     height: 30px;
                     width: 50px;
                     padding-top:8px;
+                    margin-left: 10px;
                 }
+
                 </style>
                 <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
                     <div class="foot-contact text-center">
                         <h2 class="text-center">Social Media</h2>
 
-                            <div class="fa fa-facebook btn btn-primary sosial-media"></div>
-                            <div class="fa fa-instagram btn btn-danger sosial-media"></div>
-                            <div class="fa fa-twitter btn btn-primary sosial-media"></div>
-                            <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fa fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
+                            <div class="fab fa-facebook btn btn-primary sosial-media"></div>
+                            <div class="fab fa-instagram btn btn-danger sosial-media"></div>
+                            <div class="fab fa-twitter btn btn-primary sosial-media"></div>
+                            <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fab fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
                             
                     </div><!-- .foot-contact -->
                 </div><!-- .col -->
@@ -84,6 +86,10 @@
     <!-- .footer-bar -->
 </footer><!-- .site-footer -->
 
+</body>
+
+</html>
+
 <script src="<?= base_url('assets/') ?>css/bootstrap4/popper.js"></script>
 <script src="<?= base_url('assets/') ?>css/bootstrap4/bootstrap.min.js"></script>
 <script src="<?= base_url('assets/') ?>plugins/greensock/TweenMax.min.js"></script>
@@ -99,11 +105,3 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
-
-
-
-
-
-</body>
-
-</html>

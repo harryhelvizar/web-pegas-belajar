@@ -268,9 +268,9 @@
                     <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p> -->
 
                     <ul class="p-0 m-0">
-                        <li><span>Location:</span>Jl. Gunungsari | Makassar</li>
-                        <li><span>Email:</span><a href="#">info.pegasbelajar@gmail.com</a></li>
-                        <li><span>Phone:</span><a href="#">(203) 123-6666</a></li>
+                        <li class="fas fa-map-marked-alt">  Jl. Gunungsari | Makassar</li>
+                        <li class="fas fa-envelope">  info.pegasbelajar@gmail.com</li>
+                        <li class="fas fa-phone">  (203) 123-6666</li>
                     </ul>
                 </div><!-- .contact-info -->
             </div><!-- .col -->
