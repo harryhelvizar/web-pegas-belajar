@@ -46,8 +46,9 @@
                             <nav class="site-navigation flex justify-content-end align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
                                     <li class="current-menu-item"><a href=""></a></li>
+                                    <li class="current-menu-item"><a href=""></a></li>
                                     <li class="current-menu-item"><a href="#">Beranda</a></li>
-                                    <li><a href="#">Tes</a></li>
+                                    <li><a href="<?= base_url('soal')?>">Tes</a></li>
                                     <li><a href="#">Tentang</a></li>
                                     <li><a href="#">Download</a></li>
                                     <li><a href="#">Kontak</a></li>
@@ -60,9 +61,6 @@
                                     <span></span>
                                 </div><!-- .hamburger-menu -->
 
-                                <div class="header-bar-cart">
-                                    <a href="#" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_bag_alt"></span></a>
-                                </div><!-- .header-bar-search -->
                             </nav><!-- .site-navigation -->
                         </div><!-- .col -->
                     </div><!-- .row -->
