@@ -2,49 +2,23 @@
     <div class="footer-widgets">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="foot-about">
                         <a class="foot-logo" href="#">
-                            <!-- <img src="images/foot-logo.png" alt=""> -->
                             <h1 class="site-title"><a href="<?= base_url('front') ?>" rel="home"><img src="<?= base_url('assets/') ?>/images/pegas.png" alt=""></a></h1>
-
-                            <!-- <h1 class="site-title"><a href="index.html" rel="home" style="color: black;">Pegas<span>belajar</span></a></h1> -->
                         </a>
 
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p>
 
                         <p class="footer-copyright">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy; <?= date('Y') ?> All rights reserved | Pegasbelajar <br> by <a href="https://pigidev.com" target="_blank">PigiDev</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div><!-- .foot-about -->
                 </div><!-- .col -->
 
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <div class="quick-links flex flex-wrap">
-                        <h2 class="w-100">Pegas belajar</h2>
-
-                        <ul class="w-50">
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Terms of Use </a></li>
-                            <li><a href="#">Privacy Policy </a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-
-                        <ul class="w-50">
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Forums</a></li>
-                            <li><a href="#">Language Packs</a></li>
-                            <li><a href="#">Release Status</a></li>
-                        </ul>
-                    </div><!-- .quick-links -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <div class="quick-links flex flex-wrap">
-                        <h2 class="w-100">Kritik dan saran</h2>
+                <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
+                    <div class="quick-links flex flex-wrap text-justify">
+                        <h2 class="w-100 text-center">Kritik dan saran</h2>
 
                         <ul class="w-50">
                             <li><a href="#">About </a></li>
@@ -61,17 +35,22 @@
                         </ul>
                     </div><!-- .quick-links -->
                 </div><!-- .col -->
+                <style>
+                .sosial-media{
+                    height: 30px;
+                    width: 50px;
+                    padding-top:8px;
+                }
+                </style>
+                <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                    <div class="foot-contact text-center">
+                        <h2 class="text-center">Social Media</h2>
 
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                    <div class="foot-contact">
-                        <h2>Contact Us</h2>
-
-                        <ul>
-                            <li>Email: info.deertcreative@gmail.com</li>
-                            <li>Phone: (+88) 111 555 666</li>
-                            <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fa fa-whatsapp btn btn-sm btn-success"> tanya via whatsapp</div>') ?>
-                            <li>Address: 40 Baria Sreet 133/2 NewYork City, US</li>
-                        </ul>
+                            <div class="fa fa-facebook btn btn-primary sosial-media"></div>
+                            <div class="fa fa-instagram btn btn-danger sosial-media"></div>
+                            <div class="fa fa-twitter btn btn-primary sosial-media"></div>
+                            <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fa fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
+                            
                     </div><!-- .foot-contact -->
                 </div><!-- .col -->
 

@@ -3,6 +3,8 @@
                <div class="row">
                    <div class="col-12">
                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                       <!-- <div class="parallax_background" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/hero-bg2.jpg" data-speed="0.8"> -->
+
                            <header class="entry-header">
                                <!-- <h4>Get started with online courses</h4> -->
                                <h1>Gaya belajar itu unik<br />Kenali gaya belajarmu<br>Disini!</h1>

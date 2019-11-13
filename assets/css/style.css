@@ -344,7 +344,7 @@ a:hover, a:active {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-content {
-    background: url("../images/hero-bg.jpg") no-repeat center;
+    background: url("../images/hero-bg2.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -367,7 +367,7 @@ a:hover, a:active {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #19c880;
+    color: #19bcc8;
     letter-spacing: 0.1em;
 }
 
