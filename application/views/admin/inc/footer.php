@@ -39,6 +39,8 @@
 <script src="<?= base_url('assets/admin/') ?>assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="<?= base_url('assets/admin/') ?>dist/js/pages/chart/chart-page-init.js"></script>
 
+
+
 </body>
 
 </html>

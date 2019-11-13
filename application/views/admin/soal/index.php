@@ -52,33 +52,33 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form>
+            <div class="container">
 
-                <div class="modal-body">
+                <form method="post" action="<?= base_url('admin/soal/tambah') ?>">
+
                     <div class="form-group">
-                        <!-- <textarea class="ckeditor" name="soal" id="soal" cols="30" rows="10"></textarea> -->
                         <!-- <input type="text" class="form-control" name="soal" id="soal" placeholder="Soal"> -->
-                        <div class="form-control" id="editor" style="height: 300px;">
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        <textarea class="form-control" name="soal" id="soal" cols="30" rows="3" placeholder="Soal"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="text" class="form-control" name="jawab_a" id="jawab_a" placeholder="Jawaban A">
                     </div>
-
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        <input type="text" class="form-control" name="jawab_b" id="jawab_b" placeholder="Jawaban B">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="jawab_c" id="jawab_c" placeholder="Jawaban C">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="jawab_d" id="jawab_d" placeholder="Jawaban D">
                     </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
 
             </form>
         </div>

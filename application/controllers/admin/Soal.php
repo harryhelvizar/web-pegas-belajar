@@ -16,4 +16,27 @@ class Soal extends CI_Controller
         $data['soal'] = $this->db->get('soal')->result();
         $this->load->view('admin/index', $data);
     }
+
+    public function tambah()
+    {
+        $this->form_validation->set_rules('soal', 'Soal', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            $data['title'] = 'Soal - Pegas Belajar';
+            $data['contents'] = 'admin/soal/index';
+            $this->load->view('admin/index', $data);
+        } else {
+            $data = [
+                'soal' => $this->input->post('soal'),
+                'jawab_a' => $this->input->post('jawab_a'),
+                'jawab_b' => $this->input->post('jawab_b'),
+                'jawab_c' => $this->input->post('jawab_c'),
+                'jawab_d' => $this->input->post('jawab_d')
+            ];
+
+            $this->db->insert('soal', $data);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Soal baru telah ditambahkan!</div>');
+            redirect('admin/soal');
+        }
+    }
 }
