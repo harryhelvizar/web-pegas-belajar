@@ -83,7 +83,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10">
-                            <p style="color:white;">Soal ke : <?= $soal->id ?> - <?= $total_soal ?></p>
+                            <p style="color:white;">Soal ke : <?= $soal->id_soal ?> - <?= $total_soal ?></p>
                         </div>
                     </div>
                 </div>
