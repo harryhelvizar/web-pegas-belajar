@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2019 at 09:29 AM
+-- Generation Time: Nov 14, 2019 at 09:43 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -70,12 +70,26 @@ INSERT INTO `admin_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hasil`
+--
+
+CREATE TABLE `hasil` (
+  `id_hasil` int(11) NOT NULL,
+  `id_siswa` int(11) NOT NULL,
+  `id_soal` int(11) NOT NULL,
+  `id_jawaban` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `jawaban`
 --
 
 CREATE TABLE `jawaban` (
-  `id` int(11) NOT NULL,
-  `soal` varchar(250) NOT NULL,
+  `id_jawaban` int(11) NOT NULL,
+  `id_siswa` int(11) NOT NULL,
+  `id_soal` int(11) NOT NULL,
   `jawaban_a` int(11) NOT NULL,
   `jawaban_b` int(11) NOT NULL,
   `jawaban_c` int(11) NOT NULL,
@@ -89,7 +103,7 @@ CREATE TABLE `jawaban` (
 --
 
 CREATE TABLE `siswa` (
-  `id` int(11) NOT NULL,
+  `id_siswa` int(11) NOT NULL,
   `nama` varchar(200) NOT NULL,
   `username` varchar(100) NOT NULL,
   `email` varchar(200) NOT NULL,
@@ -108,7 +122,7 @@ CREATE TABLE `siswa` (
 -- Dumping data for table `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `nama`, `username`, `email`, `password`, `nis`, `asal_sekolah`, `kabupaten`, `no_hp`, `tempat_lahir`, `tanggal_lahir`, `foto`, `date_created`) VALUES
+INSERT INTO `siswa` (`id_siswa`, `nama`, `username`, `email`, `password`, `nis`, `asal_sekolah`, `kabupaten`, `no_hp`, `tempat_lahir`, `tanggal_lahir`, `foto`, `date_created`) VALUES
 (4, 'Lalu Abdurrahman', 'lalurahman', 'lalurahman@gmail.com', '$2y$10$vwlLbfpPTazdce9FhdBLBOX45jxfRf/KdFA5m8ymk2dTBrple9LJq', '123', 'PI', 'Makassar', '085256999428', 'Makassar', '2019-11-06', 'deafult.jpg', '2019-11-11 15:17:47');
 
 -- --------------------------------------------------------
@@ -118,7 +132,7 @@ INSERT INTO `siswa` (`id`, `nama`, `username`, `email`, `password`, `nis`, `asal
 --
 
 CREATE TABLE `soal` (
-  `id` int(11) NOT NULL,
+  `id_soal` int(11) NOT NULL,
   `soal` varchar(250) NOT NULL,
   `jawab_a` varchar(250) NOT NULL,
   `jawab_b` varchar(250) NOT NULL,
@@ -130,7 +144,7 @@ CREATE TABLE `soal` (
 -- Dumping data for table `soal`
 --
 
-INSERT INTO `soal` (`id`, `soal`, `jawab_a`, `jawab_b`, `jawab_c`, `jawab_d`) VALUES
+INSERT INTO `soal` (`id_soal`, `soal`, `jawab_a`, `jawab_b`, `jawab_c`, `jawab_d`) VALUES
 (1, 'Saat menghadapi masalah, saya akan menyelesaikannya dengan..', 'Mengambil pendekatan langkah demi langkah', 'Bertindah segera atau saat itu juga', 'Pertimbangkan dampaknya terhadap orang lain', 'Pastikan memiliki data, fakta atau informasi terlebih dahulu'),
 (2, 'Ketika belajar, saya lebih suka dengan..', 'Mempertimbangkan penjelasan guru', 'Diskusi dan bertukar pikiran dalam kelompok kecil', 'Membaca artikel, studi kasus atau penjelasan di buku', 'Berpartisipasi dalam kegiatan atau praktek lapangan'),
 (3, 'Ketika guru mengajukan pertanyaan yang saya tahu jawabannya, saya akan..', 'Membiarkan orang lain menjawab lebih dulu', 'Menawarkan tanggapan atau jawaban langsung', 'Mempertimbangkan apakah jawaban saya akan diterima dengan baik atau tidak', 'Memikirkan baik-baik jawaban saya sebelum menjawab'),
@@ -171,22 +185,28 @@ ALTER TABLE `admin_role`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `hasil`
+--
+ALTER TABLE `hasil`
+  ADD PRIMARY KEY (`id_hasil`);
+
+--
 -- Indexes for table `jawaban`
 --
 ALTER TABLE `jawaban`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_jawaban`);
 
 --
 -- Indexes for table `siswa`
 --
 ALTER TABLE `siswa`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_siswa`);
 
 --
 -- Indexes for table `soal`
 --
 ALTER TABLE `soal`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_soal`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -205,22 +225,28 @@ ALTER TABLE `admin_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `hasil`
+--
+ALTER TABLE `hasil`
+  MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `jawaban`
 --
 ALTER TABLE `jawaban`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_jawaban` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `soal`
 --
 ALTER TABLE `soal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_soal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
