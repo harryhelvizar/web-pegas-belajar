@@ -1,4 +1,3 @@
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
@@ -78,7 +77,7 @@
                 <br>
                 <!-- <button type="submit" class="btn btn-primary mb-5">Selanjutnya</button> -->
                 <!-- <button type="button" class="btn btn-danger mb-5" id="reset">Reset</button> -->
-                <a href="" class="btn btn-primary mb-5 btn-sm" role="button">Selanjutnya</a>
+                <a href="<?= base_url('soal/') ?>" class="btn btn-primary mb-5 btn-sm" role="button">Selanjutnya</a>
                 <a href="" class="btn btn-danger mb-5 btn-sm" role="button">Reset</a>
 
                 <div class="container">
@@ -128,6 +127,4 @@
         </script>
 
 
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
-
-
+        <script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
