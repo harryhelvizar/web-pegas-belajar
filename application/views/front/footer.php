@@ -10,16 +10,14 @@
 
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p>
 
-                        <p class="footer-copyright">
-                            Copyright &copy; <?= date('Y') ?> All rights reserved | Pegasbelajar <br> by <a href="https://pigidev.com" target="_blank">PigiDev</a>
-                        </p>
+
                     </div><!-- .foot-about -->
                 </div><!-- .col -->
 
                 <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
                     <div class="quick-links flex flex-wrap text-justify">
-                        <h2 class="w-100 text-center">Kritik dan saran</h2>
-
+                        <h2 class="w-100 text-center">Download</h2>
+                        <!-- 
                         <ul class="w-50">
                             <li><a href="#">About </a></li>
                             <li><a href="#">Terms of Use </a></li>
@@ -32,7 +30,7 @@
                             <li><a href="#">Forums</a></li>
                             <li><a href="#">Language Packs</a></li>
                             <li><a href="#">Release Status</a></li>
-                        </ul>
+                        </ul> -->
                     </div><!-- .quick-links -->
                 </div><!-- .col -->
                 <style>
@@ -69,23 +67,11 @@
     <div class="footer-bar">
         <div class="container">
             <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="download-apps flex flex-wrap justify-content-center justify-content-lg-start align-items-center">
-                        <a href="#"><img src="images/app-store.png" alt=""></a>
-                        <a href="#"><img src="images/play-store.png" alt=""></a>
-                    </div><!-- .download-apps -->
 
-                </div>
+                <p class="footer-copyright">
+                    Copyright &copy; <?= date('Y') ?> All rights reserved | Pegasbelajar by <a href="https://pigidev.com" target="_blank">PigiDev</a>
+                </p>
 
-                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                    <div class="footer-bar-nav">
-                        <ul class="flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                            <li><a href="#">DPA</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div><!-- .footer-bar-nav -->
-                </div><!-- .col-12 -->
             </div><!-- .row -->
         </div><!-- .container -->
     </div>
