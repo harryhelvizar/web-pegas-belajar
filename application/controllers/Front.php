@@ -11,4 +11,18 @@ class Front extends CI_Controller
         $data['admin'] = $this->db->get('admin')->num_rows();
         $this->load->view('index', $data);
     }
+
+    public function kontak()
+    {
+        $data['title'] = 'Home - Pegas Belajar';
+        $this->load->view('kontak', $data);
+    }
+
+    public function soal()
+    {
+        $data['title'] = 'Soal - Pegas Belajar';
+        $data['soal'] = $this->db->get('soal', 1, 0)->result();
+        $data['total_soal'] = $this->db->get('soal')->num_rows();
+        $this->load->view('soal', $data);
+    }
 }

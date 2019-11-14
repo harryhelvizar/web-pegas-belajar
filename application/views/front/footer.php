@@ -1,103 +1,75 @@
-<footer class="site-footer" style="background:#002347;">
-    <div class="footer-widgets">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="foot-about">
-                        <a class="foot-logo" href="#">
-                            <h1 class="site-title"><a href="<?= base_url('front') ?>" rel="home"><img src="<?= base_url('assets/') ?>/images/pegas.png" alt=""></a></h1>
-                        </a>
+<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <div class="ftco-footer-widget mb-4">
+                    <h2><a class="navbar-brand" href="index.html">PegasBelajar</a></h2>
 
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p>
+                    <p style="margin-right: 150px;">Pegas Belajar merupakan media penelusuran gaya belajar siswa berbasis website, yang dikembangkan secara khusus untuk membantu siswa mengenali dan memahami preferensi gaya belajarnya. Pegas Belajar ini dibuat dengan memanfaatkan perkembangan IT, yang secara khusus diperuntukkan bagi siswa di sekolah menengah atas (SMA)</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
 
 
-                    </div><!-- .foot-about -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
-                    <div class="quick-links flex flex-wrap text-justify">
-                        <h2 class="w-100 text-center">Download</h2>
-                        <!-- 
-                        <ul class="w-50">
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Terms of Use </a></li>
-                            <li><a href="#">Privacy Policy </a></li>
-                            <li><a href="#">Contact Us</a></li>
+            <div class="col-md-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
+                                    Francisco, California, USA</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
 
-                        <ul class="w-50">
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Forums</a></li>
-                            <li><a href="#">Language Packs</a></li>
-                            <li><a href="#">Release Status</a></li>
-                        </ul> -->
-                    </div><!-- .quick-links -->
-                </div><!-- .col -->
-                <style>
-                    .sosial-media {
-                        height: 30px;
-                        width: 50px;
-                        padding-top: 8px;
-                        margin-left: 10px;
-                    }
-
-                    .sosial-media {
-                        height: 30px;
-                        width: 50px;
-                        padding-top: 8px;
-                    }
-                </style>
-                <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-                    <div class="foot-contact text-center">
-                        <h2 class="text-center">Social Media</h2>
-
-                        <div class="fab fa-facebook btn btn-primary sosial-media">
-                        </div>
-                        <div class="fab fa-instagram btn btn-danger sosial-media"></div>
-                        <div class="fab fa-twitter btn btn-primary sosial-media"></div>
-                        <?php echo anchor('https://wa.me/6282314575727?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya.....', '<div class="fab fa-whatsapp btn btn-sm btn-success sosial-media"></div>') ?>
-
-                    </div><!-- .foot-contact -->
-                </div><!-- .col -->
-
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .footer-widgets -->
-
-    <div class="footer-bar">
-        <div class="container">
-            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
-
-                <p class="footer-copyright">
-                    Copyright &copy; <?= date('Y') ?> All rights reserved | Pegasbelajar by <a href="https://pigidev.com" target="_blank">PigiDev</a>
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy; 2019 | All rights reserved | Develop by
+                    <a href="https://pigidev.com" target="_blank">PigiDev</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
-
-            </div><!-- .row -->
-        </div><!-- .container -->
+            </div>
+        </div>
     </div>
-    <!-- .footer-bar -->
-</footer><!-- .site-footer -->
-
-</body>
-
-</html>
-
-<script src="<?= base_url('assets/') ?>css/bootstrap4/popper.js"></script>
-<script src="<?= base_url('assets/') ?>css/bootstrap4/bootstrap.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/greensock/TweenMax.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/greensock/TimelineMax.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/greensock/animation.gsap.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/easing/easing.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/video-js/video.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/video-js/Youtube.min.js"></script>
-<script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</footer>
 
 
-<script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+<script src="<?= base_url('assets/template/') ?>js/jquery.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery-migrate-3.0.1.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/popper.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/bootstrap.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.easing.1.3.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.waypoints.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.stellar.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/owl.carousel.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.magnific-popup.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/aos.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.animateNumber.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/bootstrap-datepicker.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/jquery.timepicker.min.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+</script>
+<script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
+<script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
 </body>
 

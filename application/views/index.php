@@ -1,281 +1,184 @@
 <?php $this->load->view('front/header') ?>
 
 <body>
-    <div class="hero-content">
 
-        <?php $this->load->view('front/navbar') ?>
+    <?php $this->load->view('front/navbar') ?>
 
+    <?php $this->load->view('front/slider') ?>
 
-        <?php $this->load->view('front/slider') ?>
-
-    </div><!-- .hero-content -->
-
-    <!-- <div class="milestones">
-        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/milestones.jpg" data-speed="0.8"></div>
-        <div class="mt-10">
-
-            <div class="row">
-                <div class="col-6"></div>
-                <div class="col-6">
-                    <h2 class="" style="color:white;">Kenali gaya belajarmu disini!!!!</h2><br>
-                    
-                    <a href="<?= base_url('soal') ?>" class="btn btn-primary">mulai</a>
-                </div>
-            </div>
-
-        </div>
-    </div> -->
-
-    <div class="icon-boxes pt-10">
-        <header class="heading">
-            <h2 class="entry-title text-center mt-50 ">Informasi Gaya Belajar</h2>
-        </header><!-- .heading -->
-        <div class="container-fluid">
-            <div class="flex flex-wrap align-items-stretch">
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-book"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">DIVERGEN</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-book"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">ASIMILASI</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-book"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">KOVERGEN</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-book"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">AKOMODASI</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div><!-- .icon-boxes -->
-
-
-    <div class="milestones">
-        <header class="statistik">
-            <h2 class="entry-title text-center">Statistik Pengguna</h2>
-        </header><!-- .heading -->
-
-        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
-        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/milestones.jpg" data-speed="0.8"></div>
+    <section class="ftco-section">
         <div class="container">
-
-            <div class="row milestones_container">
-
-                <!-- Milestone -->
-                <div class="col-lg-4 milestone_col">
-                    <div class="milestone text-center">
-                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_2.svg" alt=""></div>
-                        <div class="milestone_counter" data-end-value="7286"><?= $siswa ?></div>
-                        <div class="milestone_text">Students</div>
+            <h3 class="text-center">Informasi Gaya Belajar</h3>
+            <div class="row">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-3 py-4 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
+                        </div>
+                        <div class="media-body px-3">
+                            <h3 class="heading">Divergen</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Milestone -->
-                <div class="col-lg-4 milestone_col">
-                    <div class="milestone text-center">
-                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_3.svg" alt=""></div>
-                        <div class="milestone_counter" data-end-value="257"><?= $admin ?></div>
-                        <div class="milestone_text">Jumlah Kelas</div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-3 py-4 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
+                        </div>
+                        <div class="media-body px-3">
+                            <h3 class="heading">Asimilasi</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Milestone -->
-                <div class="col-lg-4 milestone_col">
-                    <div class="milestone text-center">
-                        <div class="milestone_icon"><img src="<?= base_url('assets/') ?>images/milestone_4.svg" alt=""></div>
-                        <div class="milestone_counter" data-end-value="39"><?= $siswa + $admin ?></div>
-                        <div class="milestone_text">Total</div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-3 py-4 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-blackboard"></span></div>
+                        <div class="media-body px-3">
+                            <h3 class="heading">Kovergen</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-3 py-4 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-books"></span>
+                        </div>
+                        <div class="media-body px-3">
+                            <h3 class="heading">Akomodasi</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <section class="testimonial-section">
-        <div class="text-center mt-15">
-            <h2>TESTIMONI</h2>
+    <section class="ftco-section-3 ftco-counter img" id="section-counter" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_3.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row d-md-flex justify-content-center">
+                <div class="col-md-9 about-video text-center">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-md-10">
+                                <div class="row">
+
+                                    <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                        <div class="block-18 text-center">
+                                            <div class="text ">
+                                                <strong class="number text-white" data-number="<?= $siswa ?>">0</strong>
+                                                <span class="text-white">Siswa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                        <div class="block-18 text-center">
+                                            <div class="text">
+                                                <strong class="number text-white" data-number="<?= $admin ?>">0</strong>
+                                                <span class="text-white">Kelas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+                                        <div class="block-18 text-center">
+                                            <div class="text">
+                                                <strong class="number text-white" data-number="<?= $siswa + $admin ?>">0</strong>
+                                                <span class="text-white">Total</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Swiper -->
-        <div class="swiper-container testimonial-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 order-2 order-lg-1 flex align-items-center mt-5 mt-lg-0">
-                                <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/') ?>images/user-1.jpg" alt="">
-                                </figure><!-- .user-avatar -->
-                            </div><!-- .col -->
-
-                            <div class="col-12 col-lg-6 order-1 order-lg-2 content-wrap h-100">
-                                <div class="entry-content">
-                                    <p>Together as teachers, students and universities we can help make this education available for everyone.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <h3 class="testimonial-user">Russell Stephens - <span>University in UK</span></h3>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .swiper-slide -->
-
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 order-2 order-lg-1 flex align-items-center mt-5 mt-lg-0">
-                                <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/') ?>images/user-2.jpg" alt="">
-                                </figure><!-- .user-avatar -->
-                            </div><!-- .col -->
-
-                            <div class="col-12 col-lg-6 order-1 order-lg-2 content-wrap h-100">
-                                <div class="entry-content">
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <h3 class="testimonial-user">Robert Stephens - <span>University in Oxford</span></h3>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .swiper-slide -->
-
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 flex order-2 order-lg-1 align-items-center mt-5 mt-lg-0">
-                                <figure class="user-avatar">
-                                    <img src="<?= base_url('assets/') ?>images/user-3.jpg" alt="">
-                                </figure><!-- .user-avatar -->
-                            </div><!-- .col -->
-
-                            <div class="col-12 col-lg-6 order-1 order-lg-2 content-wrap h-100">
-                                <div class="entry-content">
-                                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <h3 class="testimonial-user">James Stephens - <span>University in Cambridge</span></h3>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .swiper-slide -->
-            </div><!-- .swiper-wrapper -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                        <div class="swiper-pagination position-relative flex justify-content-center align-items-center"></div>
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .testimonial-slider -->
-    </section><!-- .testimonial-section -->
+    </section>
 
 
-    <div class="maps">
-        <div class="container text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.930832731168!2d119.48096673553762!3d-5.133808876818806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f4200901921392b!2sMasjid%20Ali%20Hizaam!5e0!3m2!1sid!2sid!4v1573119822663!5m2!1sid!2sid" width="1200" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">Testimonial</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_1.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                        the Semantics, a large language ocean.</p>
+                                    <p class="name">Dennis Green</p>
+                                    <span class="position">CSE Student</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_2.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                        the Semantics, a large language ocean.</p>
+                                    <p class="name">Dennis Green</p>
+                                    <span class="position">Math Student</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_3.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                        the Semantics, a large language ocean.</p>
+                                    <p class="name">Dennis Green</p>
+                                    <span class="position">Science Students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_3.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                        the Semantics, a large language ocean.</p>
+                                    <p class="name">Dennis Green</p>
+                                    <span class="position">English Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- contak -->
-    <div class="container">
-
-        <div class="row justify-content-between">
-
-            <div class="col-12 col-lg-6">
-                <div class="contact-form">
-                    <h3>Contact</h3>
-
-                    <form>
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Your Message" rows="4"></textarea>
-                        <input type="submit" value="Send Message">
-                    </form>
-                </div><!-- .contact-form -->
-            </div><!-- .col -->
-
-            <div class="col-12 col-lg-6">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-
-                    <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. </p> -->
-
-                    <ul class="p-0 m-0">
-                        <li class="fas fa-map-marked-alt"> Jl. Gunungsari | Makassar</li>
-                        <li class="fas fa-envelope"> info.pegasbelajar@gmail.com</li>
-                        <li class="fas fa-phone"> (203) 123-6666</li>
-                    </ul>
-                </div><!-- .contact-info -->
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .container -->
-
+    </section>
 
     <?php $this->load->view('front/footer') ?>

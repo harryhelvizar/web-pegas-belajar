@@ -1,27 +1,63 @@
-       <div class="hero-content-overlay">
-           <div class="container">
-               <div class="row">
-                   <div class="col-12">
-                       <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
-                       <!-- <div class="parallax_background" data-parallax="scroll" data-image-src="<?= base_url('assets/') ?>images/hero-bg2.jpg" data-speed="0.8"> -->
-
-                           <header class="entry-header">
-                               <!-- <h4>Get started with online courses</h4> -->
-                               <h1>Gaya belajar itu unik<br />Kenali gaya belajarmu<br>Disini!</h1>
-                               <a href="<?= base_url('soal') ?>" class="btn btn-primary">mulai</a>
-                           </header><!-- .entry-header -->
-
-                           <!-- <div class="entry-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-                            </div> -->
-                           <!-- .entry-content -->
-
-                           <!-- <footer class="entry-footer read-more">
-                                <a href="#">read more</a>
-                            </footer> -->
-                           <!-- .entry-footer -->
-                       </div><!-- .hero-content-wrap -->
-                   </div><!-- .col -->
-               </div><!-- .row -->
-           </div><!-- .container -->
-       </div><!-- .hero-content-hero-content-overlay -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_1.jpg'); background-attachment:fixed;">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <div class="col-md-8 ftco-animate text-center">
+                            <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
+                            <p>
+                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed;">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <div class="col-md-8 ftco-animate text-center">
+                            <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
+                            <p>
+                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed;">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <div class="col-md-8 ftco-animate text-center">
+                            <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
+                            <p>
+                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

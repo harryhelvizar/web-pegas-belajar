@@ -2,60 +2,28 @@
 <html lang="en">
 
 <head>
-    <title><?= $title ?></title>
-
-    <!-- Required meta tags -->
+    <title>Home - Pegas Belajar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/animate.css">
+
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/magnific-popup.css">
+
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/aos.css">
+
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/ionicons.min.css">
+
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/jquery.timepicker.css">
 
 
-    <!--     
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-        crossorigin="anonymous"></script> -->
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
-
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/font-awesome.min.css">
-
-    <link href="<?= base_url('assets/') ?>plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/animate.css">
-
-    <link href="<?= base_url('assets/') ?>plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
-
-    <link href="<?= base_url('assets/fontawesome') ?>/css/all.css" rel="stylesheet">
-
-    <!-- ElegantFonts CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/elegant-fonts.css">
-
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/themify-icons.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/swiper.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/main_styles.css">
-
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/swiper.min.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.collapsible.min.js'></script>
-
-
-
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/custom.js'></script>
-    <!-- <script type='text/javascript' src="<?= base_url('assets/') ?>js/jquery-3.2.1.min.js"></script> -->
-    <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="<?= base_url('assets/') ?>plugins/parallax-js-master/parallax.min.js"></script>
-
-
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/icomoon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/style.css">
 </head>
