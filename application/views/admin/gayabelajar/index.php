@@ -38,7 +38,7 @@
                             <td><?= $gaya_belajar->cara_belajar ?></td>
                             <td><?= $gaya_belajar->metode_guru ?></td>
                             <td>
-                                <a href="" class="badge badge-success">edit</a>
+                                <a href="<?= base_url('admin/gayabelajar/edit/') . $gaya_belajar->id_gaya_belajar ?>" class="badge badge-success">edit</a>
                                 <a href="" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>

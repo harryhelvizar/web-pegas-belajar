@@ -19,13 +19,29 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-md-2"></div>
                 <div class="col-md-10">
                     <div class="row">
 
-                        <div class="col-md-12 bg-light p-5 ftco-animate">
-                            <ol>
-                                <li>hjghjgjhg</li>
-                            </ol>
+                        <div class="col-md-10 bg-light p-5 ftco-animate">
+                            <ul>
+                                <li>
+                                    <h5>Beri nomor pada jawaban yang paling sesuai dengan diri anda</h5>
+                                </li>
+                                <li>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt non ea totam modi ipsa aut debitis officiis corrupti quia quas!</h5>
+                                </li>
+                                <li>
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nulla laudantium dolorem magnam dolores sint!</h5>
+                                </li>
+                                <li>
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sed. Assumenda architecto neque accusamus ipsam commodi ducimus fugit aspernatur blanditiis tenetur, est veniam esse dicta?</h5>
+                                </li>
+                                <div class="text-center mt-5">
+
+                                    <a href="<?= base_url('front/soal') ?>" class="btn btn-primary">Lanjut Kerjakan Soal</a>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
