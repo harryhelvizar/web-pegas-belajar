@@ -9,12 +9,18 @@
 			<div class="row block-9">
 				<div class="col-md-6 pr-md-5">
 					<h4 class="mb-4">Silahkan login untuk lanjut!</h4>
-					<form action="#">
+					<?php if (validation_errors()) : ?>
+						<div class="alert alert-danger" role="alert">
+							<?= validation_errors(); ?>
+						</div>
+					<?php endif; ?>
+					<?= $this->session->flashdata('message'); ?>
+					<form action="<?= base_url('siswa/auth') ?>" method="post">
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Password">
+							<input type="password" class="form-control" name="password" id="password" placeholder="Password">
 						</div>
 
 						<div class="form-group">
