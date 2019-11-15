@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2019 at 09:43 AM
+-- Generation Time: Nov 15, 2019 at 01:08 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -66,6 +66,28 @@ CREATE TABLE `admin_role` (
 INSERT INTO `admin_role` (`id`, `role`) VALUES
 (1, 'Admin'),
 (2, 'Siswa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gaya_belajar`
+--
+
+CREATE TABLE `gaya_belajar` (
+  `id_gaya_belajar` int(11) NOT NULL,
+  `nama_gaya_belajar` varchar(250) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `karakteristik` varchar(1024) NOT NULL,
+  `icon` varchar(250) NOT NULL,
+  `tipe_kepribadian` varchar(250) NOT NULL,
+  `tugas_yg_sesuai` varchar(250) NOT NULL,
+  `kemampuan_adaptif` varchar(250) NOT NULL,
+  `kekuatan` varchar(1024) NOT NULL,
+  `kelemahan` varchar(1024) NOT NULL,
+  `cara_belajar` varchar(1024) NOT NULL,
+  `metode_guru` varchar(1024) NOT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -168,6 +190,30 @@ INSERT INTO `soal` (`id_soal`, `soal`, `jawab_a`, `jawab_b`, `jawab_c`, `jawab_d
 (21, 'Bidang pendidikan atau mata pelajaran yang sesuai..', 'Seni, sejarah dan psikologi', 'Matematika dan sains', 'Teknik dan medis', 'Komunikasi'),
 (22, 'Saya menyukai kegiatan yang..', 'Dalam ruangan dengan kegiatan yang bersifat personal', 'Dalam ruangan untuk kegiatan pengolahan data atau informasi', 'Luar ruangan untuk pekerjaan teknis', 'Luar ruangan atau kerja lapangan');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimoni`
+--
+
+CREATE TABLE `testimoni` (
+  `id_testimoni` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `jabatan` varchar(100) NOT NULL,
+  `testimoni` varchar(250) NOT NULL,
+  `foto` varchar(250) NOT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `testimoni`
+--
+
+INSERT INTO `testimoni` (`id_testimoni`, `nama`, `jabatan`, `testimoni`, `foto`, `date_created`) VALUES
+(1, 'Lalu Abdurrahman', 'Mahasiswa', 'sangat bagus .. saya suka', 'testimoni.jpg', '2019-11-14 23:49:46'),
+(2, 'Harry Helvizar', 'Mahasiswa', 'Baik saekali.. makin maju teruss', 'testimoni.jpg', '2019-11-14 23:54:48'),
+(3, 'Muhdan Fyan Syah Sofian', 'CEO Pondok Informatika', 'saya sangat suka model seperti ini karna sangat membantu', 'testimoni.jpg', '2019-11-14 23:55:40');
+
 --
 -- Indexes for dumped tables
 --
@@ -183,6 +229,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `admin_role`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gaya_belajar`
+--
+ALTER TABLE `gaya_belajar`
+  ADD PRIMARY KEY (`id_gaya_belajar`);
 
 --
 -- Indexes for table `hasil`
@@ -209,6 +261,12 @@ ALTER TABLE `soal`
   ADD PRIMARY KEY (`id_soal`);
 
 --
+-- Indexes for table `testimoni`
+--
+ALTER TABLE `testimoni`
+  ADD PRIMARY KEY (`id_testimoni`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -223,6 +281,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `admin_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `gaya_belajar`
+--
+ALTER TABLE `gaya_belajar`
+  MODIFY `id_gaya_belajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `hasil`
@@ -247,6 +311,12 @@ ALTER TABLE `siswa`
 --
 ALTER TABLE `soal`
   MODIFY `id_soal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `testimoni`
+--
+ALTER TABLE `testimoni`
+  MODIFY `id_testimoni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
