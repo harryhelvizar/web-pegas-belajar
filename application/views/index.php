@@ -17,6 +17,7 @@
                         <div class="media-body px-3">
                             <h3 class="heading">Divergen</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <a href="#" class="btn btn-primary">read more >></a>
                         </div>
                     </div>
                 </div>
@@ -28,6 +29,7 @@
                         <div class="media-body px-3">
                             <h3 class="heading">Asimilasi</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <a href="#" class="btn btn-primary">read more >></a>
                         </div>
                     </div>
                 </div>
@@ -38,6 +40,7 @@
                         <div class="media-body px-3">
                             <h3 class="heading">Kovergen</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <a href="#" class="btn btn-primary">read more >></a>
                         </div>
                     </div>
                 </div>
@@ -48,6 +51,7 @@
                         <div class="media-body px-3">
                             <h3 class="heading">Akomodasi</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <a href="#" class="btn btn-primary">read more >></a>
                         </div>
                     </div>
                 </div>

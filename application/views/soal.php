@@ -1,3 +1,9 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+
 <?php $this->load->view('front/header') ?>
 
 <body>
@@ -22,13 +28,57 @@
                     <div class="col-md-10">
                         <div class="row">
 
-                            <div class="col-md-12 bg-light  p-5 ftco-animate">
-                                <form action="#">
-                                    <h4 class="mb-4"><?= $soal->jawab_a ?></h4>
-                                    <h4 class="mb-4"><?= $soal->jawab_b ?></h4>
-                                    <h4 class="mb-4"><?= $soal->jawab_c ?></h4>
-                                    <h4 class="mb-4"><?= $soal->jawab_d ?></h4>
+                            <div class="col-md-12 bg-light p-5 ftco-animate">
+                                <form action="#" id="btn">
+                                        <div class="row mt">
+                                            <div class="col-md-1 jawab-soal">
+                                                <input class="btn btn-primary" type="button" id="btn1" name="btn1" value=" 0 ">
+                                                </button>
+                                            </div>
+                                            <div class="col-md-10 soal">
+                                                <h5><?= $soal->jawab_a ?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mt">
+                                            <div class="col-md-1">
+                                                <input class="btn btn-primary" type="button" id="btn2" name="btn2" value=" 0 ">
+                                                </button>
+                                            </div>
+                                            <div class="col-md-10 soal">
+                                                <h5><?= $soal->jawab_b ?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mt">
+                                            <div class="col-md-1">
+                                                <input class="btn btn-primary" type="button" id="btn3" name="btn3" value=" 0 ">
+                                                </button>
+                                            </div>
+                                            <div class="col-md-10 soal">
+                                                <h5><?= $soal->jawab_c ?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mt">
+                                            <div class="col-md-1">
+                                                <input class="btn btn-primary" type="button" id="btn4" name="btn4" value=" 0 ">
+                                                </button>
+                                            </div>
+                                            <div class="col-md-10 soal">
+                                                <h5><?= $soal->jawab_d?></h5>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-1">
 
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="#" class="btn btn-success">lanjutkan</a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="#" class="btn btn-danger">reset</a>
+                                            </div>
+                                            <div class="col-md-7"></div>
+                                        </div>
                                 </form>
                             </div>
                         </div>

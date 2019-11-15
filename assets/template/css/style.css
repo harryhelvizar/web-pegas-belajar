@@ -7612,22 +7612,37 @@ h1, h2, h3, h4, h5,
     text-align: center;
     display: inline-block; }
 
-.bg-light {
-  background: #f8faff !important; }
 
-.bg-primary {
-  background: #167ce9; }
+/* .bg-primary {
+  background: #167ce9; } */
+  .row.mt{
+    margin-top: 15px;
+  }
 
 .btn {
   cursor: pointer;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
-  border-radius: 30px;
+  border-radius: 50px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
+
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
+
+    .btn.btn-success{
+      margin-top: 5px;
+      border-radius: 5px;
+      width: 120px;
+    }
+
+    .btn.btn-danger{
+      border-radius: 5px;
+      width: 100px;
+      margin-top: 5px;
+    }
+
   .btn.btn-primary {
     background: #167ce9;
     border: 1px solid #167ce9;
@@ -8288,7 +8303,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 2em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
