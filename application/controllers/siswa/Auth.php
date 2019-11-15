@@ -28,7 +28,7 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() === false) {
             $data['title'] = 'Register Siswa - Pegas Belajar';
-            $this->load->view('auth/register');
+            $this->load->view('auth/register', $data);
         } else {
             $data = [
                 'nama' => htmlspecialchars($this->input->post('nama', true)), //'true' untuk menghindari XSS (Cross-site scripting)

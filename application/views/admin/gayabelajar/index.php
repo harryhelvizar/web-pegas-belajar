@@ -3,7 +3,7 @@
         <div class="card">
             <?= $this->session->flashdata('message'); ?>
             <div class="card-body">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
+                <a href="<?= base_url('admin/gayabelajar/tambah') ?>" type="button" class="btn btn-primary">Tambah Data</a>
             </div>
             <table class="table">
                 <thead>
@@ -54,11 +54,12 @@
 <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
+<!-- <div class="modal fade bd-example-modal-xl" id="gayaBelajarModal" tabindex="-1" role="dialog" aria-labelledby="gayaBelajarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+
+        <div class="modal-content ">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                <h5 class="modal-title" id="gayaBelajarModalLabel">Tambah Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -66,7 +67,6 @@
             <div class="container">
 
                 <form method="post" action="<?= base_url('admin/gayabelajar/tambah') ?>">
-
 
                     <div class="form-group">
                         <input type="text" class="form-control" name="nama_gaya_belajar" id="nama_gaya_belajar" placeholder="Nama Gaya Belajar">
@@ -110,8 +110,10 @@
 
             </form>
         </div>
+
+
     </div>
-</div>
+</div> -->
 
 <script>
     //***********************************//

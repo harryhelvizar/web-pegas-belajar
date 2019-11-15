@@ -15,10 +15,10 @@
                 <?php foreach ($gaya_belajar as $gaya) : ?>
                     <div class="col-md-3 d-flex align-self-stretch ftco-animate">
                         <div class="media block-6 services p-3 py-4 d-block text-center">
-                            <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
+                            <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="<?= $gaya->icon ?>"></span>
                             </div>
                             <div class="media-body px-3">
-                                <a href="">
+                                <a href="<?= base_url('front/gayabelajar') ?>">
                                     <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
                                     <p><?= $gaya->title ?></p>
                                 </a>

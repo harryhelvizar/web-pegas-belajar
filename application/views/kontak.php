@@ -25,7 +25,7 @@
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-3">
-                    <p><span>Address:</span> Jl. Gunungsari | Makassar | Indonesia</p>
+                    <p><span>Address:</span> Jl. Gunungsari | Makassar </p>
                 </div>
                 <div class="col-md-3">
                     <p><span>Phone:</span> <a href="wa.me/6285240572160">0852 4057 2160</a></p>

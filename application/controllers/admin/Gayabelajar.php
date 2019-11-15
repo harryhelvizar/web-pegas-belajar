@@ -27,7 +27,7 @@ class Gayabelajar extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Gaya Belajar - Pegas Belajar';
-            $data['contents'] = 'admin/gayabelajar/index';
+            $data['contents'] = 'admin/gayabelajar/tambah';
             $data['gaya_belajar'] = $this->db->get('gaya_belajar')->result();
             $this->load->view('admin/index', $data);
         } else {

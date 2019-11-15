@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div class="col-md-8 ftco-animate text-center">
-                    <h1 class="mb-3 bread">Tentang Kami</h1>
+                    <h1 class="mb-3 bread"><?= $gaya->nama_gaya_belajar ?></h1>
                 </div>
             </div>
         </div>
@@ -21,8 +21,8 @@
             <div class="row d-flex">
 
                 <div class="col-md-10 pl-md-5 ftco-animate">
-                    <h2 class="mb-4">Selamat datang di situs PegasBelajar.</h2>
-                    <p>Pegas Belajar merupakan media penelusuran gaya belajar siswa berbasis website, yang dikembangkan secara khusus untuk membantu siswa mengenali dan memahami preferensi gaya belajarnya. Pegas Belajar ini dibuat dengan memanfaatkan perkembangan IT, yang secara khusus diperuntukkan bagi siswa di sekolah menengah atas (SMA).</p>
+                    <h2 class="mb-4"><?= $gaya->title ?></h2>
+                    <p><?= $gaya->karakteristik ?></p>
                 </div>
             </div>
         </div>
