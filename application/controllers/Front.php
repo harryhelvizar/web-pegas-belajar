@@ -46,4 +46,15 @@ class Front extends CI_Controller
         $data['title'] = 'Intruksi Jawab Soal - Pegas Belajar';
         $this->load->view('intruksi', $data);
     }
+
+    public function hasil()
+    {
+        $data['title'] = 'Hasil Soal - Pegas Belajar';
+        $this->load->view('hasil', $data);
+    }
+
+    public function jawaban()
+    {
+        # code...
+    }
 }

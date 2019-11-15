@@ -29,16 +29,15 @@
                         <div class="row">
 
                             <div class="col-md-12 bg-light p-5 ftco-animate">
-                                <form action="soal.php" method="post" id="btn">
-
+                                <form action="<?= base_url('front/soal') ?>" method="post" id="btn">
+                                    <?php $jawab = [] ?>
                                     <div class="col" style="text-align: right;">
                                         <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
                                     </div>
 
                                     <div class="row mt">
                                         <div class="col-md-1 jawab-soal">
-                                            <input class="btn btn-primary" type="button" id="btn1" name="btn1" value=" 0 ">
-                                            </button>
+                                            <input class="btn btn-primary" type="button" id="btn1" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
                                         </div>
                                         <div class="col-md-10 soal">
                                             <h5><?= $soal->jawab_a ?></h5>
@@ -46,8 +45,7 @@
                                     </div>
                                     <div class="row mt">
                                         <div class="col-md-1">
-                                            <input class="btn btn-primary" type="button" id="btn2" name="btn2" value=" 0 ">
-                                            </button>
+                                            <input class="btn btn-primary" type="button" id="btn2" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
                                         </div>
                                         <div class="col-md-10 soal">
                                             <h5><?= $soal->jawab_b ?></h5>
@@ -55,8 +53,7 @@
                                     </div>
                                     <div class="row mt">
                                         <div class="col-md-1">
-                                            <input class="btn btn-primary" type="button" id="btn3" name="btn3" value=" 0 ">
-                                            </button>
+                                            <input class="btn btn-primary" type="button" id="btn3" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
                                         </div>
                                         <div class="col-md-10 soal">
                                             <h5><?= $soal->jawab_c ?></h5>
@@ -64,8 +61,7 @@
                                     </div>
                                     <div class="row mt">
                                         <div class="col-md-1">
-                                            <input class="btn btn-primary" type="button" id="btn4" name="btn4" value=" 0 ">
-                                            </button>
+                                            <input class="btn btn-primary" type="button" id="btn4" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
                                         </div>
                                         <div class="col-md-10 soal">
                                             <h5><?= $soal->jawab_d ?></h5>
@@ -77,7 +73,7 @@
 
                                         </div>
                                         <div class="col-md-2">
-                                            <a href="#" class="btn btn-success">Lanjutkan</a>
+                                            <a href="<?php base_url('front/soal/') ?>" class="btn btn-success">Lanjutkan</a>
                                         </div>
                                         <div class="col-md-2">
                                             <a href="#" class="btn btn-danger">Reset</a>
