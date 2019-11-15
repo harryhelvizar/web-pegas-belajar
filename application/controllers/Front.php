@@ -28,7 +28,7 @@ class Front extends CI_Controller
 
     public function soal()
     {
-        siswa_login();
+        // siswa_login();
         $data['title'] = 'Soal - Pegas Belajar';
 
         // pagination
