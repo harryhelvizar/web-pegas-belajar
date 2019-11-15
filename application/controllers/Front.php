@@ -37,7 +37,7 @@ class Front extends CI_Controller
 
         // config
 
-        $config['base_url'] = 'http://localhost/web-pegas-belajar/front/soal/';
+        $config['base_url'] = base_url() . '/front/soal/';
 
         $config['total_rows'] = 22;
         $config['per_page'] = 1;
