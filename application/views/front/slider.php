@@ -9,7 +9,7 @@
                         <div class="col-md-8 ftco-animate text-center">
                             <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
                             <p>
-                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <a href="<?= base_url('front/intruksi') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
                                 <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
                             </p>
                         </div>
@@ -26,7 +26,7 @@
                         <div class="col-md-8 ftco-animate text-center">
                             <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
                             <p>
-                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <a href="<?= base_url('front/intruksi') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
                                 <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
                             </p>
                         </div>
@@ -43,7 +43,7 @@
                         <div class="col-md-8 ftco-animate text-center">
                             <h1 class="mb-4">Gaya Belajar itu Unik. <br> Penasaran ? Kenali Gaya Belajarmu Disini!</h1>
                             <p>
-                                <a href="<?= base_url('front/soal') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
+                                <a href="<?= base_url('front/intruksi') ?>" class="btn btn-primary px-4 py-3">Mulai Tes</a>
                                 <!-- <a href="#" class="btn btn-secondary px-4 py-3">Register</a> -->
                             </p>
                         </div>

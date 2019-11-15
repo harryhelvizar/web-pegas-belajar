@@ -23,6 +23,8 @@
                 <div class="col-md-10 pl-md-5 ftco-animate">
                     <h2 class="mb-4"><?= $gaya->title ?></h2>
                     <p><?= $gaya->karakteristik ?></p>
+                    <!-- <h4>Tipe Kepribadian</h4> -->
+                    <!-- <p><?= $gaya->tipe_kepribadian ?></p> -->
                 </div>
             </div>
         </div>
