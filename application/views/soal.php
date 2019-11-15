@@ -30,6 +30,11 @@
 
                             <div class="col-md-12 bg-light p-5 ftco-animate">
                                 <form action="#" id="btn">
+
+                                        <div class="col" style="text-align: right;">
+                                            <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal?> - <?= $total_soal; ?></p>
+                                        </div>
+                                        
                                         <div class="row mt">
                                             <div class="col-md-1 jawab-soal">
                                                 <input class="btn btn-primary" type="button" id="btn1" name="btn1" value=" 0 ">
@@ -79,6 +84,7 @@
                                             </div>
                                             <div class="col-md-7"></div>
                                         </div>
+
                                 </form>
                             </div>
                         </div>
