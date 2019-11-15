@@ -10,7 +10,7 @@
         <div class="container">
             <h3 class="text-center">Informasi Gaya Belajar</h3>
             <div class="row">
-                            
+
 
                 <?php foreach ($gaya_belajar as $gaya) : ?>
                     <div class="col-md-3 d-flex align-self-stretch ftco-animate">
@@ -18,8 +18,10 @@
                             <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
                             </div>
                             <div class="media-body px-3">
-                                <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
-                                <p><?= $gaya->title ?></p>
+                                <a href="">
+                                    <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
+                                    <p><?= $gaya->title ?></p>
+                                </a>
                             </div>
 
                         </div>

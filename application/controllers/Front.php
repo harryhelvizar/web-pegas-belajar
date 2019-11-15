@@ -37,6 +37,7 @@ class Front extends CI_Controller
     public function gayabelajar()
     {
         $data['title'] = 'Gaya Belajar - Pegas Belajar';
+
         $this->load->view('gaya-belajar', $data);
     }
 }
