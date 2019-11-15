@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="">
     <div class="container">
-        <a class="navbar-brand" href="<?= base_url('front')?>"><img src="<?= base_url('assets/')?>images/pegas-0.png" alt=""></a>
+        <a class="navbar-brand" href="<?= base_url('front')?>"><img src="<?= base_url('assets/template/')?>images/pegas-02-01.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
