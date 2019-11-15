@@ -7621,10 +7621,10 @@ h1, h2, h3, h4, h5,
 
 .btn {
   cursor: pointer;
-  -webkit-border-radius: 30px;
+  /* -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 50px;
+  -ms-border-radius: 50px; */
+  /* border-radius: 10px; */
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
 

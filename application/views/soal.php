@@ -29,7 +29,7 @@
                         <div class="row">
 
                             <div class="col-md-12 bg-light p-5 ftco-animate">
-                                <form action="#" id="btn">
+                                <form action="soal.php" method="post" id="btn">
 
                                         <div class="col" style="text-align: right;">
                                             <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal?> - <?= $total_soal; ?></p>

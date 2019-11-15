@@ -235,7 +235,7 @@ a:hover, a:active {
     height: 2px;
     width: 100%;
     background: #fff;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     opacity: 1;
     left: 0;
     transition: .25s ease-in-out;
