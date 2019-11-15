@@ -3,6 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Auth extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function index()
     {
         # code...
@@ -12,6 +17,8 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Login Siswa - Pegas Belajar';
+            $data['siswa'] = $this->db->get('siswa')->num_rows();
+            $this->session->set_userdata($data);
             $this->load->view('auth/login', $data);
         } else {
             $this->_login();
@@ -62,7 +69,7 @@ class Auth extends CI_Controller
 
         if ($siswa) {
             if (password_verify($password, $siswa['password'])) {
-                $data = ['email' => $user['email']];
+                $data = ['email' => $siswa['email']];
 
                 $this->session->set_userdata($data);
                 redirect('front');
@@ -74,5 +81,13 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
             redirect('siswa/auth');
         }
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('email');
+
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Berhasil Logout!</div>');
+        redirect('siswa/auth');
     }
 }

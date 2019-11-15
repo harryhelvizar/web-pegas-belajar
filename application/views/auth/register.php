@@ -9,9 +9,9 @@
 			<div class="row block-9">
 				<div class="col-md-6 pr-md-5">
 					<h4 class="mb-4">Silahkan daftar!</h4>
-					<form action="#">
+					<form action="<?= base_url('siswa/auth/register') ?>" method="post">
 						<div class="form-group">
-							<input type="text" name="nama" id="name" class="form-control" placeholder="Nama Lengkap">
+							<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
 						</div>
 						<div class="form-group">
 							<input type="text" name="username" id="username" class="form-control" placeholder="Username">

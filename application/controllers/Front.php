@@ -3,6 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Front extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('login_helper');
+    }
 
     public function index()
     {
@@ -11,6 +16,7 @@ class Front extends CI_Controller
         $data['admin'] = $this->db->get('admin')->num_rows();
         $data['gaya_belajar'] = $this->db->get('gaya_belajar')->result();
         $data['testimoni'] = $this->db->get('testimoni')->result();
+        // $this->db->set_userdata($data);
         $this->load->view('index', $data);
     }
 
@@ -22,6 +28,7 @@ class Front extends CI_Controller
 
     public function soal()
     {
+        siswa_login();
         $data['title'] = 'Soal - Pegas Belajar';
 
         // pagination
@@ -62,6 +69,7 @@ class Front extends CI_Controller
 
     public function intruksi()
     {
+        // siswa_login();
         $data['title'] = 'Intruksi Jawab Soal - Pegas Belajar';
         $this->load->view('intruksi', $data);
     }
