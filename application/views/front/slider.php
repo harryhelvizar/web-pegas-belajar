@@ -2,7 +2,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_1.jpg'); background-attachment:fixed;">
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_1.jpg'); background-attachment:fixed; height: 500px;">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -19,7 +19,7 @@
         </div>
         <div class="carousel-item">
             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed;">
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -36,7 +36,7 @@
         </div>
         <div class="carousel-item">
             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed;">
+            <div class="hero-wrap" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed; height: 500px;">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">

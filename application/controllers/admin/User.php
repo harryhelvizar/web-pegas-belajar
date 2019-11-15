@@ -40,7 +40,7 @@ class User extends CI_Controller
                 'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
                 'role_id' => 1,
                 'is_active' => 1,
-                'date_created' => time()
+                'date_created' => time("Y/m/d H:iP")
 
             ];
 
