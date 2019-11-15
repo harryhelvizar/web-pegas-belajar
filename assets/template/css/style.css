@@ -7633,12 +7633,12 @@ h1, h2, h3, h4, h5,
 
     .btn.btn-success{
       margin-top: 5px;
-      border-radius: 5px;
+      /* border-radius: 15px; */
       width: 120px;
     }
 
     .btn.btn-danger{
-      border-radius: 5px;
+      /* border-radius: 5px; */
       width: 100px;
       margin-top: 5px;
     }

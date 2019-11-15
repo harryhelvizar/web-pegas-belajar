@@ -23,7 +23,26 @@ class Front extends CI_Controller
     public function soal()
     {
         $data['title'] = 'Soal - Pegas Belajar';
-        $data['soal'] = $this->db->get('soal', 1, 0)->result();
+
+        // pagination
+
+        $this->load->library('pagination');
+
+        // config
+
+        $config['base_url'] = 'http://localhost/web-pegas-belajar/front/soal/';
+
+        $config['total_rows'] = 22;
+        $config['per_page'] = 1;
+
+        // inisialisasi
+
+        $this->pagination->initialize($config);
+
+
+
+        $data['start'] = $this->uri->segment(3);
+        $data['soal'] = $this->db->get('soal', $config['per_page'], $data['start'])->result();
         $data['total_soal'] = $this->db->get('soal')->num_rows();
         $this->load->view('soal', $data);
     }
