@@ -9,7 +9,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="<?= base_url('front/tentang') ?>" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="<?= base_url('front/kontak') ?>" class="nav-link">Contact</a></li>
 
                 <li class="nav-item cta"><a href="<?= base_url('siswa/auth') ?>" class="nav-link"><span>Login</span></a></li>

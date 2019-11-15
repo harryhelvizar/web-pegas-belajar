@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed;">
+<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed; ">
     <div class="overlay"></div>
     <div class="container">
         <div class="row mb-5">
@@ -10,7 +10,7 @@
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                         <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        <li class="ftco-animate"><a href="https://api.whatsapp.com/send?phone=085240572160&text=Assalamu%27alaikum%2c%20perkenalkan%20nama%20saya.....&source=&data="><span class="icon-whatsapp"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -21,10 +21,9 @@
                     <h2 class="ftco-heading-2">Have a Questions?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
-                                    Francisco, California, USA</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                            <li><span class="icon icon-map-marker"></span><span class="text">Jl. Gunungsari | Makassar | Indonesia</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">0852 4057 2160</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">pegasbelajar@gmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +34,7 @@
 
                 <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy; 2019 | All rights reserved | Develop by
+                    Copyright &copy; <?= date('Y') ?> | All rights reserved | Develop by
                     <a href="https://pigidev.com" target="_blank">PigiDev</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>

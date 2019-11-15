@@ -10,51 +10,22 @@
         <div class="container">
             <h3 class="text-center">Informasi Gaya Belajar</h3>
             <div class="row">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-3 py-4 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
-                        </div>
-                        <div class="media-body px-3">
-                            <h3 class="heading">Divergen</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                            <a href="#" class="btn btn-primary">read more >></a>
-                        </div>
-                    </div>
-                </div>
+                            
 
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-3 py-4 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
-                        </div>
-                        <div class="media-body px-3">
-                            <h3 class="heading">Asimilasi</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                            <a href="#" class="btn btn-primary">read more >></a>
-                        </div>
-                    </div>
-                </div>
+                <?php foreach ($gaya_belajar as $gaya) : ?>
+                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services p-3 py-4 d-block text-center">
+                            <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-exam"></span>
+                            </div>
+                            <div class="media-body px-3">
+                                <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
+                                <p><?= $gaya->title ?></p>
+                            </div>
 
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-3 py-4 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-blackboard"></span></div>
-                        <div class="media-body px-3">
-                            <h3 class="heading">Kovergen</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                            <a href="#" class="btn btn-primary">read more >></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-3 py-4 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="flaticon-books"></span>
-                        </div>
-                        <div class="media-body px-3">
-                            <h3 class="heading">Akomodasi</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                            <a href="#" class="btn btn-primary">read more >></a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
+
             </div>
         </div>
     </section>
@@ -64,7 +35,7 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row d-md-flex justify-content-center">
-                <div class="col-md-9 about-video text-center">
+                <div class="col-md-9 text-center">
                     <div class="container">
                         <div class="row justify-content-center ">
                             <div class="col-md-10">
@@ -115,70 +86,22 @@
             <div class="row">
                 <div class="col-md-12 ftco-animate">
                     <div class="carousel-testimony owl-carousel">
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                        the Semantics, a large language ocean.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">CSE Student</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_2.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                        the Semantics, a large language ocean.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">Math Student</span>
+                        <?php foreach ($testimoni as $testimoni) : ?>
+                            <div class="item">
+                                <div class="testimony-wrap text-center">
+                                    <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_1.jpg)">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="icon-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <p class="mb-5"><?= $testimoni->testimoni ?></p>
+                                        <p class="name"><?= $testimoni->nama ?></p>
+                                        <span class="position"><?= $testimoni->jabatan ?></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_3.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                        the Semantics, a large language ocean.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">Science Students</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="user-img mb-5" style="background-image: url(<?= base_url('assets/template/') ?>images/person_3.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                        the Semantics, a large language ocean.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">English Student</span>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
