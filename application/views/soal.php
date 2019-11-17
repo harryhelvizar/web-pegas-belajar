@@ -81,9 +81,6 @@
                                         <div class="col-md-7"></div>
                                     </div>
 
-                                    <div class="pagination">
-                                        <?= $this->pagination->create_links(); ?>
-                                    </div>
                                 </form>
 
                             </div>

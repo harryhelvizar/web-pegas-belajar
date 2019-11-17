@@ -101,9 +101,13 @@ h6 {
 	margin-bottom: 0.5rem;
 }
 
+.karakteristik{
+  text-align:justify ;
+}
+
 p {
 	margin-top: 0;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -10917,26 +10921,32 @@ h5,
 	margin-top: 15px;
 }
 
+.soal{
+  padding-top: 6px;
+}
+
 .btn {
 	cursor: pointer;
-	/* -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 50px; */
-  /* border-radius: 10px; */
+	-webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important; }
+  box-shadow: none !important; 
+  }
 
   .btn:hover, .btn:active, .btn:focus {
-    outline: none; }
+    outline: none; 
+  }
 
     .btn.btn-success{
       margin-top: 5px;
-      /* border-radius: 15px; */
+      border-radius: 25px;
       width: 120px;
     }
 
     .btn.btn-danger{
-      /* border-radius: 5px; */
+      border-radius: 25px;
       width: 100px;
       margin-top: 5px;
     }
