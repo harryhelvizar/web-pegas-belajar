@@ -118,14 +118,14 @@
             i--;
         })
 
-        $('#lanjut').click(function() {
-            // var data = $('#form' : input).serializeArray();
-            $.post($('#form').attr('action'), $('#form': input).serializeArray());
-        })
+        // $('#lanjut').click(function() {
+        //     // var data = $('#form' : input).serializeArray();
+        //     $.post($('#form').attr('action'), $('#form': input).serializeArray());
+        // })
 
-        $('#form').submit(function() {
-            return false;
-        })
+        // $('#form').submit(function() {
+        //     return false;
+        // })
     </script>
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
