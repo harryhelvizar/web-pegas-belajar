@@ -1,11 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use GuzzleHttp\Client;
+
 class Auth extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('My_model');
     }
 
     public function index()
@@ -27,6 +30,8 @@ class Auth extends CI_Controller
 
     public function register()
     {
+
+
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
         $this->form_validation->set_rules('username', 'Username', 'required|trim');
         $this->form_validation->set_rules('email', 'Email', 'required|trim|is_unique[admin.email]|valid_email');
@@ -34,6 +39,9 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'required|trim');
 
         if ($this->form_validation->run() === false) {
+            $this->load->model('my_model');
+            $data['provinsi'] = $this->my_model->getProvinsi();
+            $data['kabupatens'] = $this->my_model->getKabupaten();
             $data['title'] = 'Register Siswa - Pegas Belajar';
             $this->load->view('auth/register', $data);
         } else {

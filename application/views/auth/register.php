@@ -31,7 +31,12 @@
 						</div>
 
 						<div class="form-group">
-							<input type="text" name="kabupaten" id="kabupaten" class="form-control" placeholder="Kabupaten">
+							<select class="form-control" name="kabupaten" id="kabupaten">
+								<option value="">Pilih Kabupaten</option>
+								<?php foreach ($kabupatens as $kabupatens) : ?>
+									<option value="<?= $kabupatens['nama'] ?>"><?= $kabupatens['nama'] ?></option>
+								<?php endforeach; ?>
+							</select>
 						</div>
 						<div class="form-group">
 							<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="Nomor HP">
