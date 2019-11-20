@@ -36,11 +36,29 @@
                                 <li>
                                     <h5>Tekan tombol <strong class="badge badge-danger">Reset</strong>, jika ingin memperbaiki pilihan jawaban dan tombol <strong class="badge badge-success">Lanjutkan</strong> untuk melanjutkan pada soal berikutnya.</h5>
                                 </li>
+                                <br>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input type="text" name="nama_lengkap" class="form-control" placeholder="input nama anda" require>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input type="text" name="email" class="form-control" placeholder="input email anda" require>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 text-center mt-4">
+                                            <a href="#" class="btn btn-primary">Lanjut Kerjakan Soal</a>
+                                        </div>
+                                    </div>
 
-                                <div class="text-center mt-5">
+                                </form>
 
-                                    <a href="<?= base_url('front/soal') ?>" class="btn btn-primary">Lanjut Kerjakan Soal</a>
-                                </div>
+
                             </ul>
                         </div>
                     </div>
