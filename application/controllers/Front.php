@@ -28,7 +28,6 @@ class Front extends CI_Controller
 
     public function soal($page=1)
     {
-        
         if (isset($page))
             $this->db->where('id_soal', $page);
         else
