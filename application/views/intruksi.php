@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
-                                            <a href="#" class="btn btn-primary">Lanjut Kerjakan Soal</a>
+                                            <a href="<?= base_url('front/soal/1') ?>" class="btn btn-primary">Lanjut Kerjakan Soal</a>
                                         </div>
                                     </div>
 
