@@ -74,9 +74,9 @@
 
                                         </div>
                                         <div class="col-md-2">
-                                            <a href="<?php base_url('front/soal/') ?>" class="btn btn-success" id="lanjut">Lanjutkan</a> </div>
+                                            <a href="<?= base_url('front/soal/'. $lanjut) ?>" class="btn btn-success" id="lanjut">Lanjutkan</a> </div>
                                         <div class="col-md-2">
-                                            <a href="#" id="reset" class="btn btn-danger">Reset</a>
+                                            <a href="#" id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</a>
                                         </div>
                                         <div class="col-md-7"></div>
                                     </div>
