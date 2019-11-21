@@ -29,7 +29,6 @@
 						<div class="form-group">
 							<input type="text" name="asal_sekolah" id="asal_sekolah" class="form-control" placeholder="Asal Sekolah">
 						</div>
-
 						<div class="form-group">
 							<select class="form-control" name="kabupaten" id="kabupaten">
 								<option value="">Pilih Kabupaten</option>

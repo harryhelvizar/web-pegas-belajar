@@ -24,7 +24,9 @@ class My_model extends CI_Model
     {
         $client = new Client();
 
-        $response = $client->request('GET', 'http://dev.farizdotid.com/api/daerahindonesia/provinsi/73/kabupaten');
+        $id_provinsi = 73;
+
+        $response = $client->request('GET', 'http://dev.farizdotid.com/api/daerahindonesia/provinsi/' . $id_provinsi . '/kabupaten');
 
         $result = json_decode($response->getBody()->getContents(), true);
 
