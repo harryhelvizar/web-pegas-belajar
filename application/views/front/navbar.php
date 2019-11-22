@@ -14,7 +14,7 @@
                 <li class="nav-item"><a href="<?= base_url('front/kontak') ?>" class="nav-link">Kontak</a></li>
 
                 <?php if ($login) { ?>
-                    <li class="nav-item"><a href="<?= base_url('front/kontak') ?>" class="nav-link"><?= $login->nama ?></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><?= $login->nama ?></a></li>
                     <li class="nav-item "><a href="<?= base_url('siswa/auth/logout') ?>" class="nav-link"><span>Keluar</span></a></li>
                 <?php } else { ?>
                     <li class="nav-item"><a href="<?= base_url('siswa/auth') ?>" class="nav-link">Login</a></li>
