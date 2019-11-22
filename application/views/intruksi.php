@@ -38,10 +38,25 @@
                                 </li>
                                 <br>
                                 <form action="">
+<<<<<<< HEAD
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input type="text" name="nama" id="nama" class="form-control" placeholder="input nama anda" require>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="input email anda" require>
+                                        </div>
+                                        
+                                    </div>
+=======
 
+>>>>>>> 7a94bf3b3fcbaf5107f47ccf54b9f19a25afd4bd
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
-                                            <a href="<?= base_url('front/soal/1') ?>" class="btn btn-primary">Lanjut Kerjakan Soal</a>
+                                            <button class="btn btn-primary" onclick="lanjut()" id="btnlanjut">Lanjut Kerjakan Soal</button>
                                         </div>
                                     </div>
 
@@ -63,26 +78,20 @@
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
+    <?php $this->load->view('front/script') ?>
+    <script>
 
-    <script src="<?= base_url('assets/template/') ?>js/jquery.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/popper.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/bootstrap.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.easing.1.3.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.waypoints.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.stellar.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/owl.carousel.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.magnific-popup.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/aos.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.animateNumber.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/bootstrap-datepicker.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/jquery.timepicker.min.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+        function lanjut() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            if (nama != "" || email!="") {
+                windows.location.href="<?= base_url() ?>";
+                return true;
+            }else{
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+        }
     </script>
-    <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
-    <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
-
 </body>
 
 </html>
