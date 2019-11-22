@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed; ">
+<footer class="ftco-footer ftco-bg-dark ftco-section img" style="padding-top: 20px; padding-bottom: 10px; background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed; ">
     <div class="overlay"></div>
     <div class="container">
         <div class="row mb-5">
@@ -19,7 +19,7 @@
 
             <div class="col-md-4">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <h2 class="ftco-heading-2">Ada Pertanyaan ?</h2>
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Jl. Gunungsari | Makassar | Indonesia</span></li>
@@ -35,8 +35,8 @@
 
                 <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy; <?= date('Y') ?> | All rights reserved | Develop by
-                    <a href="https://pigidev.com" target="_blank">PigiDev</a>
+                    <!-- Copyright &copy; <?= date('Y') ?> | All rights reserved | Develop by -->
+                    <!-- <a href="https://pigidev.com" target="_blank">PigiDev</a> -->
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>

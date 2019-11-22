@@ -7,7 +7,8 @@
 	<section class="ftco-section contact-section ftco-degree-bg">
 		<div class="container">
 			<div class="row block-9">
-				<div class="col-md-6 pr-md-5">
+				<!-- <div class="col-md-2"></div> -->
+				<div class="col-md-6 pr-md-5" style="margin:auto">
 					<h4 class="mb-4">Silahkan login untuk lanjut!</h4>
 					<?php if (validation_errors()) : ?>
 						<div class="alert alert-danger" role="alert">
@@ -15,6 +16,7 @@
 						</div>
 					<?php endif; ?>
 					<?= $this->session->flashdata('message'); ?>
+
 					<form action="<?= base_url('siswa/auth') ?>" method="post">
 						<div class="form-group">
 							<input type="email" class="form-control" name="email" id="email" placeholder="Email">

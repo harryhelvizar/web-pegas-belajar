@@ -5,7 +5,7 @@
     <?php $this->load->view('front/navbar') ?>
 
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; max-height: 300px;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -38,18 +38,7 @@
                                 </li>
                                 <br>
                                 <form action="">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <input type="text" name="nama_lengkap" class="form-control" placeholder="input nama anda" require>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <input type="text" name="email" class="form-control" placeholder="input email anda" require>
-                                        </div>
-                                        
-                                    </div>
+
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
                                             <a href="<?= base_url('front/soal/1') ?>" class="btn btn-primary">Lanjut Kerjakan Soal</a>

@@ -101,13 +101,13 @@ h6 {
 	margin-bottom: 0.5rem;
 }
 
-.karakteristik{
-  text-align:justify ;
+.karakteristik {
+	text-align: justify;
 }
 
 p {
 	margin-top: 0;
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -10787,6 +10787,7 @@ h5,
 }
 
 .slider-text .bread {
+	margin-top: -200px;
 	font-weight: 400 !important;
 }
 
@@ -10921,81 +10922,103 @@ h5,
 	margin-top: 15px;
 }
 
-.soal{
-  padding-top: 6px;
+.soal {
+	padding-top: 6px;
 }
 
 .btn {
 	cursor: pointer;
 	-webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important; 
-  }
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
 
-  .btn:hover, .btn:active, .btn:focus {
-    outline: none; 
-  }
+.btn:hover,
+.btn:active,
+.btn:focus {
+	outline: none;
+}
 
-    .btn.btn-success{
-      margin-top: 5px;
-      border-radius: 25px;
-      width: 120px;
-    }
+.btn.btn-success {
+	margin-top: 5px;
+	border-radius: 25px;
+	width: 120px;
+}
 
-    .btn.btn-danger{
-      border-radius: 25px;
-      width: 100px;
-      margin-top: 5px;
-    }
+.btn.btn-danger {
+	border-radius: 25px;
+	width: 100px;
+	margin-top: 5px;
+}
 
-  .btn.btn-primary {
-    background: #167ce9;
-    border: 1px solid #167ce9;
-    color: #fff; }
-    .btn.btn-primary:hover {
-      border: 1px solid #167ce9;
-      background: transparent !important;
-      color: #167ce9; }
-    .btn.btn-primary.btn-outline-primary {
-      border: 1px solid #167ce9;
-      background: transparent;
-      color: #167ce9; }
-      .btn.btn-primary.btn-outline-primary:hover {
-        border: 1px solid transparent;
-        background: #167ce9;
-        color: #fff; }
-  .btn.btn-secondary {
-    background: #ffc300;
-    border: 1px solid #ffc300;
-    color: #fff; }
-    .btn.btn-secondary:hover {
-      border: 1px solid #ffc300;
-      background: transparent;
-      color: #ffc300; }
-    .btn.btn-secondary.btn-outline-secondary {
-      border: 1px solid #ffc300;
-      background: transparent;
-      color: #ffc300; }
-      .btn.btn-secondary.btn-outline-secondary:hover {
-        border: 1px solid transparent;
-        background: #ffc300;
-        color: #fff; }
-  .btn.btn-outline-white {
-    border-color: rgba(255, 255, 255, 0.8);
-    background: none;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px;
-    border-width: 1px;
-    color: #fff; }
-    .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-      background: #fff;
-      border-color: #fff;
-      color: #167ce9;
+.btn.btn-primary {
+	background: #167ce9;
+	border: 1px solid #167ce9;
+	color: #fff;
+}
+
+.btn.btn-primary:hover {
+	border: 1px solid #167ce9;
+	background: transparent !important;
+	color: #167ce9;
+}
+
+.btn.btn-primary.btn-outline-primary {
+	border: 1px solid #167ce9;
+	background: transparent;
+	color: #167ce9;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+	border: 1px solid transparent;
+	background: #167ce9;
+	color: #fff;
+}
+
+.btn.btn-secondary {
+	background: #ffc300;
+	border: 1px solid #ffc300;
+	color: #fff;
+}
+
+.btn.btn-secondary:hover {
+	border: 1px solid #ffc300;
+	background: transparent;
+	color: #ffc300;
+}
+
+.btn.btn-secondary.btn-outline-secondary {
+	border: 1px solid #ffc300;
+	background: transparent;
+	color: #ffc300;
+}
+
+.btn.btn-secondary.btn-outline-secondary:hover {
+	border: 1px solid transparent;
+	background: #ffc300;
+	color: #fff;
+}
+
+.btn.btn-outline-white {
+	border-color: rgba(255, 255, 255, 0.8);
+	background: none;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	border-radius: 30px;
+	border-width: 1px;
+	color: #fff;
+}
+
+.btn.btn-outline-white:hover,
+.btn.btn-outline-white:focus,
+.btn.btn-outline-white:active {
+	background: #fff;
+	border-color: #fff;
+	color: #167ce9;
 	border-radius: 10px;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
