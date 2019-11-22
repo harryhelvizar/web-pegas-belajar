@@ -51,7 +51,7 @@
 						</div>
 					</form>
 
-					<p>Sudah punya akun ? Silahkan <a href="<?= base_url('siswa/auth') ?>">login</a></p>
+					<p>Sudah punya akun ? Silahkan <a href="<?= base_url('siswa/auth') ?>">Masuk</a></p>
 				</div>
 
 

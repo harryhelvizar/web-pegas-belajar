@@ -4,7 +4,7 @@
         <div class="row mb-5">
             <div class="col-md-8">
 
-                <a class="navbar-brand" href="<?= base_url('front') ?>"><img src="<?= base_url('assets/') ?>template/images/pegas-02-01.png" alt=""></a>
+                <a class="navbar-brand" href="<?= base_url('front') ?>"><img src="<?= base_url('assets/') ?>template/images/pegas-02-01.png" width="180"></a>
                 <div class="ftco-footer-widget mb-4">
                     <!-- <h2><a class="navbar-brand" href="index.html">PegasBelajar</a></h2> -->
                     <p style="margin-right: 150px;">Pegas Belajar merupakan media penelusuran gaya belajar siswa berbasis website, yang dikembangkan secara khusus untuk membantu siswa mengenali dan memahami preferensi gaya belajarnya. Pegas Belajar ini dibuat dengan memanfaatkan perkembangan IT, yang secara khusus diperuntukkan bagi siswa di sekolah menengah atas (SMA)</p>

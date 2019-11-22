@@ -74,6 +74,7 @@ class Front extends CI_Controller
     {
         $data['title'] = 'Hasil Soal - Pegas Belajar';
         $data['siswa'] = $this->db->get('siswa')->num_rows();
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->load->view('hasil', $data);
     }
 

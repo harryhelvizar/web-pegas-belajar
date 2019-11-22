@@ -30,7 +30,7 @@
 						</div>
 					</form>
 
-					<p>Belum punya akun ? Silahkan <a href="<?= base_url('siswa/auth/register') ?>">daftar</a></p>
+					<p>Belum punya akun ? Silahkan <a href="<?= base_url('siswa/auth/register') ?>">Daftar</a></p>
 				</div>
 
 
