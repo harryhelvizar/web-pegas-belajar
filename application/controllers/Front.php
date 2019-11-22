@@ -16,32 +16,38 @@ class Front extends CI_Controller
         $data['admin'] = $this->db->get('admin')->num_rows();
         $data['gaya_belajar'] = $this->db->get('gaya_belajar')->result();
         $data['testimoni'] = $this->db->get('testimoni')->result();
-        // $this->db->set_userdata($data);
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->load->view('index', $data);
     }
 
     public function kontak()
     {
         $data['title'] = 'Kontak - Pegas Belajar';
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->load->view('kontak', $data);
     }
 
-    public function soal($page=1)
+    public function soal($page = 1)
     {
         if (isset($page))
             $this->db->where('id_soal', $page);
         else
-            $page=1;
+            $page = 1;
+        siswa_login();
 
+        $data['title'] = 'Soal - Pegas Belajar';
         $data['lanjut'] = (int) $page + 1;
+        // $data['siswa'] = $this->db->get('siswa')->num_rows();
         $data['soal'] = $this->db->get('soal', 1)->result();
         $data['total_soal'] = $this->db->get('soal')->num_rows();
-        
+
         $this->load->view('soal', $data);
     }
 
     public function tentang()
     {
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+
         $data['title'] = 'Tentang - Pegas Belajar';
         $this->load->view('tentang', $data);
     }
@@ -49,20 +55,26 @@ class Front extends CI_Controller
     public function gayabelajar()
     {
         $data['title'] = 'Gaya Belajar - Pegas Belajar';
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+
         $data['gaya'] = $this->db->get('gaya_belajar')->row();
         $this->load->view('gaya-belajar', $data);
     }
 
     public function intruksi()
     {
-        // siswa_login();
+        siswa_login();
         $data['title'] = 'Intruksi Jawab Soal - Pegas Belajar';
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+
         $this->load->view('intruksi', $data);
     }
 
     public function hasil()
     {
         $data['title'] = 'Hasil Soal - Pegas Belajar';
+        $data['siswa'] = $this->db->get('siswa')->num_rows();
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->load->view('hasil', $data);
     }
 

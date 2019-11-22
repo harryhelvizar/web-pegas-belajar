@@ -5,7 +5,7 @@
     <?php $this->load->view('front/navbar') ?>
 
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; max-height: 300px;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -38,6 +38,7 @@
                                 </li>
                                 <br>
                                 <form action="">
+<<<<<<< HEAD
                                     <div class="row">
                                         <div class="col-md-8">
                                             <input type="text" name="nama" id="nama" class="form-control" placeholder="input nama anda" require>
@@ -50,6 +51,9 @@
                                         </div>
                                         
                                     </div>
+=======
+
+>>>>>>> 7a94bf3b3fcbaf5107f47ccf54b9f19a25afd4bd
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
                                             <button class="btn btn-primary" onclick="lanjut()" id="btnlanjut">Lanjut Kerjakan Soal</button>

@@ -21,6 +21,7 @@ class Auth extends CI_Controller
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Login Siswa - Pegas Belajar';
             $data['siswa'] = $this->db->get('siswa')->num_rows();
+            $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
             $this->session->set_userdata($data);
             $this->load->view('auth/login', $data);
         } else {
@@ -42,6 +43,7 @@ class Auth extends CI_Controller
             $this->load->model('my_model');
             $data['provinsi'] = $this->my_model->getProvinsi();
             $data['kabupatens'] = $this->my_model->getKabupaten();
+            $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
             $data['title'] = 'Register Siswa - Pegas Belajar';
             $this->load->view('auth/register', $data);
         } else {
