@@ -9,7 +9,7 @@
 			<div class="row block-9">
 				<!-- <div class="col-md-2"></div> -->
 				<div class="col-md-6 pr-md-5" style="margin:auto">
-					<h4 class="mb-4">Silahkan login untuk lanjut!</h4>
+					<h4 class="mb-4">Silahkan Masuk untuk lanjut!</h4>
 					<?php if (validation_errors()) : ?>
 						<div class="alert alert-danger" role="alert">
 							<?= validation_errors(); ?>
@@ -26,7 +26,7 @@
 						</div>
 
 						<div class="form-group">
-							<input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+							<input type="submit" value="Masuk" class="btn btn-primary py-3 px-5">
 						</div>
 					</form>
 
