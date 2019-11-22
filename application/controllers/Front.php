@@ -11,6 +11,8 @@ class Front extends CI_Controller
 
     public function index()
     {
+
+
         $data['title'] = 'Home - Pegas Belajar';
         $data['siswa'] = $this->db->get('siswa')->num_rows();
         $data['admin'] = $this->db->get('admin')->num_rows();
@@ -72,6 +74,7 @@ class Front extends CI_Controller
 
     public function hasil()
     {
+        siswa_login();
         $data['title'] = 'Hasil Soal - Pegas Belajar';
         $data['siswa'] = $this->db->get('siswa')->num_rows();
         $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();

@@ -5,12 +5,44 @@
     <?php $this->load->view('front/navbar') ?>
 
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; ">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                <div class="col-md-10 ftco-animate text-center">
-                    <h1 class="mb-3 bread">Skor :</h1>
+                <div class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
+
+                    <div class="row mb-3" style="text-color: black;">
+                        <div class="col-md-6">
+                            <div class="card bg-primary mb-3">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>50%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-warning">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>10%</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-warning mb-3">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>20%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-warning">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>20%</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -19,27 +51,74 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-2"></div>
-                <div class="col-md-10">
+
+                <div class="col-md-12">
                     <div class="row">
 
-                        <div class="col-md-10 bg-light p-5 ftco-animate">
-                            <div class="text-center">
-                                <img src="<?= base_url('assets/template/') ?>images/bg_2.jpg" width="300" class="mb-5">
+                        <div class="col-md-12 bg-light p-5 ftco-animate">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card bg-primary mb-2">
+                                        <div class="ml-3 text-center">
+                                            <h3 class="text-white">Nama : <?= $login->nama ?></h3>
+                                            <h3 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h3>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h5>Nama Lengkap : </h5>
-                            <h5>Gaya Belajar : </h5>
-                            <ul>
-                                <li>Divergen</li>
-                            </ul>
-                            <h5>Tipe Kepribadian : </h5>
-                            <ul>
-                                <li>Introvert Feeling (IF), Reflector & Feeler</li>
-                            </ul>
-                            <h5>Tugas Yang Sesuai :</h5>
-                            <ul>
-                                <li>Personal Job (tugas atau pekerjaan yang berhubungan dengan orang lain, membangun hubungan interpersonal atau relasi sosial)</li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-md-6 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Kekuatan</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Kelemahan</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Tipe Kepribadian</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Tugas Yang Sesuai</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Kemampuan Adaptif</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-6 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Cara Belajar</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center mt-2">
+                                    <div class="card bg-primary text-white">
+                                        <h3>Metode Mengajar Guru Yang sesuai</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>

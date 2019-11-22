@@ -15,9 +15,9 @@
 
                 <?php if ($login) { ?>
                     <li class="nav-item"><a href="#" class="nav-link"><?= $login->nama ?></a></li>
-                    <li class="nav-item "><a href="<?= base_url('siswa/auth/logout') ?>" class="nav-link"><span>Keluar</span></a></li>
+                    <li class="nav-item cta"><a href="<?= base_url('siswa/auth/logout') ?>" class="nav-link"><span>Keluar</span></a></li>
                 <?php } else { ?>
-                    <li class="nav-item"><a href="<?= base_url('siswa/auth') ?>" class="nav-link">Masuk</a></li>
+                    <li class="nav-item cta"><a href="<?= base_url('siswa/auth') ?>" class="nav-link">Masuk</a></li>
                 <?php } ?>
 
             </ul>

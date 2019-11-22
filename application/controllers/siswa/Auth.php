@@ -65,7 +65,7 @@ class Auth extends CI_Controller
 
             // menambahkan data ke tabel user
             $this->db->insert('siswa', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been registered!</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Selamat, akun anda berhasil terdaftar!</div>');
             redirect('front');
         }
     }
@@ -84,11 +84,11 @@ class Auth extends CI_Controller
                 $this->session->set_userdata($data);
                 redirect('front');
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password Salah!</div>');
                 redirect('siswa/auth');
             }
         } else {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email Tidak Terdaftar!</div>');
             redirect('siswa/auth');
         }
     }
@@ -97,7 +97,7 @@ class Auth extends CI_Controller
     {
         $this->session->unset_userdata('email');
 
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Berhasil Logout!</div>');
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Berhasil Keluar!</div>');
         redirect('siswa/auth');
     }
 }
