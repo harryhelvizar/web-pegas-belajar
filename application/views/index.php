@@ -18,12 +18,12 @@
                             <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="<?= $gaya->icon ?>"></span>
                             </div>
                             <div class="media-body px-3">
-                                <a href="<?= base_url('front/gayabelajar') ?>">
-                                    <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
-                                    <p><?= $gaya->title ?></p>
-                                </a>
 
-                                <?= anchor('front/detail_gayabelajar/' .$gaya->id_gaya_belajar, '<p>detail</p>')?>
+                                <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
+                                <!-- <p><?= $gaya->title ?></p> -->
+
+                                <a href="<?= base_url('front/detail_gayabelajar/') . $gaya->id_gaya_belajar ?>" class="badge badge-info">Lihat Detail</a>
+                                <!-- <?= anchor('front/detail_gayabelajar/' . $gaya->id_gaya_belajar, '<p>detail</p>') ?> -->
                             </div>
 
                         </div>
