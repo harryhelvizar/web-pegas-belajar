@@ -38,25 +38,10 @@
                                 </li>
                                 <br>
                                 <form action="">
-<<<<<<< HEAD
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <input type="text" name="nama" id="nama" class="form-control" placeholder="input nama anda" require>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="input email anda" require>
-                                        </div>
-                                        
-                                    </div>
-=======
 
->>>>>>> 7a94bf3b3fcbaf5107f47ccf54b9f19a25afd4bd
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
-                                            <button class="btn btn-primary" onclick="lanjut()" id="btnlanjut">Lanjut Kerjakan Soal</button>
+                                            <a href="<?= base_url('front/soal/1') ?>" class="btn btn-primary" id="btnlanjut">Lanjut Kerjakan Soal</a>
                                         </div>
                                     </div>
 
@@ -80,17 +65,16 @@
 
     <?php $this->load->view('front/script') ?>
     <script>
-
-        function lanjut() {
-            var nama = document.getElementById("nama").value;
-            var email = document.getElementById("email").value;
-            if (nama != "" || email!="") {
-                windows.location.href="<?= base_url() ?>";
-                return true;
-            }else{
-                alert('Anda harus mengisi data dengan lengkap !');
-            }
-        }
+        // function lanjut() {
+        //     var nama = document.getElementById("nama").value;
+        //     var email = document.getElementById("email").value;
+        //     if (nama != "" || email != "") {
+        //         windows.location.href = "<?= base_url() ?>";
+        //         return true;
+        //     } else {
+        //         alert('Anda harus mengisi data dengan lengkap !');
+        //     }
+        // }
     </script>
 </body>
 

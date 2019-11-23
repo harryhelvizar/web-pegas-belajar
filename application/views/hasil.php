@@ -61,7 +61,8 @@
                                     <div class="card bg-primary mb-2">
                                         <div class="ml-3 text-center">
                                             <h3 class="text-white">Nama : <?= $login->nama ?></h3>
-                                            <h3 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h3>
+                                            <h4 class="text-white">NIS : <?= $login->nis ?></h4>
+                                            <h4 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h4>
                                         </div>
                                     </div>
                                 </div>
