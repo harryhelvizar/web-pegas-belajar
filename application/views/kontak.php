@@ -5,7 +5,7 @@
     <?php $this->load->view('front/navbar') ?>
 
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; max-height: 300px;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -21,14 +21,14 @@
         <div class="container">
             <div class="row d-flex mb-5 contact-info">
                 <div class="col-md-12 mb-4">
-                    <h2 class="h4">Contact Information</h2>
+                    <h2 class="h4">Informasi Kontak</h2>
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-3">
-                    <p><span>Address:</span> Jl. Gunungsari | Makassar </p>
+                    <p><span>Alamat :</span> Jl. Gunungsari | Makassar </p>
                 </div>
                 <div class="col-md-3">
-                    <p><span>Phone:</span> <a href="wa.me/6285240572160">0852 4057 2160</a></p>
+                    <p><span>Telepon :</span> <a href="wa.me/6285240572160">0852 4057 2160</a></p>
                 </div>
                 <div class="col-md-3">
                     <p><span>Email:</span> <a href="mailto:pegasbelajar@gmail.com">pegasbelajar@gmail.com</a></p>
@@ -37,22 +37,22 @@
             </div>
             <div class="row block-9">
                 <div class="col-md-6 pr-md-5">
-                    <h4 class="mb-4">Do you have any questions?</h4>
+                    <h4 class="mb-4">Ada Pertanyaan ?</h4>
                     <form action="#">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Subjek">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Pesan"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Kirim Pesan" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
 

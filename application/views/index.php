@@ -35,7 +35,7 @@
     </section>
 
 
-    <section class="ftco-section-3 ftco-counter img" id="section-counter" style="background-image: url(<?= base_url('assets/template/') ?>images/bg_3.jpg);">
+    <section class="ftco-section-3 ftco-counter img" id="section-counter" style="padding-top: 30px; padding-bottom: 30px; background-image: url(<?= base_url('assets/template/') ?>images/bg_3.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row d-md-flex justify-content-center">
@@ -84,7 +84,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">Testimonial</h2>
+                    <h2 class="mb-2">Testimonial</h2>
                 </div>
             </div>
             <div class="row">

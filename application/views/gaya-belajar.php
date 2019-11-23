@@ -3,7 +3,12 @@
 <body>
 
     <?php $this->load->view('front/navbar') ?>
+<<<<<<< HEAD
     <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+=======
+
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; max-height: 300px;">
+>>>>>>> 5c0f28a978112ca21e5d4a31a87fed9000ee2270
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">

@@ -8,10 +8,9 @@
 
 <body>
 
-    <?php $this->load->view('front/navbar') ?>
 
     <?php foreach ($soal as $soal) : ?>
-        <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; height: 500px;">
+        <!-- <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; max-height: 300px;">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -20,22 +19,68 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <section class="ftco-section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
+
                         <div class="row">
 
+
                             <div class="col-md-12 bg-light p-5 ftco-animate">
+                                <div class="row pb-5">
+                                    <div class="col-12" style="text-align: right;">
+                                        <a href="<?= base_url() ?>" class="btn btn-danger">Keluar</a>
+                                    </div>
+                                </div>
+                                <div class="container" style="text-align: center;">
+                                    <div class="card bg-warning pl-1 pt-2 pb-2">
+
+                                        <h3><?= $soal->soal ?></h3>
+                                    </div>
+                                </div>
                                 <form action="<?= base_url('front/soal') ?>" method="post" id="form">
 
-                                    <div class="col" style="text-align: right;">
-                                        <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
+
+                                    <div class="row mt-4">
+                                        <div class="col-1 jawab-soal ml-3">
+                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5><?= $soal->jawab_a ?></h5>
+                                        </div>
                                     </div>
 
-                                    <div class="row mt">
+                                    <div class="row mt-4">
+                                        <div class="col-1 jawab-soal ml-3">
+                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5><?= $soal->jawab_b ?></h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-1 jawab-soal ml-3">
+                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5><?= $soal->jawab_c ?></h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-1 jawab-soal ml-3">
+                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5><?= $soal->jawab_d ?></h5>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row mt">
                                         <div class="col-md-1 jawab-soal">
                                             <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
                                         </div>
@@ -67,18 +112,23 @@
                                         <div class="col-md-10 soal">
                                             <h5><?= $soal->jawab_d ?></h5>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <br>
                                     <div class="row">
                                         <div class="col-md-1">
 
                                         </div>
                                         <div class="col-md-2">
-                                            <a href="<?= base_url('front/soal/'. $lanjut) ?>" class="btn btn-success" id="lanjut">Lanjutkan</a> </div>
+                                            <a href="<?= base_url('front/soal/' . $lanjut) ?>" class="btn btn-success" id="lanjut">Lanjutkan</a>
+                                        </div>
                                         <div class="col-md-2">
                                             <a href="#" id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</a>
                                         </div>
-                                        <div class="col-md-7"></div>
+                                        <div class="col-md-7">
+                                            <div class="col" style="text-align: right;">
+                                                <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </form>
