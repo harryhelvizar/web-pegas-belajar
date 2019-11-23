@@ -18,7 +18,6 @@
                             <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="<?= $gaya->icon ?>"></span>
                             </div>
                             <div class="media-body px-3">
-
                                 <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
                                 <!-- <p><?= $gaya->title ?></p> -->
 

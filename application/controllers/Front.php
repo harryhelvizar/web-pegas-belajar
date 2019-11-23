@@ -71,7 +71,6 @@ class Front extends CI_Controller
         $data['title'] = 'Gaya Belajar - Pegas Belajar';
         $data['gaya'] = $this->my_model->detail_gaya($id_gaya);
 
-        $data['title'] = 'Gaya Belajar - Pegas Belajar';
         $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->load->view('gaya-belajar', $data);
     }

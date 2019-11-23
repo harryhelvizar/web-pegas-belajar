@@ -18,6 +18,7 @@
                             </h1>
                         <?php endforeach; ?>
                     </div>
+
                 </div>
             </div>
         </div>
