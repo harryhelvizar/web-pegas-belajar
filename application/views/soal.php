@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div class="container" style="text-align: center;">
-                                    <div class="card pl-1 pt-2 pb-2">
+                                    <div class="card bg-warning pl-1 pt-2 pb-2">
 
                                         <h3><?= $soal->soal ?></h3>
                                     </div>
