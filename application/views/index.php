@@ -22,6 +22,8 @@
                                     <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
                                     <p><?= $gaya->title ?></p>
                                 </a>
+
+                                <?= anchor('front/detail_gayabelajar/' .$gaya->id_gaya_belajar, '<p>detail</p>')?>
                             </div>
 
                         </div>

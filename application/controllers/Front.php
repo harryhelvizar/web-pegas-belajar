@@ -7,6 +7,7 @@ class Front extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('login_helper');
+        $this->load->model('my_model');
     }
 
     public function index()
@@ -46,10 +47,18 @@ class Front extends CI_Controller
         $this->load->view('tentang', $data);
     }
 
-    public function gayabelajar()
+    // public function gayabelajar()
+    // {
+    //     $data['title'] = 'Gaya Belajar - Pegas Belajar';
+    //     $data['gaya'] = $this->db->get('gaya_belajar')->row();
+    //     $this->load->view('gaya-belajar', $data);
+    // }
+
+
+    public function detail_gayabelajar($id_gaya)
     {
-        $data['title'] = 'Gaya Belajar - Pegas Belajar';
-        $data['gaya'] = $this->db->get('gaya_belajar')->row();
+        // $data['title'] = 'Gaya Belajar - Pegas Belajar';
+        $data['gaya'] = $this->my_model->detail_gaya($id_gaya);
         $this->load->view('gaya-belajar', $data);
     }
 
