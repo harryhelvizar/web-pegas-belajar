@@ -72,9 +72,6 @@ class Front extends CI_Controller
         $data['gaya'] = $this->my_model->detail_gaya($id_gaya);
 
         $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
-
-        // $data['gaya'] = $this->db->get('gaya_belajar')->row();
-
         $this->load->view('gaya-belajar', $data);
     }
 
