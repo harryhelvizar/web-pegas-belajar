@@ -111,4 +111,5 @@
         </div>
     </section>
 
+
     <?php $this->load->view('front/footer') ?>

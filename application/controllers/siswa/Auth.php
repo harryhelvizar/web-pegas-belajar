@@ -41,7 +41,6 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() === false) {
             $this->load->model('my_model');
-            $data['provinsi'] = $this->my_model->getProvinsi();
             $data['kabupatens'] = $this->my_model->getKabupaten();
             $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
             $data['title'] = 'Register Siswa - Pegas Belajar';

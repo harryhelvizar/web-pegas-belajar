@@ -11,23 +11,12 @@ class My_model extends CI_Model
 
     public function detail_gaya($id_gaya)
     {
-        $result = $this->db->where('id_gaya_belajar',$id_gaya)->get('gaya_belajar');
-        if($result->num_rows() >0){
+        $result = $this->db->where('id_gaya_belajar', $id_gaya)->get('gaya_belajar');
+        if ($result->num_rows() > 0) {
             return $result->result();
-        }else{
+        } else {
             return false;
         }
-    }
-
-    public function getProvinsi()
-    {
-        $client = new Client();
-
-        $response = $client->request('GET', 'http://dev.farizdotid.com/api/daerahindonesia/provinsi');
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result['semuaprovinsi'];
     }
 
     public function getKabupaten()
