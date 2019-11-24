@@ -32,8 +32,8 @@
 						<div class="form-group">
 							<select class="form-control" name="kabupaten" id="kabupaten">
 								<option value="">Pilih Kabupaten</option>
-								<?php foreach ($kabupatens as $kabupatens) : ?>
-									<option value="<?= $kabupatens['nama'] ?>"><?= $kabupatens['nama'] ?></option>
+								<?php foreach ($kabupaten as $kabupaten) : ?>
+									<option value="<?= $kabupaten->nama_kabupaten ?>"><?= $kabupaten->nama_kabupaten ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
