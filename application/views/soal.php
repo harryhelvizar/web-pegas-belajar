@@ -41,7 +41,7 @@
                                         <h3><?= $soal->soal ?></h3>
                                     </div>
                                 </div>
-                                <form action="<?= base_url('front/soal') ?>" method="post" id="form">
+                                <form action="<?= base_url('front/savesoal/' . $page) ?>" method="post" id="form">
 
 
                                     <div class="row mt-4">
@@ -119,10 +119,11 @@
 
                                         </div>
                                         <div class="col-md-2">
-                                            <a href="<?= base_url('front/soal/' . $lanjut) ?>" class="btn btn-success" id="lanjut">Lanjutkan</a>
+                                            <!-- <a href="<?= base_url('front/soal/' . $lanjut) ?>" class="btn btn-success" id="lanjut">Lanjutkan</a> -->
+                                            <button class="btn btn-success" type=submit>Lanjutkan</button>
                                         </div>
                                         <div class="col-md-2">
-                                            <a href="#" id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</a>
+                                            <button type=reset id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</button>
                                         </div>
                                         <div class="col-md-7">
                                             <div class="col" style="text-align: right;">
