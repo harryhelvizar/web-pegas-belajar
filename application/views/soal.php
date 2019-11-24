@@ -35,9 +35,17 @@
                                         <a href="<?= base_url() ?>" class="btn btn-danger">Keluar</a>
                                     </div>
                                 </div>
+                                <style>
+                                  .gambar-soal img {
+                                        width: 400px;
+                                        height: 250px;
+                                    }
+                                </style>
+                                <div class="gambar-soal img-fluid">
+                                    <img src="<?= base_url()?>assets/img/think.svg" alt="">
+                                </div>
                                 <div class="container" style="text-align: center;">
                                     <div class="card bg-warning pl-1 pt-2 pb-2">
-
                                         <h3><?= $soal->soal ?></h3>
                                     </div>
                                 </div>
