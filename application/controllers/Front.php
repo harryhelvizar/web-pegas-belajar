@@ -39,7 +39,7 @@ class Front extends CI_Controller
         siswa_login();
 
         $data['title'] = 'Soal - Pegas Belajar';
-        $data['lanjut'] = (int) $page + 1;
+        $data['page'] = $page;
         if ($page > 22) {
             redirect('front/hasil');
         }
@@ -47,6 +47,13 @@ class Front extends CI_Controller
         $data['total_soal'] = $this->db->get('soal')->num_rows();
 
         $this->load->view('soal', $data);
+    }
+
+    public function savesoal($page){
+        $page++;
+        
+        redirect(base_url() . 'front/soal/' . $page ,'refresh');
+        
     }
 
     public function tentang()
