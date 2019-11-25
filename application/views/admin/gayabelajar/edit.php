@@ -2,7 +2,7 @@
     <div class="col-12">
         <div class="card">
             <?php foreach ($gaya as $gaya_belajar) : ?>
-                <form method="post" action="<?= base_url('admin/gayabelajar/update/')?>">
+                <form method="post" action="<?= base_url('admin/gayabelajar/update/') ?>">
                     <div class="form-group">
                         <input type="hidden" class="form-control" name="id_gaya_belajar" id="id_gaya_belajar" value="<?= $gaya_belajar->id_gaya_belajar ?>">
                     </div>

@@ -55,6 +55,7 @@ class Gayabelajar extends CI_Controller
 
     public function edit($id_gaya_belajar)
     {
+        $data['title'] = 'Edit Gaya Belajar';
         $where = array('id_gaya_belajar' => $id_gaya_belajar);
         $data['gaya'] = $this->my_model->edit_gaya($where, 'gaya_belajar')->result();
         $this->load->view('admin/gayabelajar/edit', $data);
@@ -73,23 +74,23 @@ class Gayabelajar extends CI_Controller
         $kekuatan               = $this->input->post('kekuatan');
         $kelemahan              = $this->input->post('kelemahan');
         $cara_belajar           = $this->input->post('cara_belajar');
-        $metode_guru            = $this->input->post('metode_guru');  
-        
+        $metode_guru            = $this->input->post('metode_guru');
+
         $data = array(
-                   'nama_gaya_belajar'    => $nama_gaya_belajar,
-                   'title'                => $title,
-                   'karakteristik'        => $karakteristik,    
-                   'icon'                 => $icon,             
-                   'tipe_kepribadian'     => $tipe_kepribadian, 
-                   'tugas_yang_sesuai'    => $tugas_yang_sesuai,
-                   'kemampuan_adaptif'    => $kemampuan_adaptif,
-                   'kekuatan'             => $kekuatan,         
-                   'kelemahan'            => $kelemahan,        
-                   'cara_belajar'         => $cara_belajar,     
-                   'metode_guru'          => $metode_guru      
+            'nama_gaya_belajar'    => $nama_gaya_belajar,
+            'title'                => $title,
+            'karakteristik'        => $karakteristik,
+            'icon'                 => $icon,
+            'tipe_kepribadian'     => $tipe_kepribadian,
+            'tugas_yang_sesuai'    => $tugas_yang_sesuai,
+            'kemampuan_adaptif'    => $kemampuan_adaptif,
+            'kekuatan'             => $kekuatan,
+            'kelemahan'            => $kelemahan,
+            'cara_belajar'         => $cara_belajar,
+            'metode_guru'          => $metode_guru
         );
         $where = array(
-            'id_gaya_belajar' => $id_gaya_belajar 
+            'id_gaya_belajar' => $id_gaya_belajar
         );
         $this->my_model->update_gaya($where, $data, 'gaya_belajar');
         redirect('admin/gayabelajar');
