@@ -83,7 +83,7 @@ class Gayabelajar extends CI_Controller
             'karakteristik'        => $karakteristik,
             'icon'                 => $icon,
             'tipe_kepribadian'     => $tipe_kepribadian,
-            'tugas_yg_sesuai'    => $tugas_yg_sesuai,
+            'tugas_yg_sesuai'      => $tugas_yg_sesuai,
             'kemampuan_adaptif'    => $kemampuan_adaptif,
             'kekuatan'             => $kekuatan,
             'kelemahan'            => $kelemahan,
