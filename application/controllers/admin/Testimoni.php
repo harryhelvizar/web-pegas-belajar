@@ -41,4 +41,13 @@ class Testimoni extends CI_Controller
             redirect('admin/testimoni');
         }
     }
+
+    public function edit($id_testimoni)
+    {
+        $data['title'] = 'Edit Testimoni';
+        $data['contents'] = 'admin/testimoni/edit';
+        $where = array('id_testimoni' = $id_testimoni);
+        $data['testimoni'] = $this->my_model->edit_testimoni($where, 'testimoni')->result();
+        $this->load->view('admin/index', $data);
+    }
 }
