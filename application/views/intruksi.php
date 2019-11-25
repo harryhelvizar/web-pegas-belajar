@@ -41,7 +41,7 @@
 
                                     <div class="row">
                                         <div class="col-md-3 text-center mt-4">
-                                            <a href="<?= base_url('front/soal/1') ?>" class="btn btn-primary" id="btnlanjut">Lanjut Kerjakan Soal</a>
+                                            <a href="<?= base_url('front/soal') ?>" class="btn btn-primary" id="btnlanjut">Lanjut Kerjakan Soal</a>
                                         </div>
                                     </div>
 
