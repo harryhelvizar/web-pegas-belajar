@@ -56,9 +56,10 @@ class Gayabelajar extends CI_Controller
     public function edit($id_gaya_belajar)
     {
         $data['title'] = 'Edit Gaya Belajar';
+        $data['contents'] = 'admin/gayabelajar/edit';
         $where = array('id_gaya_belajar' => $id_gaya_belajar);
         $data['gaya'] = $this->my_model->edit_gaya($where, 'gaya_belajar')->result();
-        $this->load->view('admin/gayabelajar/edit', $data);
+        $this->load->view('admin/index', $data);
     }
 
     public function update()
@@ -69,7 +70,7 @@ class Gayabelajar extends CI_Controller
         $karakteristik          = $this->input->post('karakteristik');
         $icon                   = $this->input->post('icon');
         $tipe_kepribadian       = $this->input->post('tipe_kepribadian');
-        $tugas_yang_sesuai      = $this->input->post('tugas_yang_sesuai');
+        $tugas_yg_sesuai      = $this->input->post('tugas_yg_sesuai');
         $kemampuan_adaptif      = $this->input->post('kemampuan_adaptif');
         $kekuatan               = $this->input->post('kekuatan');
         $kelemahan              = $this->input->post('kelemahan');
@@ -82,7 +83,7 @@ class Gayabelajar extends CI_Controller
             'karakteristik'        => $karakteristik,
             'icon'                 => $icon,
             'tipe_kepribadian'     => $tipe_kepribadian,
-            'tugas_yang_sesuai'    => $tugas_yang_sesuai,
+            'tugas_yg_sesuai'    => $tugas_yg_sesuai,
             'kemampuan_adaptif'    => $kemampuan_adaptif,
             'kekuatan'             => $kekuatan,
             'kelemahan'            => $kelemahan,
