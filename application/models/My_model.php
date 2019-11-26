@@ -42,4 +42,16 @@ class My_model extends CI_Model
         $this->db->where($where);
         $this->db->update($table,$data);
     }
+
+
+    public function edit_testimoni($where,$table)
+    {
+        return $this->db->get_where($table,$where);
+    }
+
+    public function update_testimooni($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table,$data);
+    }
 }

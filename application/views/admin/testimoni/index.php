@@ -28,7 +28,7 @@
                             <td><?= $testimoni->foto ?></td>
                             <td><?= $testimoni->testimoni ?></td>
                             <td>
-                                <a href="" class="badge badge-success">edit</a>
+                                <a href="<?= base_url('admin/testimoni/edit/'). $testimoni->id_testimoni?>" class="badge badge-success">edit</a>
                                 <a href="" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
