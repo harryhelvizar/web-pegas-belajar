@@ -49,7 +49,7 @@ class My_model extends CI_Model
         return $this->db->get_where($table,$where);
     }
 
-    public function update_testimooni($where, $data, $table)
+    public function update_testimoni($where, $data, $table)
     {
         $this->db->where($where);
         $this->db->update($table,$data);

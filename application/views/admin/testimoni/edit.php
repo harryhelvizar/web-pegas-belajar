@@ -13,10 +13,7 @@
                         <input type="text" class="form-control" name="jabatan" id="jabatan" value="<?= $testimoni->jabatan ?>">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="testimoni" id="testimoni" cols="30" rows="10" value="<?= $testimoni->testimoni?>"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="foto" id="foto" cols="30" rows="3"><?= $testimoni->foto ?></textarea>
+                        <textarea class="form-control" name="testimoni" id="testimoni" cols="30" rows="3"><?= $testimoni->testimoni?></textarea>
                     </div>
 
         </div>
