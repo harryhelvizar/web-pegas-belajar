@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2019 at 05:54 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Waktu pembuatan: 26 Nov 2019 pada 10.04
+-- Versi server: 10.1.33-MariaDB
+-- Versi PHP: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id`, `nama`, `username`, `email`, `password`, `foto`, `role_id`, `is_active`, `date_created`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `admin` (`id`, `nama`, `username`, `email`, `password`, `foto`, `rol
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_role`
+-- Struktur dari tabel `admin_role`
 --
 
 CREATE TABLE `admin_role` (
@@ -60,7 +60,7 @@ CREATE TABLE `admin_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin_role`
+-- Dumping data untuk tabel `admin_role`
 --
 
 INSERT INTO `admin_role` (`id`, `role`) VALUES
@@ -70,7 +70,7 @@ INSERT INTO `admin_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gaya_belajar`
+-- Struktur dari tabel `gaya_belajar`
 --
 
 CREATE TABLE `gaya_belajar` (
@@ -90,17 +90,19 @@ CREATE TABLE `gaya_belajar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `gaya_belajar`
+-- Dumping data untuk tabel `gaya_belajar`
 --
 
 INSERT INTO `gaya_belajar` (`id_gaya_belajar`, `nama_gaya_belajar`, `title`, `karakteristik`, `icon`, `tipe_kepribadian`, `tugas_yg_sesuai`, `kemampuan_adaptif`, `kekuatan`, `kelemahan`, `cara_belajar`, `metode_guru`, `date_created`) VALUES
 (11, 'Divergen', 'Feeling / Reflector', '<p>Gaya belajar Diverger&nbsp;merupakan kombinasi dari&nbsp;Concrete experience&nbsp;dan Reflection Observation,&nbsp;yaitu gaya belajar individu yang membentuk pengalaman belajar melalui menghayati sendiri secara konkret, kemudian mentransformasikan kedalam pengamatan reflektif. Siswa dengan tipe&nbsp;Diverger&nbsp;&nbsp;unggul dalam melihat situasi konkret dari banyak sudut pandang yang berbeda kemudian menghubungkan menjadi satu pandangan yang utuh. Kutub Feeling&nbsp;individu belajar melalui perasaan dengan menekankan segi-segi pengalaman konkret, lebih mementingkan relasi dengan sesama dan kepekaan terhadap perasaan orang lain. Individu cenderung lebih terbuka dan mampu beradaptasi terhadap perubahan yang dihadapinya dalam proses belajarnya.<br />\r\nGaya belajar ini senang merenungkan pengalaman dan mengamati dari berbagai perspektif. Mengumpulkan data, baik secara langsung maupun dari orang lain, dan lebih suka memikirkannya secara menyeluruh sebelum sampai pada sebuah kesimpulan. Pengumpulan dan analisis data yang menyeluruh tentang pengalaman dan peristiwa adalah penting sehingga mereka cenderung menunda mengambil kesimpulan. Mereka adalah orang-orang yang bijaksana yang suka mempertimbangkan semua sudut pandang dan implikasi yang mungkin terjadi sebelum begerak (berhati-hati). Pendekatannya pada setiap situasi adalah dengan &quot;mengamati&quot; dan bukan &quot;bertindak&quot;.<br />\r\nSiswa dengan tipe ini lebih menyukai tugas belajar yang menuntut menghasilkan ide-ide (<em>brainstorming</em>), gagasan dan biasanya juga menyukai mengumpulkan berbagai sumber informasi. Menyukai isu yang berkaitan dengan kesusastraan, budaya, sejarah, psikologi, pengembangan diri dan ilmu-ilmu sosial lainnya. Siswa dalam belajarnya biasanya lebih banyak bertanya &quot;Mengapa (<em>Why</em>)&quot;.</p>', 'flaticon-books', 'Introvert Feeling (IF), Reflector & Feeler', 'Personal Job (tugas atau pekerjaan yang berhubungan dengan orang lain, membangun hubungan interpersonal atau relasi sosial)', '- Valuing Skill (Kemampuan menilai dari berbagai sudut pandang)\r\n- Recognizing problem (Mampu mengenali sebuah permasalahan)', '- Kekuatan terbesar terletak pada kreativitas dan kemampuan imajinatif\r\n- Unggul dalam kemampuan untuk melihat situasi konkret dari banyak perspektif dan menghasilkan banyak ide (kreatif)\r\n- Menyukai tantangan dan mempelajari hal-hal yang baru\r\n- Memiliki kemampuan dalam membangun hubungan interpersonal, terbuka, pendengar, yang baik, dan mampu memahami orang lain\r\n- Memiliki kepekaan emosi yang tinggi \r\n- Mampu membangun hubungan yang persuasif kepada orang lain \r\n- Berhati-hati serta tidak langsung pada pengambilan keputusan \r\n- Teliti dan bijaksana', '- Cenderung lambat dalam mengambil keputusan\r\n- Cepat mengalami bosan, khusus nya pada hal-hal yang membutuhkan waktu lama ', 'Cenderung belajar dengan pertanyaan \"Mengapa (Why)\", sehingga cara belajar yang efektif untuk gaya belajar divergen adalah melalui proses mendengarkan (listening), berinteraksi (interaction), bertukar pikiran (sharing) dan mengamati (observing)', 'Dalam menghadapi gaya belajar divergen, guru sebaiknya berperan sebagai motivator atau inspirator. Metode mengajar yang cocok untuk diterapkan diantaranya ceramah, diskusi, kerja kelompok dan tanya jawab.', '2019-11-15 08:24:44'),
-(12, 'Asimilasi', 'Teoritis', '<p>Gaya belajar Asimilasi, adalah kombinasi <em>Konseptualisasi Abstrak&nbsp;</em>dan <em>Observasi Reflektif </em>gaya belajar individu yang menangani pengalaman melalui konseptualisasi secara abstrak dan mentransformasi ke dalam pengamatan reflektif. Individu ini terampil dalam mengolah banyak informasi serta menempatkannya ke dalam bentuk yang pasti dan logis. Memiliki minat yang tinggi&nbsp; pada ide-ide dan konsep abstrak. Secara umum, ia lebih mementingkan keunggulan logis sebuah teori daripada nilai praktisnya. Memiliki kelebihan dalam memahami berbagai sajian informasi serta merangkumnya dalam suatu format yang logis, singkat dan jelas.</p>\r\n\r\n<p>&nbsp;</p>', 'flaticon-books', 'Introvert Intuition (li), Observer & Theorist', 'Information Job (tugas atau pekerjaan yang berhubungan informasi, konsep, teori, perhitungan dan pengolahan data)', '- Thinking Skill (Kemampuan berpikir, analisa dan konseptual)\r\n- Defining Problems (Mampu menetapkan dan menjelaskan suatu permasalahan)', '- Kekuatan terbesar terletak pada kemampuan pemahaman terhadap berbagai sajian informasi dan data.\r\n- Mampu mengembangkan sebuah konsep teori dan membuat pemetaan konsep\r\n- Mampu merangkum sebuah informasi menjadi format yang logis, singkat dan jelas ji kak', '', '', '', '2019-11-24 06:47:58');
+(12, 'Asimilasi', 'Teoritis', '<p>Gaya belajar Asimilasi, adalah kombinasi <em>Konseptualisasi Abstrak&nbsp;</em>dan <em>Observasi Reflektif </em>gaya belajar individu yang menangani pengalaman melalui konseptualisasi secara abstrak dan mentransformasi ke dalam pengamatan reflektif. Individu ini terampil dalam mengolah banyak informasi serta menempatkannya ke dalam bentuk yang pasti dan logis. Memiliki minat yang tinggi&nbsp; pada ide-ide dan konsep abstrak. Secara umum, ia lebih mementingkan keunggulan logis sebuah teori daripada nilai praktisnya. Memiliki kelebihan dalam memahami berbagai sajian informasi serta merangkumnya dalam suatu format yang logis, singkat dan jelas.</p>\r\n\r\n<p>&nbsp;</p>\r\n', 'flaticon-books', 'Introvert Intuition (li), Observer & Theorist', 'Information Job (tugas atau pekerjaan yang berhubungan informasi, konsep, teori, perhitungan dan pengolahan data)', '- Thinking Skill (Kemampuan berpikir, analisa dan konseptual)\r\n- Defining Problems (Mampu menetapkan dan menjelaskan suatu permasalahan)', '- Kekuatan terbesar terletak pada kemampuan pemahaman terhadap berbagai sajian informasi dan data.\r\n- Mampu mengembangkan sebuah konsep teori dan membuat pemetaan konsep\r\n- Mampu merangkum sebuah informasi menjadi format yang logis, singkat dan jelas ji kak', 'kurang kasih sayangv', '', '', '2019-11-25 09:21:16'),
+(13, 'Kovergen', 'Exstrover Thinking (Et), Thinker & Pragmatis', '<p>test</p>\r\n', 'flaticon-books', 'test', 'test', 'test', 'test', 'test', 'test', 'test', '2019-11-25 09:32:34'),
+(14, 'Akomodasi', 'Kerja Lapangan', '<p>test</p>', 'flaticon-books', 'test', 'test', 'test', 'test', 'test', 'test', 'test', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hasil`
+-- Struktur dari tabel `hasil`
 --
 
 CREATE TABLE `hasil` (
@@ -113,7 +115,7 @@ CREATE TABLE `hasil` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jawaban`
+-- Struktur dari tabel `jawaban`
 --
 
 CREATE TABLE `jawaban` (
@@ -129,7 +131,7 @@ CREATE TABLE `jawaban` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kabupaten`
+-- Struktur dari tabel `kabupaten`
 --
 
 CREATE TABLE `kabupaten` (
@@ -138,7 +140,7 @@ CREATE TABLE `kabupaten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kabupaten`
+-- Dumping data untuk tabel `kabupaten`
 --
 
 INSERT INTO `kabupaten` (`id_kabupaten`, `nama_kabupaten`) VALUES
@@ -168,7 +170,7 @@ INSERT INTO `kabupaten` (`id_kabupaten`, `nama_kabupaten`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siswa`
+-- Struktur dari tabel `siswa`
 --
 
 CREATE TABLE `siswa` (
@@ -188,7 +190,7 @@ CREATE TABLE `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data untuk tabel `siswa`
 --
 
 INSERT INTO `siswa` (`id_siswa`, `nama`, `username`, `email`, `password`, `nis`, `asal_sekolah`, `kabupaten`, `no_hp`, `tempat_lahir`, `tanggal_lahir`, `foto`, `date_created`) VALUES
@@ -198,7 +200,7 @@ INSERT INTO `siswa` (`id_siswa`, `nama`, `username`, `email`, `password`, `nis`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slider`
+-- Struktur dari tabel `slider`
 --
 
 CREATE TABLE `slider` (
@@ -210,7 +212,7 @@ CREATE TABLE `slider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `slider`
+-- Dumping data untuk tabel `slider`
 --
 
 INSERT INTO `slider` (`id_slider`, `nama_slider`, `text`, `gambar`, `status`) VALUES
@@ -221,7 +223,7 @@ INSERT INTO `slider` (`id_slider`, `nama_slider`, `text`, `gambar`, `status`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `soal`
+-- Struktur dari tabel `soal`
 --
 
 CREATE TABLE `soal` (
@@ -234,7 +236,7 @@ CREATE TABLE `soal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `soal`
+-- Dumping data untuk tabel `soal`
 --
 
 INSERT INTO `soal` (`id_soal`, `soal`, `jawab_a`, `jawab_b`, `jawab_c`, `jawab_d`) VALUES
@@ -264,7 +266,7 @@ INSERT INTO `soal` (`id_soal`, `soal`, `jawab_a`, `jawab_b`, `jawab_c`, `jawab_d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tamu`
+-- Struktur dari tabel `tamu`
 --
 
 CREATE TABLE `tamu` (
@@ -276,7 +278,7 @@ CREATE TABLE `tamu` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testimoni`
+-- Struktur dari tabel `testimoni`
 --
 
 CREATE TABLE `testimoni` (
@@ -289,150 +291,150 @@ CREATE TABLE `testimoni` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `testimoni`
+-- Dumping data untuk tabel `testimoni`
 --
 
 INSERT INTO `testimoni` (`id_testimoni`, `nama`, `jabatan`, `testimoni`, `foto`, `date_created`) VALUES
-(1, 'Lalu Abdurrahman', 'Mahasiswa', 'sangat bagus .. saya suka', 'testimoni.jpg', '2019-11-14 23:49:46'),
+(1, 'Lalu Abdurrahman', 'Mahasiswa', 'sangat bagus .. saya suka sekali ..', '', '2019-11-26 05:51:42'),
 (2, 'Harry Helvizar', 'Mahasiswa', 'Baik saekali.. makin maju teruss', 'testimoni.jpg', '2019-11-14 23:54:48'),
-(3, 'Muhdan Fyan Syah Sofian', 'CEO Pondok Informatika', 'saya sangat suka model seperti ini karna sangat membantu', 'testimoni.jpg', '2019-11-14 23:55:40');
+(3, 'Muhdan Fyan Syah Sofian', 'CEO Pondok Informatika', 'saya sangat suka model seperti ini karna sangat membantu kami', '', '2019-11-26 05:51:52');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `admin_role`
+-- Indeks untuk tabel `admin_role`
 --
 ALTER TABLE `admin_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `gaya_belajar`
+-- Indeks untuk tabel `gaya_belajar`
 --
 ALTER TABLE `gaya_belajar`
   ADD PRIMARY KEY (`id_gaya_belajar`);
 
 --
--- Indexes for table `hasil`
+-- Indeks untuk tabel `hasil`
 --
 ALTER TABLE `hasil`
   ADD PRIMARY KEY (`id_hasil`);
 
 --
--- Indexes for table `jawaban`
+-- Indeks untuk tabel `jawaban`
 --
 ALTER TABLE `jawaban`
   ADD PRIMARY KEY (`id_jawaban`);
 
 --
--- Indexes for table `kabupaten`
+-- Indeks untuk tabel `kabupaten`
 --
 ALTER TABLE `kabupaten`
   ADD PRIMARY KEY (`id_kabupaten`);
 
 --
--- Indexes for table `siswa`
+-- Indeks untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`id_siswa`);
 
 --
--- Indexes for table `slider`
+-- Indeks untuk tabel `slider`
 --
 ALTER TABLE `slider`
   ADD PRIMARY KEY (`id_slider`);
 
 --
--- Indexes for table `soal`
+-- Indeks untuk tabel `soal`
 --
 ALTER TABLE `soal`
   ADD PRIMARY KEY (`id_soal`);
 
 --
--- Indexes for table `tamu`
+-- Indeks untuk tabel `tamu`
 --
 ALTER TABLE `tamu`
   ADD PRIMARY KEY (`id_tamu`);
 
 --
--- Indexes for table `testimoni`
+-- Indeks untuk tabel `testimoni`
 --
 ALTER TABLE `testimoni`
   ADD PRIMARY KEY (`id_testimoni`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `admin_role`
+-- AUTO_INCREMENT untuk tabel `admin_role`
 --
 ALTER TABLE `admin_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `gaya_belajar`
+-- AUTO_INCREMENT untuk tabel `gaya_belajar`
 --
 ALTER TABLE `gaya_belajar`
-  MODIFY `id_gaya_belajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_gaya_belajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `hasil`
+-- AUTO_INCREMENT untuk tabel `hasil`
 --
 ALTER TABLE `hasil`
   MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jawaban`
+-- AUTO_INCREMENT untuk tabel `jawaban`
 --
 ALTER TABLE `jawaban`
   MODIFY `id_jawaban` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `kabupaten`
+-- AUTO_INCREMENT untuk tabel `kabupaten`
 --
 ALTER TABLE `kabupaten`
   MODIFY `id_kabupaten` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `siswa`
+-- AUTO_INCREMENT untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `slider`
+-- AUTO_INCREMENT untuk tabel `slider`
 --
 ALTER TABLE `slider`
   MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `soal`
+-- AUTO_INCREMENT untuk tabel `soal`
 --
 ALTER TABLE `soal`
   MODIFY `id_soal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT for table `tamu`
+-- AUTO_INCREMENT untuk tabel `tamu`
 --
 ALTER TABLE `tamu`
   MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `testimoni`
+-- AUTO_INCREMENT untuk tabel `testimoni`
 --
 ALTER TABLE `testimoni`
   MODIFY `id_testimoni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;

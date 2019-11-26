@@ -51,6 +51,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <br>
             <div class="container">
 
                 <?= form_open_multipart(base_url('admin/konfigurasi/tambahslider')) ?>
