@@ -71,6 +71,7 @@ class Konfigurasi extends CI_Controller
         }
     }
 
+
     public function kabupaten()
     {
         $data['title'] = 'Kabupaten - Pegas Belajar';

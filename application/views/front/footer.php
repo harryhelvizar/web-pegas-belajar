@@ -45,7 +45,7 @@
 </footer>
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
     (function() {
@@ -57,8 +57,10 @@
         s1.setAttribute('crossorigin', '*');
         s0.parentNode.insertBefore(s1, s0);
     })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
+
+<script async data-id="22470" src="https://cdn.widgetwhats.com/script.min.js"></script>
 
 
 
