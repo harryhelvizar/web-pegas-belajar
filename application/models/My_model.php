@@ -31,4 +31,27 @@ class My_model extends CI_Model
 
         return $result['kabupatens'];
     }
+
+    public function edit_gaya($where,$table)
+    {
+        return $this->db->get_where($table,$where);
+    }
+
+    public function update_gaya($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table,$data);
+    }
+
+
+    public function edit_testimoni($where,$table)
+    {
+        return $this->db->get_where($table,$where);
+    }
+
+    public function update_testimoni($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table,$data);
+    }
 }
