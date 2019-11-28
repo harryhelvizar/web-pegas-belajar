@@ -4,16 +4,22 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 <script src="<?= base_url('assets/template/') ?>js/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
         //sembunyikan semua div soal
-        for (var j=2; j<=22; j++)
+        for (var j = 2; j <= 22; j++)
             $('#soal_' + j).hide();
         
         $('#lanjut_22').val("Selesai");
     });
+<<<<<<< HEAD
     
 
 </script>
+=======
+</script>
+
+<?php $this->load->view('front/header') ?>
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
 
 
 <?php
@@ -22,15 +28,15 @@
 
 <body>
 
-        <section class="soal_section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
+    <section class="soal_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
 
-                        <div class="soal">
+                    <div class="soal">
 
                         <?php foreach ($soal as $soal) : ?>
-                            <div id="soal_<?= $soal->id_soal?>">
+                            <div id="soal_<?= $soal->id_soal ?>">
                                 <div class="col-md-12 bg-light p-5 ftco-animate">
                                     <div class="row pb-5">
                                         <div class="col-12" style="text-align: right;">
@@ -38,13 +44,13 @@
                                         </div>
                                     </div>
                                     <style>
-                                    .gambar-soal img {
+                                        .gambar-soal img {
                                             width: 400px;
                                             height: 250px;
                                         }
                                     </style>
                                     <div class="gambar-soal img-fluid">
-                                        <img src="<?= base_url()?>assets/img/think.svg" alt="">
+                                        <!-- <img src="<?= base_url() ?>assets/img/think.svg" alt=""> -->
                                     </div>
                                     <div class="container" style="text-align: center;">
                                         <div class="card bg-warning pl-1 pt-2 pb-2">
@@ -54,7 +60,7 @@
                                     <form action="" method="post" id="form" name="form1">
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_a ?></h5>
@@ -62,7 +68,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_b ?></h5>
@@ -70,7 +76,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_c ?></h5>
@@ -78,7 +84,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_d ?></h5>
@@ -255,6 +261,7 @@
                                             //alert(question[1]["A"]);
                                         var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
                                         var i = 4;
+<<<<<<< HEAD
                                         
                                         function cekQuestion(a,b){
                                             
@@ -272,45 +279,71 @@
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "A");
+=======
+                                        $('#btn1_<?= $soal->id_soal ?>').click(function() {
+                                            $(this).val(i);
+                                            $(this).attr('disabled', 'disabled');
+                                            <?php
+                                                ?>
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             i--;
-                                            if (i==0)
-                                                i=4;
+                                            if (i == 0)
+                                                i = 4;
                                         });
+<<<<<<< HEAD
                                         $('#btn2_<?= $soal->id_soal?>').click(function() {
+=======
+
+                                        $('#btn2_<?= $soal->id_soal ?>').click(function() {
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "B");
                                             i--;
-                                            if (i==0) 
-                                                i=4;
+                                            if (i == 0)
+                                                i = 4;
                                         });
+<<<<<<< HEAD
                                         $('#btn3_<?= $soal->id_soal?>').click(function() {
+=======
+
+                                        $('#btn3_<?= $soal->id_soal ?>').click(function() {
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "C");
                                             i--;
-                                            if (i==0)
-                                                i=4;
+                                            if (i == 0)
+                                                i = 4;
                                         });
+<<<<<<< HEAD
                                         $('#btn4_<?= $soal->id_soal?>').click(function() {
+=======
+
+                                        $('#btn4_<?= $soal->id_soal ?>').click(function() {
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "D");
                                             i--;
+<<<<<<< HEAD
                                             if (i==0) 
                                                 i=4;
 
+=======
+                                            if (i == 0)
+                                                i = 4;
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                         });
-
                                     </script>
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -337,6 +370,7 @@
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
     <script>
+<<<<<<< HEAD
     
     <?php for($a=1; $a<=21; $a++){?> 
     
@@ -349,6 +383,16 @@
                                 
     <?php 
     } ?>
+=======
+        <?php for ($a = 1; $a <= 22; $a++) { ?>
+
+            $('#lanjut_<?= $a ?>').click(function() {
+                $('#soal_<?= $a ?>').hide();
+                $('#soal_<?= $a + 1 ?>').show();
+            });
+
+        <?php } ?>
+>>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
     </script>
 
 </body>
