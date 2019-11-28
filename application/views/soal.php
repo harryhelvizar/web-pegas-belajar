@@ -8,14 +8,19 @@
         //sembunyikan semua div soal
         for (var j=2; j<=22; j++)
             $('#soal_' + j).hide();
+        
+        $('#lanjut_22').val("Selesai");
     });
+    
 
 </script>
-    
-<?php $this->load->view('front/header') ?>
+
+
+<?php
+            $this->load->view('front/header');
+?>
 
 <body>
-
 
         <section class="soal_section">
             <div class="container">
@@ -46,7 +51,7 @@
                                             <h3><?= $soal->soal ?></h3>
                                         </div>
                                     </div>
-                                    <form action="" method="post" id="form">
+                                    <form action="" method="post" id="form" name="form1">
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
                                                 <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
@@ -98,39 +103,203 @@
                                         </div>
                                     </form>
                                     <script>
+                                        var question = {
+                                            1 : {
+                                                "A" : "O",
+                                                "B" : "D",
+                                                "C" : "F",
+                                                "D" : "T",
+                                            },
+                                            2 : {
+                                                "A" : "O",
+                                                "B" : "F",
+                                                "C" : "T",
+                                                "D" : "D",
+                                            },
+                                            3 : {
+                                                "A" : "O",
+                                                "B" : "D",
+                                                "C" : "F",
+                                                "D " : "T",
+                                            },
+                                            4 : {
+                                                "A " : "F",
+                                                "B " : "T",
+                                                "C " : "D",
+                                                "D " : "O",
+                                            },
+
+                                            5 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "D",
+                                                "D " : "T",
+                                            },
+
+                                            6 : {
+                                                "A " : "D",
+                                                "B " : "T",
+                                                "C " : "O",
+                                                "D " : "F",
+                                            },
+
+                                            7 : {
+                                                "A " : "T",
+                                                "B " : "F",
+                                                "C " : "D",
+                                                "D " : "O",
+                                            },
+
+                                            
+                                            8 : {
+                                                "A " : "O",
+                                                "B " : "D",
+                                                "C " : "T",
+                                                "D " : "F",
+                                            },
+
+                                            
+                                            9 : {
+                                                "A " : "T",
+                                                "B " : "F",
+                                                "C " : "D",
+                                                "D " : "O",
+                                            },
+
+                                            10 : {
+                                                "A " : "D",
+                                                "B " : "T",
+                                                "C " : "O",
+                                                "D " : "F",
+                                            },
+
+                                            11 : {
+                                                "A " : "T",
+                                                "B " : "D",
+                                                "C " : "O",
+                                                "D " : "F",
+                                            },
+                                            
+                                            12 : {
+                                                "A " : "T",
+                                                "B " : "F",
+                                                "C " : "O",
+                                                "D " : "D",
+                                            },
+
+                                            13 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            14 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            15 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            16 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            17 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            19 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            20 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            21 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            },
+
+                                            22 : {
+                                                "A " : "F",
+                                                "B " : "O",
+                                                "C " : "T",
+                                                "D " : "D",
+                                            }
+                                            
+                                            };
+
+                                            //alert(question[1]["A"]);
+                                        var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
                                         var i = 4;
+                                        
+                                        function cekQuestion(a,b){
+                                            
+                                            if (question[a][b] == 'F')
+                                                kunciF += i;
+                                            if (question[a][b] == 'O')
+                                                kunciO += i;
+                                            if (question[a][b] == 'T')
+                                                kunciT += i;
+                                            if (question[a][b] == 'D')
+                                                kunciD += i;
+                                        }
+
                                         $('#btn1_<?= $soal->id_soal?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
-                                            <?php
-                                            ?>
+                                            cekQuestion(<?= $soal->id_soal?>, "A");
                                             i--;
                                             if (i==0)
                                                 i=4;
                                         });
-
                                         $('#btn2_<?= $soal->id_soal?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal?>, "B");
                                             i--;
                                             if (i==0) 
                                                 i=4;
                                         });
-
                                         $('#btn3_<?= $soal->id_soal?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal?>, "C");
                                             i--;
                                             if (i==0)
                                                 i=4;
                                         });
-
                                         $('#btn4_<?= $soal->id_soal?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal?>, "D");
                                             i--;
                                             if (i==0) 
                                                 i=4;
+
                                         });
 
                                     </script>
@@ -169,14 +338,17 @@
 
     <script>
     
-    <?php for($a=1; $a<=22; $a++){?> 
+    <?php for($a=1; $a<=21; $a++){?> 
     
         $('#lanjut_<?= $a ?>').click(function(){
-            $('#soal_<?= $a ?>').hide();
-            $('#soal_<?= $a+1 ?>').show();
+            if (i==4){
+                $('#soal_<?= $a ?>').hide();
+                $('#soal_<?= $a+1 ?>').show();
+            }
         });
                                 
-    <?php } ?>
+    <?php 
+    } ?>
     </script>
 
 </body>
