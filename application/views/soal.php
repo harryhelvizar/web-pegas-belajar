@@ -13,6 +13,164 @@
         $('#lanjut_22').val("Selesai");
     });
     
+    var question = {
+                    1 : {
+                        "A" : "O",
+                        "B" : "D",
+                        "C" : "F",
+                        "D" : "T",
+                    },
+                    2 : {
+                        "A" : "O",
+                        "B" : "F",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+                    3 : {
+                        "A" : "O",
+                        "B" : "D",
+                        "C" : "F",
+                        "D" : "T",
+                    },
+                    4 : {
+                        "A" : "F",
+                        "B" : "T",
+                        "C" : "D",
+                        "D" : "O",
+                    },
+
+                    5 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "D",
+                        "D" : "T",
+                    },
+
+                    6 : {
+                        "A" : "D",
+                        "B" : "T",
+                        "C" : "O",
+                        "D" : "F",
+                    },
+
+                    7 : {
+                        "A" : "T",
+                        "B" : "F",
+                        "C" : "D",
+                        "D" : "O",
+                    },
+
+                    
+                    8 : {
+                        "A" : "O",
+                        "B" : "D",
+                        "C" : "T",
+                        "D" : "F",
+                    },
+
+                    
+                    9 : {
+                        "A" : "T",
+                        "B" : "F",
+                        "C" : "D",
+                        "D" : "O",
+                    },
+
+                    10 : {
+                        "A" : "D",
+                        "B" : "T",
+                        "C" : "O",
+                        "D" : "F",
+                    },
+
+                    11 : {
+                        "A" : "T",
+                        "B" : "D",
+                        "C" : "O",
+                        "D" : "F",
+                    },
+                    
+                    12 : {
+                        "A" : "T",
+                        "B" : "F",
+                        "C" : "O",
+                        "D" : "D",
+                    },
+
+                    13 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    14 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    15 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    16 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    17 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    18 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    19 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    20 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    21 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    },
+
+                    22 : {
+                        "A" : "F",
+                        "B" : "O",
+                        "C" : "T",
+                        "D" : "D",
+                    }
+                    
+            };
+
+                                            //alert(question[1]["A"]);
+                                        var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
 </script>
 
 
@@ -103,168 +261,17 @@
                                         </div>
                                     </form>
                                     <script>
-                                        var question = {
-                                            1 : {
-                                                "A" : "O",
-                                                "B" : "D",
-                                                "C" : "F",
-                                                "D" : "T",
-                                            },
-                                            2 : {
-                                                "A" : "O",
-                                                "B" : "F",
-                                                "C" : "T",
-                                                "D" : "D",
-                                            },
-                                            3 : {
-                                                "A" : "O",
-                                                "B" : "D",
-                                                "C" : "F",
-                                                "D " : "T",
-                                            },
-                                            4 : {
-                                                "A " : "F",
-                                                "B " : "T",
-                                                "C " : "D",
-                                                "D " : "O",
-                                            },
-
-                                            5 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "D",
-                                                "D " : "T",
-                                            },
-
-                                            6 : {
-                                                "A " : "D",
-                                                "B " : "T",
-                                                "C " : "O",
-                                                "D " : "F",
-                                            },
-
-                                            7 : {
-                                                "A " : "T",
-                                                "B " : "F",
-                                                "C " : "D",
-                                                "D " : "O",
-                                            },
-
-                                            
-                                            8 : {
-                                                "A " : "O",
-                                                "B " : "D",
-                                                "C " : "T",
-                                                "D " : "F",
-                                            },
-
-                                            
-                                            9 : {
-                                                "A " : "T",
-                                                "B " : "F",
-                                                "C " : "D",
-                                                "D " : "O",
-                                            },
-
-                                            10 : {
-                                                "A " : "D",
-                                                "B " : "T",
-                                                "C " : "O",
-                                                "D " : "F",
-                                            },
-
-                                            11 : {
-                                                "A " : "T",
-                                                "B " : "D",
-                                                "C " : "O",
-                                                "D " : "F",
-                                            },
-                                            
-                                            12 : {
-                                                "A " : "T",
-                                                "B " : "F",
-                                                "C " : "O",
-                                                "D " : "D",
-                                            },
-
-                                            13 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            14 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            15 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            16 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            17 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            19 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            20 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            21 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            },
-
-                                            22 : {
-                                                "A " : "F",
-                                                "B " : "O",
-                                                "C " : "T",
-                                                "D " : "D",
-                                            }
-                                            
-                                            };
-
-                                            //alert(question[1]["A"]);
-                                        var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
                                         var i = 4;
                                               
                                         function cekQuestion(a,b){
                                             
-                                            if (question[a][b] == 'F')
+                                            if (question[a][b] == "F")
                                                 kunciF += i;
-                                            if (question[a][b] == 'O')
+                                            if (question[a][b] == "O")
                                                 kunciO += i;
-                                            if (question[a][b] == 'T')
+                                            if (question[a][b] == "T")
                                                 kunciT += i;
-                                            if (question[a][b] == 'D')
+                                            if (question[a][b] == "D")
                                                 kunciD += i;
                                         }
 
@@ -485,10 +492,10 @@
             if (i==4){
                 $('.soal_section').hide();
                 $('.hasil_section').show();
-                $('#nilaiFeeling').text(kunciF);
-                $('#nilaiObserver').text(kunciO);
-                $('#nilaiThinker').text(kunciT);
-                $('#nilaiDoer').text(kunciD);
+                $('#nilaiFeeling').text(((kunciF/88) * 100).toFixed(2) + " %");
+                $('#nilaiObserver').text(((kunciO/88) * 100).toFixed(2) + " %");
+                $('#nilaiThinker').text(((kunciT/88) * 100).toFixed(2) + " %");
+                $('#nilaiDoer').text(((kunciD/88) * 100).toFixed(2) + " %");
             }
         });
     </script>
