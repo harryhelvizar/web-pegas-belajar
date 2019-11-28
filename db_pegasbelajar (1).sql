@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2019 at 07:49 AM
+-- Generation Time: Nov 25, 2019 at 05:54 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -198,6 +198,29 @@ INSERT INTO `siswa` (`id_siswa`, `nama`, `username`, `email`, `password`, `nis`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `slider`
+--
+
+CREATE TABLE `slider` (
+  `id_slider` int(11) NOT NULL,
+  `nama_slider` varchar(100) NOT NULL,
+  `text` varchar(100) NOT NULL,
+  `gambar` varchar(200) NOT NULL,
+  `status` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`id_slider`, `nama_slider`, `text`, `gambar`, `status`) VALUES
+(2, 'Slider 2', 'Gaya Belajar itu Unik. Penasaran ? Kenali Gaya Belajarmu Disini!', 'pexels-photo-256468.jpeg', ''),
+(3, 'Slider 3', 'Gaya Belajar itu Unik. Penasaran ? Kenali Gaya Belajarmu Disini!', 'dawn-1840298_1920.jpg', 'active'),
+(4, 'Slider 1', 'Gaya Belajar itu Unik. Penasaran ? Kenali Gaya Belajarmu Disini!', 'notebook-336634_1920.jpg', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `soal`
 --
 
@@ -321,6 +344,12 @@ ALTER TABLE `siswa`
   ADD PRIMARY KEY (`id_siswa`);
 
 --
+-- Indexes for table `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`id_slider`);
+
+--
 -- Indexes for table `soal`
 --
 ALTER TABLE `soal`
@@ -383,6 +412,12 @@ ALTER TABLE `kabupaten`
 --
 ALTER TABLE `siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `soal`
