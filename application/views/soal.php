@@ -370,7 +370,6 @@
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
     <script>
-<<<<<<< HEAD
     
     <?php for($a=1; $a<=21; $a++){?> 
     
@@ -383,16 +382,7 @@
                                 
     <?php 
     } ?>
-=======
-        <?php for ($a = 1; $a <= 22; $a++) { ?>
 
-            $('#lanjut_<?= $a ?>').click(function() {
-                $('#soal_<?= $a ?>').hide();
-                $('#soal_<?= $a + 1 ?>').show();
-            });
-
-        <?php } ?>
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
     </script>
 
 </body>
