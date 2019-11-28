@@ -11,19 +11,12 @@
         
         $('#lanjut_22').val("Selesai");
     });
-<<<<<<< HEAD
     
-
 </script>
-=======
-</script>
-
-<?php $this->load->view('front/header') ?>
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
 
 
 <?php
-            $this->load->view('front/header');
+    $this->load->view('front/header');
 ?>
 
 <body>
@@ -261,8 +254,7 @@
                                             //alert(question[1]["A"]);
                                         var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
                                         var i = 4;
-<<<<<<< HEAD
-                                        
+                                              
                                         function cekQuestion(a,b){
                                             
                                             if (question[a][b] == 'F')
@@ -279,23 +271,13 @@
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "A");
-=======
-                                        $('#btn1_<?= $soal->id_soal ?>').click(function() {
-                                            $(this).val(i);
-                                            $(this).attr('disabled', 'disabled');
-                                            <?php
-                                                ?>
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
+                                            
                                             i--;
                                             if (i == 0)
                                                 i = 4;
                                         });
-<<<<<<< HEAD
-                                        $('#btn2_<?= $soal->id_soal?>').click(function() {
-=======
 
                                         $('#btn2_<?= $soal->id_soal ?>').click(function() {
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "B");
@@ -303,12 +285,8 @@
                                             if (i == 0)
                                                 i = 4;
                                         });
-<<<<<<< HEAD
-                                        $('#btn3_<?= $soal->id_soal?>').click(function() {
-=======
 
                                         $('#btn3_<?= $soal->id_soal ?>').click(function() {
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "C");
@@ -316,24 +294,14 @@
                                             if (i == 0)
                                                 i = 4;
                                         });
-<<<<<<< HEAD
-                                        $('#btn4_<?= $soal->id_soal?>').click(function() {
-=======
 
                                         $('#btn4_<?= $soal->id_soal ?>').click(function() {
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal?>, "D");
                                             i--;
-<<<<<<< HEAD
-                                            if (i==0) 
-                                                i=4;
-
-=======
                                             if (i == 0)
                                                 i = 4;
->>>>>>> 9ec99949c582c76d6758d4a3c9b0f8704d90ed80
                                         });
                                     </script>
                                 </div>
