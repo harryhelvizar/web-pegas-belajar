@@ -1,7 +1,7 @@
 <?php $this->load->view('front/header') ?>
 
 <body>
-
+<section class="hasil_section">
     <?php $this->load->view('front/navbar') ?>
 
 
@@ -127,7 +127,7 @@
         </div>
     </section>
 
-
+</section>
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">

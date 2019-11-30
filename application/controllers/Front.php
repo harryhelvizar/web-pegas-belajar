@@ -40,7 +40,10 @@ class Front extends CI_Controller
         // if ($page > 22) {
         //     redirect('front/hasil');
         // }
-        $data['soal'] = $this->db->get('soal', 22)->result();
+        $data['siswa'] = $this->db->get('siswa')->num_rows();
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();  
+        $data['kunci'] = $this->db->get('kunci')->result();
+        $data['soal'] = $this->db->get('soal', 22)->result();   
         $data['total_soal'] = $this->db->get('soal')->num_rows();
 
         $this->load->view('soal', $data);
@@ -60,13 +63,6 @@ class Front extends CI_Controller
         $data['title'] = 'Tentang - Pegas Belajar';
         $this->load->view('tentang', $data);
     }
-
-    // public function gayabelajar()
-    // {
-    //     $data['title'] = 'Gaya Belajar - Pegas Belajar';
-    //     $data['gaya'] = $this->db->get('gaya_belajar')->row();
-    //     $this->load->view('gaya-belajar', $data);
-    // }
 
 
     public function detail_gayabelajar($id_gaya)
