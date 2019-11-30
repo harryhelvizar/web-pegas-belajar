@@ -55,7 +55,9 @@
             </div>
             <div class="container">
 
-                <form method="post" action="<?= base_url('admin/testimoni/tambah') ?>">
+
+                <!-- <form action="<?= base_url(). 'admin/testimoni/tambahtestimoni'; ?>" method="post" enctype="multipart/form-data"> -->
+                <?= form_open_multipart(base_url('admin/testimoni/tambahtestimoni')) ?>    
 
 
                     <div class="form-group">
@@ -67,6 +69,9 @@
                     <div class="form-group">
                         <textarea class="form-control" name="testimoni" id="testimoni" cols="30" rows="3" placeholder="Penjelasan"></textarea>
                     </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control" name="foto" id="foto" placeholder="Foto">
+                    </div> 
 
 
             </div>
@@ -75,7 +80,8 @@
                 <button type="submit" class="btn btn-primary">Save changes</button>
             </div>
 
-            </form>
+            <?= form_close() ?>
+                <!-- </form> -->
         </div>
     </div>
 </div>

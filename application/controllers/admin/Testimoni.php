@@ -19,10 +19,9 @@ class Testimoni extends CI_Controller
         $this->load->view('admin/index', $data);
     }
 
-    public function tambah()
+    public function tambahTestimoni()
     {
-        $this->form_validation->set_rules('nama', 'Nama', 'trim|required');
-
+        $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Testimoni - Pegas Belajar';
@@ -30,17 +29,47 @@ class Testimoni extends CI_Controller
             $data['testimoni'] = $this->db->get('testimoni')->result();
             $this->load->view('admin/index', $data);
         } else {
-            $data = [
-                'nama' => $this->input->post('nama'),
-                'jabatan' => $this->input->post('jabatan'),
-                'testimoni' => $this->input->post('testimoni'),
-                'foto' => 'testimoni.jpg',
-                'date_created' => time("Y/m/d H:iP")
-            ];
 
-            $this->db->insert('testimoni', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Testimoni baru telah ditambahkan!</div>');
-            redirect('admin/testimoni');
+            $config['upload_path']    = '.assets/upload/testimoni/';
+            $config['allowed_types']  = 'gif|jpg|png|jpeg';
+            $config['max_size']       = '2400';
+            $config['max_width']      = '2024';
+            $config['max_height']     = '2024';
+            
+            $this->load->library('upload', $config);
+
+            if (!$this->upload->do_upload('foto')) {
+                $data['title'] = 'testimoni';
+                $data['contents'] = 'admin/testimoni/index';
+                $data['testimoni'] = $this->db->get('testimoni')->result();
+                $this->load->view('admin/index', $data);
+
+            } else {
+                $data_gambar = array('upload_data' => $this->upload->data());
+
+                $config['image_library']  = 'gd2';
+                $config['source_image']  = './assets/upload/testimoni/' . $data_gambar['upload_data']['file_name'];
+                $config['create_thumb']  = TRUE;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']    = 1000;
+                $config['height']   = 1000;
+
+                $this->load->library('image_lib', $config);
+
+                $this->image_lib->resize();
+
+                $data = [
+                    'nama' => $this->input->post('nama'),
+                    'jabatan' => $this->input->post('jabatan'),
+                    'testimoni' => $this->input->post('testimoni'),
+                    'foto' => $data_gambar['upload_data']['file_name'],
+                    'date_created' => time("Y/m/d H:iP")
+                ];
+                
+                $this->db->insert('testimoni', $data);
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Testimoni baru telah ditambahkan!</div>');
+                redirect('admin/testimoni/index');
+            }
         }
     }
 
