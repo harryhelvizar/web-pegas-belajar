@@ -33,7 +33,7 @@ class Front extends CI_Controller
 
     public function soal()
     {
-        
+
         siswa_login();
 
         $data['title'] = 'Soal - Pegas Belajar';
@@ -41,19 +41,19 @@ class Front extends CI_Controller
         //     redirect('front/hasil');
         // }
         $data['siswa'] = $this->db->get('siswa')->num_rows();
-        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();  
-        $data['kunci'] = $this->db->get('kunci')->result();
-        $data['soal'] = $this->db->get('soal', 22)->result();   
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+        // $data['kunci'] = $this->db->get('kunci')->result();
+        $data['soal'] = $this->db->get('soal', 22)->result();
         $data['total_soal'] = $this->db->get('soal')->num_rows();
 
         $this->load->view('soal', $data);
     }
 
-    public function savesoal($page){
+    public function savesoal($page)
+    {
         $page++;
-        
-        redirect(base_url() . 'front/soal/' . $page ,'refresh');
-        
+
+        redirect(base_url() . 'front/soal/' . $page, 'refresh');
     }
 
     public function tentang()
