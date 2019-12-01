@@ -335,33 +335,33 @@
 
                         <div class="row mb-3" style="text-color: black;">
                             <div class="col-md-6">
-                                <div class="card bg-primary mb-3">
+                                <div class="card bg-warning mb-3" id="feeling">
                                     <h3>Feeling / Reflector</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
-                                    <h1 id="nilaiFeeling">50%</h1>
+                                    <h1 id="nilaiFeeling">0%</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card bg-warning">
+                                <div class="card bg-warning" id="observer">
                                     <h3>Observer / Theorist</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
-                                    <h1 id="nilaiObserver">10%</h1>
+                                    <h1 id="nilaiObserver">0%</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card bg-warning mb-3">
+                                <div class="card bg-warning mb-3" id="thinker">
                                     <h3>Thinker / Pragmatis</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
-                                    <h1 id="nilaiThinker">20%</h1>
+                                    <h1 id="nilaiThinker">0%</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card bg-warning">
+                                <div class="card bg-warning" id="doer">
                                     <h3>Doer / Activist</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
-                                    <h1 id="nilaiDoer">20%</h1>
+                                    <h1 id="nilaiDoer">0%</h1>
                                 </div>
                             </div>
                         </div>
@@ -497,6 +497,29 @@
                 $('#nilaiThinker').text(((kunciT/88) * 100).toFixed(2) + " %");
                 $('#nilaiDoer').text(((kunciD/88) * 100).toFixed(2) + " %");
             }
+            var max = kunciF;
+
+            if (max < kunciO){
+                max = kunciO;
+                $('#observer').addClass("bg-primary");
+                $('#observer').removeClass("bg-warning");
+            }
+            if (max < kunciT){
+                max = kunciT;
+                $('#thinker').addClass("bg-primary");
+                $('#thinker').removeClass("bg-warning");
+            }
+            if (max < kunciD){
+                max = kunciD;
+                $('#doer').addClass("bg-primary");
+                $('#doer').removeClass("bg-warning");
+            }
+
+            if (max == kunciF){
+                $('#feeling').addClass("bg-primary");
+                $('#feeling').removeClass("bg-warning");
+            }
+
         });
     </script>
 
