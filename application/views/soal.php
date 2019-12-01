@@ -499,26 +499,58 @@
             }
             var max = kunciF;
 
+            // if (max < kunciO){
+            //     max = kunciO;
+            //     $('#observer').addClass("bg-primary");
+            //     $('#observer').removeClass("bg-warning");
+            // }
+            // if (max < kunciT){
+            //     max = kunciT;
+            //     $('#thinker').addClass("bg-primary");
+            //     $('#thinker').removeClass("bg-warning");
+            // }
+            // if (max < kunciD){
+            //     max = kunciD;
+            //     $('#doer').addClass("bg-primary");
+            //     $('#doer').removeClass("bg-warning");
+            // }
+
+            // if (max == kunciF){
+                
+            //     $('#feeling').addClass("bg-primary");
+            //     $('#feeling').removeClass("bg-warning");
+            // }
+
             if (max < kunciO){
                 max = kunciO;
-                $('#observer').addClass("bg-primary");
-                $('#observer').removeClass("bg-warning");
             }
             if (max < kunciT){
                 max = kunciT;
-                $('#thinker').addClass("bg-primary");
-                $('#thinker').removeClass("bg-warning");
             }
             if (max < kunciD){
                 max = kunciD;
-                $('#doer').addClass("bg-primary");
-                $('#doer').removeClass("bg-warning");
             }
 
             if (max == kunciF){
                 $('#feeling').addClass("bg-primary");
                 $('#feeling').removeClass("bg-warning");
             }
+            
+            if (max == kunciO){
+                $('#observer').addClass("bg-primary");
+                $('#observer').removeClass("bg-warning");
+            }
+            
+            if (max == kunciT){
+                $('#thinker').addClass("bg-primary");
+                $('#thinker').removeClass("bg-warning");
+            }
+            
+            if (max == kunciD){
+                $('#doer').addClass("bg-primary");
+                $('#doer').removeClass("bg-warning");
+            }
+            
 
         });
     </script>
