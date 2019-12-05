@@ -50,11 +50,28 @@ class Front extends CI_Controller
         $this->load->view('soal', $data);
     }
 
-    public function savesoal($page)
+    public function savejwb()
     {
-        $page++;
-
-        redirect(base_url() . 'front/soal/' . $page, 'refresh');
+        $id_siswa = $this->input->post('id_siswa');
+        $kunciF = $this->input->post('kunciF');
+        $id_siswa =  $this->input->post('kunciF');
+        $kunciF = $this->input->post('kunciF');
+        $kunciO = $this->input->post('kunciO');
+        $kunciD = $this->input->post('kunciD');
+        $kunciT = $this->input->post('kunciT');
+        
+        
+            $data = array(
+                'id_siswa' => $id_siswa,
+                'kunciF' => $kunciF,
+                'kunciO' => $kunciO,
+                'kunciT' => $kunciT,
+                'kunciD' => $kunciD
+                );
+            $hasil = $this->db->insert('jawaban', $data);
+            echo "<script> alert ('Data Sudah Berhasil disimpan'); </script>";
+            redirect(base_url(),'refresh');
+            
     }
 
     public function tentang()
