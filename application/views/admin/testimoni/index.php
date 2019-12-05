@@ -55,8 +55,6 @@
             </div>
             <div class="container">
 
-
-                <!-- <form action="<?= base_url(). 'admin/testimoni/tambahtestimoni'; ?>" method="post" enctype="multipart/form-data"> -->
                 <?= form_open_multipart(base_url('admin/testimoni/tambahtestimoni')) ?>    
 
 
@@ -71,6 +69,9 @@
                     </div>
                     <div class="form-group">
                         <input type="file" class="form-control" name="foto" id="foto" placeholder="Foto">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" name="date_created" id="date_created" placeholder="tanggal update">
                     </div> 
 
 

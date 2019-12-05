@@ -13,6 +13,11 @@ class Testimoni extends CI_Controller
 
     public function index()
     {
+        # code...
+    }
+
+    public function testimoni()
+    {
         $data['title'] = 'Testimoni - Pegas Belajar';
         $data['contents'] = 'admin/testimoni/index';
         $data['testimoni'] = $this->db->get('testimoni')->result();
@@ -21,7 +26,7 @@ class Testimoni extends CI_Controller
 
     public function tambahTestimoni()
     {
-        $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
+        $this->form_validation->set_rules('nama_testimoni', 'Nama Testimoni', 'required|trim');
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Testimoni - Pegas Belajar';
@@ -43,6 +48,7 @@ class Testimoni extends CI_Controller
                 $data['contents'] = 'admin/testimoni/index';
                 $data['testimoni'] = $this->db->get('testimoni')->result();
                 $this->load->view('admin/index', $data);
+                $error = array('error' => $this->upload->display_errors());
 
             } else {
                 $data_gambar = array('upload_data' => $this->upload->data());
@@ -51,8 +57,8 @@ class Testimoni extends CI_Controller
                 $config['source_image']  = './assets/upload/testimoni/' . $data_gambar['upload_data']['file_name'];
                 $config['create_thumb']  = TRUE;
                 $config['maintain_ratio'] = TRUE;
-                $config['width']    = 1000;
-                $config['height']   = 1000;
+                $config['width']    = 5000;
+                $config['height']   = 5000;
 
                 $this->load->library('image_lib', $config);
 
