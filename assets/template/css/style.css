@@ -4480,6 +4480,10 @@ input[type="button"].btn-block {
 	text-decoration: none;
 }
 
+.nav-link:hover {
+	color: #E36C0A;
+}
+
 .nav-link.disabled {
 	color: #6c757d;
 }
