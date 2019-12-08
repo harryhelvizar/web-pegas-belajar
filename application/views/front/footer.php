@@ -22,7 +22,7 @@
                     <h2 class="ftco-heading-2">Ada Pertanyaan ?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">Jl. Gunungsari | Makassar | Indonesia</span></li>
+                            <li><span class="icon icon-map-marker"></span><span class="text">Jalan Bonto Langkasa, Banta-Bantaeng, Rappocini, Banta-Bantaeng, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222</span></li>
                             <li><a href="https://api.whatsapp.com/send?phone=6285240572160&text=Assalamu%27alaikum%2c%20perkenalkan%20nama%20saya.....&source=&data="><span class="icon icon-phone"></span><span class="text">0852 4057 2160</span></a></li>
                             <li><a href="#"><span class="icon icon-envelope"></span><span class="text">pegasbelajar@gmail.com</span></a></li>
                         </ul>

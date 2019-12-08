@@ -12,170 +12,173 @@
         $('.hasil_section').hide();
         $('#lanjut_22').val("Selesai");
     });
-    
+
     var question = {
-                    1 : {
-                        "A" : "O",
-                        "B" : "D",
-                        "C" : "F",
-                        "D" : "T",
-                    },
-                    2 : {
-                        "A" : "O",
-                        "B" : "F",
-                        "C" : "T",
-                        "D" : "D",
-                    },
-                    3 : {
-                        "A" : "O",
-                        "B" : "D",
-                        "C" : "F",
-                        "D" : "T",
-                    },
-                    4 : {
-                        "A" : "F",
-                        "B" : "T",
-                        "C" : "D",
-                        "D" : "O",
-                    },
+        1: {
+            "A": "O",
+            "B": "D",
+            "C": "F",
+            "D": "T",
+        },
+        2: {
+            "A": "O",
+            "B": "F",
+            "C": "T",
+            "D": "D",
+        },
+        3: {
+            "A": "O",
+            "B": "D",
+            "C": "F",
+            "D": "T",
+        },
+        4: {
+            "A": "F",
+            "B": "T",
+            "C": "D",
+            "D": "O",
+        },
 
-                    5 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "D",
-                        "D" : "T",
-                    },
+        5: {
+            "A": "F",
+            "B": "O",
+            "C": "D",
+            "D": "T",
+        },
 
-                    6 : {
-                        "A" : "D",
-                        "B" : "T",
-                        "C" : "O",
-                        "D" : "F",
-                    },
+        6: {
+            "A": "D",
+            "B": "T",
+            "C": "O",
+            "D": "F",
+        },
 
-                    7 : {
-                        "A" : "T",
-                        "B" : "F",
-                        "C" : "D",
-                        "D" : "O",
-                    },
+        7: {
+            "A": "T",
+            "B": "F",
+            "C": "D",
+            "D": "O",
+        },
 
-                    
-                    8 : {
-                        "A" : "O",
-                        "B" : "D",
-                        "C" : "T",
-                        "D" : "F",
-                    },
 
-                    
-                    9 : {
-                        "A" : "T",
-                        "B" : "F",
-                        "C" : "D",
-                        "D" : "O",
-                    },
+        8: {
+            "A": "O",
+            "B": "D",
+            "C": "T",
+            "D": "F",
+        },
 
-                    10 : {
-                        "A" : "D",
-                        "B" : "T",
-                        "C" : "O",
-                        "D" : "F",
-                    },
 
-                    11 : {
-                        "A" : "T",
-                        "B" : "D",
-                        "C" : "O",
-                        "D" : "F",
-                    },
-                    
-                    12 : {
-                        "A" : "T",
-                        "B" : "F",
-                        "C" : "O",
-                        "D" : "D",
-                    },
+        9: {
+            "A": "T",
+            "B": "F",
+            "C": "D",
+            "D": "O",
+        },
 
-                    13 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        10: {
+            "A": "D",
+            "B": "T",
+            "C": "O",
+            "D": "F",
+        },
 
-                    14 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        11: {
+            "A": "T",
+            "B": "D",
+            "C": "O",
+            "D": "F",
+        },
 
-                    15 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        12: {
+            "A": "T",
+            "B": "F",
+            "C": "O",
+            "D": "D",
+        },
 
-                    16 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        13: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    17 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        14: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    18 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        15: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    19 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        16: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    20 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        17: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    21 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    },
+        18: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                    22 : {
-                        "A" : "F",
-                        "B" : "O",
-                        "C" : "T",
-                        "D" : "D",
-                    }
-                    
-            };
+        19: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
 
-                                            //alert(question[1]["A"]);
-                                        var kunciF=0, kunciO=0, kunciT=0, kunciD=0;
+        20: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
+
+        21: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        },
+
+        22: {
+            "A": "F",
+            "B": "O",
+            "C": "T",
+            "D": "D",
+        }
+
+    };
+
+    //alert(question[1]["A"]);
+    var kunciF = 0,
+        kunciO = 0,
+        kunciT = 0,
+        kunciD = 0;
 </script>
 
 
 <?php
-    $this->load->view('front/header');
+$this->load->view('front/header');
 ?>
 
 <body>
@@ -213,111 +216,111 @@
                                         </div>
                                     </div>
 
-                                <form action="" method="post" id="form_<?= $soal->id_soal ?>" name="form_<?= $soal->id_soal ?>">
-                                    <div class="row mt-4">
-                                        <div class="col-1 jawab-soal ml-3">
-                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
-                                        </div>
-                                        <div class="col-10">
-                                            <h5><?= $soal->jawab_a ?></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-4">
-                                        <div class="col-1 jawab-soal ml-3">
-                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
-                                        </div>
-                                        <div class="col-10">
-                                            <h5><?= $soal->jawab_b ?></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-4">
-                                        <div class="col-1 jawab-soal ml-3">
-                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
-                                        </div>
-                                        <div class="col-10">
-                                            <h5><?= $soal->jawab_c ?></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-4">
-                                        <div class="col-1 jawab-soal ml-3">
-                                            <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
-                                        </div>
-                                        <div class="col-10">
-                                            <h5><?= $soal->jawab_d ?></h5>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-md-1">
-                                            
-                                        
-                                        </div>
-                                        <div class="col-md-2">
-                                            <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <button type=reset id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</button>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="col" style="text-align: right;">
-                                                <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
+                                    <form action="" method="post" id="form_<?= $soal->id_soal ?>" name="form_<?= $soal->id_soal ?>">
+                                        <div class="row mt-4">
+                                            <div class="col-1 jawab-soal ml-3">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
+                                            </div>
+                                            <div class="col-10">
+                                                <h5><?= $soal->jawab_a ?></h5>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                                
-                                <script>
-                                    var i = 4;
-                                            
-                                    function cekQuestion(a,b){
-                                        
-                                        if (question[a][b] == "F")
-                                            kunciF += i;
-                                        if (question[a][b] == "O")
-                                            kunciO += i;
-                                        if (question[a][b] == "T")
-                                            kunciT += i;
-                                        if (question[a][b] == "D")
-                                            kunciD += i;
-                                    }
+                                        <div class="row mt-4">
+                                            <div class="col-1 jawab-soal ml-3">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
+                                            </div>
+                                            <div class="col-10">
+                                                <h5><?= $soal->jawab_b ?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-1 jawab-soal ml-3">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
+                                            </div>
+                                            <div class="col-10">
+                                                <h5><?= $soal->jawab_c ?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-1 jawab-soal ml-3">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
+                                            </div>
+                                            <div class="col-10">
+                                                <h5><?= $soal->jawab_d ?></h5>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-1">
 
-                                    $('#btn1_<?= $soal->id_soal?>').click(function() {
-                                        $(this).val(i);
-                                        $(this).attr('disabled', 'disabled');
-                                        cekQuestion(<?= $soal->id_soal?>, "A");
-                                        
-                                        i--;
-                                        if (i == 0)
-                                            i = 4;
-                                    });
 
-                                    $('#btn2_<?= $soal->id_soal ?>').click(function() {
-                                        $(this).val(i);
-                                        $(this).attr('disabled', 'disabled');
-                                        cekQuestion(<?= $soal->id_soal?>, "B");
-                                        i--;
-                                        if (i == 0)
-                                            i = 4;
-                                    });
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type=reset id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</button>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="col" style="text-align: right;">
+                                                    <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
 
-                                    $('#btn3_<?= $soal->id_soal ?>').click(function() {
-                                        $(this).val(i);
-                                        $(this).attr('disabled', 'disabled');
-                                        cekQuestion(<?= $soal->id_soal?>, "C");
-                                        i--;
-                                        if (i == 0)
-                                            i = 4;
-                                    });
+                                    <script>
+                                        var i = 4;
 
-                                    $('#btn4_<?= $soal->id_soal ?>').click(function() {
-                                        $(this).val(i);
-                                        $(this).attr('disabled', 'disabled');
-                                        cekQuestion(<?= $soal->id_soal?>, "D");
-                                        i--;
-                                        if (i == 0)
-                                            i = 4;
-                                    });
-                                </script>
+                                        function cekQuestion(a, b) {
+
+                                            if (question[a][b] == "F")
+                                                kunciF += i;
+                                            if (question[a][b] == "O")
+                                                kunciO += i;
+                                            if (question[a][b] == "T")
+                                                kunciT += i;
+                                            if (question[a][b] == "D")
+                                                kunciD += i;
+                                        }
+
+                                        $('#btn1_<?= $soal->id_soal ?>').click(function() {
+                                            $(this).val(i);
+                                            $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal ?>, "A");
+
+                                            i--;
+                                            if (i == 0)
+                                                i = 4;
+                                        });
+
+                                        $('#btn2_<?= $soal->id_soal ?>').click(function() {
+                                            $(this).val(i);
+                                            $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal ?>, "B");
+                                            i--;
+                                            if (i == 0)
+                                                i = 4;
+                                        });
+
+                                        $('#btn3_<?= $soal->id_soal ?>').click(function() {
+                                            $(this).val(i);
+                                            $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal ?>, "C");
+                                            i--;
+                                            if (i == 0)
+                                                i = 4;
+                                        });
+
+                                        $('#btn4_<?= $soal->id_soal ?>').click(function() {
+                                            $(this).val(i);
+                                            $(this).attr('disabled', 'disabled');
+                                            cekQuestion(<?= $soal->id_soal ?>, "D");
+                                            i--;
+                                            if (i == 0)
+                                                i = 4;
+                                        });
+                                    </script>
 
                                 </div>
                             </div>
@@ -343,14 +346,14 @@
                         <div class="row mb-3" style="text-color: black;">
                             <div class="col-md-6">
                                 <div class="card bg-warning mb-3" id="feeling">
-                                    <h3>Feeling / Reflector</h3>
+                                    <h3>Divergen</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
                                     <h1 id="nilaiFeeling">0%</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card bg-warning" id="observer">
-                                    <h3>Observer / Theorist</h3>
+                                    <h3>Asimilasi</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
                                     <h1 id="nilaiObserver">0%</h1>
                                 </div>
@@ -359,14 +362,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card bg-warning mb-3" id="thinker">
-                                    <h3>Thinker / Pragmatis</h3>
+                                    <h3>Kovergen</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
                                     <h1 id="nilaiThinker">0%</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card bg-warning" id="doer">
-                                    <h3>Doer / Activist</h3>
+                                    <h3>Asimilasi</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
                                     <h1 id="nilaiDoer">0%</h1>
                                 </div>
@@ -381,7 +384,7 @@
                                     <input type="hidden" id="kunciT" name="kunciT">
                                     <input type="hidden" id="id_siswa" name="id_siswa" value=<?= $login->id_siswa ?>>
                                     <button type="submit" name="" id="" class="btn btn-primary btn-large">Simpan</button>
-                                    <a name="" id="" class="btn btn-warning" href="<?=base_url() . "front/soal" ?>" role="button">Ulangi</a>
+                                    <a name="" id="" class="btn btn-warning" href="<?= base_url() . "front/soal" ?>" role="button">Ulangi</a>
                                 </form>
                             </div>
                         </div>
@@ -496,64 +499,63 @@
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
     <script>
-    
-    <?php for($a=1; $a<=21; $a++){?> 
-    
-        $('#lanjut_<?= $a ?>').click(function(){
-            if (i==4){
-                $('#soal_<?= $a ?>').hide();
-                $('#soal_<?= $a+1 ?>').show();
-            }
-        });
-                                
-    <?php 
-    } ?>
-    $('#lanjut_22').click(function(){
-            if (i==4){
+        <?php for ($a = 1; $a <= 21; $a++) { ?>
+
+            $('#lanjut_<?= $a ?>').click(function() {
+                if (i == 4) {
+                    $('#soal_<?= $a ?>').hide();
+                    $('#soal_<?= $a + 1 ?>').show();
+                }
+            });
+
+        <?php
+        } ?>
+        $('#lanjut_22').click(function() {
+            if (i == 4) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
-                $('#nilaiFeeling').text(((kunciF/88) * 100).toFixed(2) + " %");
-                $('#nilaiObserver').text(((kunciO/88) * 100).toFixed(2) + " %");
-                $('#nilaiThinker').text(((kunciT/88) * 100).toFixed(2) + " %");
-                $('#nilaiDoer').text(((kunciD/88) * 100).toFixed(2) + " %");
+                $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(2) + " %");
+                $('#nilaiObserver').text(((kunciO / 88) * 100).toFixed(2) + " %");
+                $('#nilaiThinker').text(((kunciT / 88) * 100).toFixed(2) + " %");
+                $('#nilaiDoer').text(((kunciD / 88) * 100).toFixed(2) + " %");
                 $('#kunciF').val(kunciF);
                 $('#kunciO').val(kunciO);
                 $('#kunciT').val(kunciT);
                 $('#kunciD').val(kunciD);
-                var id_siswa =  $('#id_siswa').val();
+                var id_siswa = $('#id_siswa').val();
             }
 
             var max = kunciF;
-            if (max < kunciO){
+            if (max < kunciO) {
                 max = kunciO;
             }
-            if (max < kunciT){
+            if (max < kunciT) {
                 max = kunciT;
             }
-            if (max < kunciD){
+            if (max < kunciD) {
                 max = kunciD;
             }
 
-            if (max == kunciF){
+            if (max == kunciF) {
                 $('#feeling').addClass("bg-primary");
                 $('#feeling').removeClass("bg-warning");
             }
-            
-            if (max == kunciO){
+
+            if (max == kunciO) {
                 $('#observer').addClass("bg-primary");
                 $('#observer').removeClass("bg-warning");
             }
-            
-            if (max == kunciT){
+
+            if (max == kunciT) {
                 $('#thinker').addClass("bg-primary");
                 $('#thinker').removeClass("bg-warning");
             }
-            
-            if (max == kunciD){
+
+            if (max == kunciD) {
                 $('#doer').addClass("bg-primary");
                 $('#doer').removeClass("bg-warning");
             }
-            
+
 
         });
     </script>
