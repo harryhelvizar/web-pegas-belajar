@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section img" style="padding-top: 20px; padding-bottom: 10px; background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed; ">
+<footer class="ftco-footer ftco-bg-dark ftco-section img" style="height: 400px; padding-top: 40px; padding-bottom: 10px; background-image: url(<?= base_url('assets/template/') ?>images/bg_2.jpg); background-attachment:fixed; ">
     <div class="overlay"></div>
     <div class="container">
         <div class="row mb-5">
