@@ -33,7 +33,7 @@ class Front extends CI_Controller
 
     public function soal()
     {
-        
+
         siswa_login();
 
         $data['title'] = 'Soal - Pegas Belajar';
@@ -41,19 +41,36 @@ class Front extends CI_Controller
         //     redirect('front/hasil');
         // }
         $data['siswa'] = $this->db->get('siswa')->num_rows();
-        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();  
+        $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         // $data['kunci'] = $this->db->get('kunci')->result();
-        $data['soal'] = $this->db->get('soal', 22)->result();   
+        $data['soal'] = $this->db->get('soal', 22)->result();
         $data['total_soal'] = $this->db->get('soal')->num_rows();
 
         $this->load->view('soal', $data);
     }
 
-    public function savesoal($page){
-        $page++;
+    public function savejwb()
+    {
+        $id_siswa = $this->input->post('id_siswa');
+        $kunciF = $this->input->post('kunciF');
+        $id_siswa =  $this->input->post('kunciF');
+        $kunciF = $this->input->post('kunciF');
+        $kunciO = $this->input->post('kunciO');
+        $kunciD = $this->input->post('kunciD');
+        $kunciT = $this->input->post('kunciT');
         
-        redirect(base_url() . 'front/soal/' . $page ,'refresh');
         
+            $data = array(
+                'id_siswa' => $id_siswa,
+                'kunciF' => $kunciF,
+                'kunciO' => $kunciO,
+                'kunciT' => $kunciT,
+                'kunciD' => $kunciD
+                );
+            $hasil = $this->db->insert('jawaban', $data);
+            echo "<script> alert ('Data Sudah Berhasil disimpan'); </script>";
+            redirect(base_url(),'refresh');
+            
     }
 
     public function tentang()
