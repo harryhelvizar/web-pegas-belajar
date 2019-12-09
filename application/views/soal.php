@@ -219,7 +219,7 @@ $this->load->view('front/header');
                                     <form action="" method="post" id="form_<?= $soal->id_soal ?>" name="form_<?= $soal->id_soal ?>">
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value="_ ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_a ?></h5>
@@ -227,7 +227,7 @@ $this->load->view('front/header');
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_b ?></h5>
@@ -235,7 +235,7 @@ $this->load->view('front/header');
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_c ?></h5>
@@ -243,7 +243,7 @@ $this->load->view('front/header');
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-1 jawab-soal ml-3">
-                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" 0 ">
+                                                <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
                                                 <h5><?= $soal->jawab_d ?></h5>
@@ -514,10 +514,10 @@ $this->load->view('front/header');
             if (i == 4) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
-                $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(2) + " %");
-                $('#nilaiObserver').text(((kunciO / 88) * 100).toFixed(2) + " %");
-                $('#nilaiThinker').text(((kunciT / 88) * 100).toFixed(2) + " %");
-                $('#nilaiDoer').text(((kunciD / 88) * 100).toFixed(2) + " %");
+                $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
+                $('#nilaiObserver').text(((kunciO / 88) * 100).toFixed(0) + " %");
+                $('#nilaiThinker').text(((kunciT / 88) * 100).toFixed(0) + " %");
+                $('#nilaiDoer').text(((kunciD / 88) * 100).toFixed(0) + " %");
                 $('#kunciF').val(kunciF);
                 $('#kunciO').val(kunciO);
                 $('#kunciT').val(kunciT);
