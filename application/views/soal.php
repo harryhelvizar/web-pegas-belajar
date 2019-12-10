@@ -379,6 +379,7 @@
                                     <input type="hidden" id="kunciO" name="kunciO">
                                     <input type="hidden" id="kunciD" name="kunciD">
                                     <input type="hidden" id="kunciT" name="kunciT">
+                                    <input type="hidden" id="nilaimax" name="nilaimax">
                                     <input type="hidden" id="id_siswa" name="id_siswa" value=<?= $login->id_siswa ?>>
                                     <button type="submit" name="" id="" class="btn btn-primary btn-large">Simpan</button>
                                     <a name="" id="" class="btn btn-warning" href="<?=base_url() . "front/soal" ?>" role="button">Ulangi</a>
@@ -524,14 +525,19 @@
             }
 
             var max = kunciF;
+            var nilaimax = "F";
+            
             if (max < kunciO){
                 max = kunciO;
+                nilaimax = "O";
             }
             if (max < kunciT){
                 max = kunciT;
+                nilaimax = "T";
             }
             if (max < kunciD){
                 max = kunciD;
+                nilaimax = "D";
             }
 
             if (max == kunciF){
@@ -554,7 +560,8 @@
                 $('#doer').removeClass("bg-warning");
             }
             
-
+            
+            $('#nilaimax').val(nilaimax);
         });
     </script>
 
