@@ -527,13 +527,9 @@ $this->load->view('front/header');
             }
 
             var max = kunciF;
-<<<<<<< HEAD
-            var nilaimax = "F";
-            
-            if (max < kunciO){
-=======
+            var nilaimax = "F";            
+
             if (max < kunciO) {
->>>>>>> d2c7e5ae16a9f8f1f2c76631f94700d448243114
                 max = kunciO;
                 nilaimax = "O";
             }
@@ -565,14 +561,8 @@ $this->load->view('front/header');
                 $('#doer').addClass("bg-primary");
                 $('#doer').removeClass("bg-warning");
             }
-<<<<<<< HEAD
-            
-            
+        
             $('#nilaimax').val(nilaimax);
-=======
-
-
->>>>>>> d2c7e5ae16a9f8f1f2c76631f94700d448243114
         });
     </script>
 
