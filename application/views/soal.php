@@ -343,7 +343,7 @@ $this->load->view('front/header');
                 <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                     <div class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
 
-                        <div class="row mb-3" style="text-color: black;">
+                        <div class="row mb-3" style="color: black;">
                             <div class="col-md-6">
                                 <div class="card bg-warning mb-3" id="feeling">
                                     <h3>Divergen</h3>
@@ -382,6 +382,7 @@ $this->load->view('front/header');
                                     <input type="hidden" id="kunciO" name="kunciO">
                                     <input type="hidden" id="kunciD" name="kunciD">
                                     <input type="hidden" id="kunciT" name="kunciT">
+                                    <input type="hidden" id="nilaimax" name="nilaimax">
                                     <input type="hidden" id="id_siswa" name="id_siswa" value=<?= $login->id_siswa ?>>
                                     <button type="submit" name="" id="" class="btn btn-primary btn-large">Simpan</button>
                                     <a name="" id="" class="btn btn-warning" href="<?= base_url() . "front/soal" ?>" role="button">Ulangi</a>
@@ -398,75 +399,111 @@ $this->load->view('front/header');
                 <div class="row justify-content-center">
 
                     <div class="col-md-12">
-                        <div class="row">
-
-                            <div class="col-md-12 bg-light p-5 ftco-animate">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="card bg-primary mb-2">
-                                            <div class="ml-3 text-center">
-                                                <h3 class="text-white">Nama : <?= $login->nama ?></h3>
-                                                <h4 class="text-white">NIS : <?= $login->nis ?></h4>
-                                                <h4 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="">
+                            <div class="card bg-light mb-3">
+                                <div class="card-body text-center">
+                                    <h5>Nama Lengkap : <?= $login->nama ?> </h5>
+                                    <h5>NIS : <?= $login->nis ?> </h5>
+                                    <h5>Asal Sekolah : <?= $login->asal_sekolah ?> </h5>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Kekuatan</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Kelemahan</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="row mt-3">
-                                    <div class="col-md-4 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Tipe Kepribadian</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Tugas Yang Sesuai</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Kemampuan Adaptif</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-3">
-                                    <div class="col-md-6 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Cara Belajar</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 text-center mt-2">
-                                        <div class="card bg-primary text-white">
-                                            <h3>Metode Mengajar Guru Yang sesuai</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Kekuatan</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Kelemahan</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Tipe Kepribadian</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Tugas Yang Sesuai</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Kemampuan Adaptif</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Cara Belajar</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 ">
+                                <div class=" mt-3">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-header">
+                                            <h5>Metode Mengajar Guru Yang Sesuai</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -526,14 +563,19 @@ $this->load->view('front/header');
             }
 
             var max = kunciF;
+            var nilaimax = "F";
+
             if (max < kunciO) {
                 max = kunciO;
+                nilaimax = "O";
             }
             if (max < kunciT) {
                 max = kunciT;
+                nilaimax = "T";
             }
             if (max < kunciD) {
                 max = kunciD;
+                nilaimax = "D";
             }
 
             if (max == kunciF) {
@@ -556,7 +598,7 @@ $this->load->view('front/header');
                 $('#doer').removeClass("bg-warning");
             }
 
-
+            $('#nilaimax').val(nilaimax);
         });
     </script>
 

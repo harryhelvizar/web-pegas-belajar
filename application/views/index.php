@@ -19,10 +19,9 @@
                             </div>
                             <div class="media-body px-3">
                                 <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, repellendus!</p>
-
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quas.</p>
                                 <a href="<?= base_url('front/detail_gayabelajar/') . $gaya->id_gaya_belajar ?>" class="badge badge-info">Selengkapnya..</a>
-                                <!-- <?= anchor('front/detail_gayabelajar/' . $gaya->id_gaya_belajar, '<p>detail</p>') ?> -->
+
                             </div>
 
                         </div>
