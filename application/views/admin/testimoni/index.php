@@ -29,7 +29,7 @@
                             <td><?= $testimoni->testimoni ?></td>
                             <td>
                                 <a href="<?= base_url('admin/testimoni/edit/'). $testimoni->id_testimoni?>" class="badge badge-success">edit</a>
-                                <a href="" class="badge badge-danger">hapus</a>
+                                <a href="<?= base_url('admin/testimoni/hapus/'). $testimoni->id_testimoni?>" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
 
@@ -55,7 +55,7 @@
             </div>
             <div class="container">
 
-                <?= form_open_multipart(base_url('admin/testimoni/tambahtestimoni')) ?>    
+                <?= form_open_multipart(base_url('admin/testimoni/tambah')) ?>    
 
 
                     <div class="form-group">

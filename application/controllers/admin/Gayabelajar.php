@@ -70,7 +70,7 @@ class Gayabelajar extends CI_Controller
         $karakteristik          = $this->input->post('karakteristik');
         $icon                   = $this->input->post('icon');
         $tipe_kepribadian       = $this->input->post('tipe_kepribadian');
-        $tugas_yg_sesuai      = $this->input->post('tugas_yg_sesuai');
+        $tugas_yg_sesuai        = $this->input->post('tugas_yg_sesuai');
         $kemampuan_adaptif      = $this->input->post('kemampuan_adaptif');
         $kekuatan               = $this->input->post('kekuatan');
         $kelemahan              = $this->input->post('kelemahan');
