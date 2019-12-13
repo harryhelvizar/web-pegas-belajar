@@ -24,8 +24,8 @@
                     <h2 class="h4">Informasi Kontak</h2>
                 </div>
                 <div class="w-100"></div>
-                <div class="col-md-3">
-                    <p><span>Alamat :</span> Jl. Gunungsari | Makassar </p>
+                <div class="col-md-6">
+                    <p><span>Alamat :</span>Jalan Bonto Langkasa, Banta-Bantaeng, Rappocini, <br> Banta-Bantaeng, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222</p>
                 </div>
                 <div class="col-md-3">
                     <p><span>Telepon :</span> <a href="wa.me/6285240572160">0852 4057 2160</a></p>
@@ -59,8 +59,7 @@
                 </div>
 
                 <div class="col-md-6">
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8079449951083!2d119.48047831430029!3d-5.134606453374412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefccbf0918981%3A0x27e0f0eb440978c6!2sLorong%20Ali%20Hizaam%2C%20Tamalanrea%20Indah%2C%20Kec.%20Tamalanrea%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090245!5e0!3m2!1sid!2sid!4v1573766719636!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.599435474612!2d119.43065171412776!3d-5.167955853630409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee29211d15189%3A0x5232d0558e3d7ae5!2sProgram%20Pasca%20Sarjana%20Universitas%20Negeri%20Makassar!5e0!3m2!1sid!2sid!4v1575708015899!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
