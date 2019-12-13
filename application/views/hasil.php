@@ -11,7 +11,7 @@
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
 
-                    <div class="row mb-3" style="text-color: black;">
+                    <div class="row mb-3" style="color: black;">
                         <div class="col-md-6">
                             <div class="card bg-primary mb-3">
                                 <h3>Divergen</h3>
@@ -59,7 +59,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="card bg-primary mb-2">
-                                        <div class="ml-3 text-center">
+                                        <div class="ml-3">
                                             <h3 class="text-white">Nama : <?= $login->nama ?></h3>
                                             <h4 class="text-white">NIS : <?= $login->nis ?></h4>
                                             <h4 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h4>
