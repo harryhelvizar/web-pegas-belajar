@@ -59,18 +59,27 @@ class Front extends CI_Controller
         $kunciO = $this->input->post('kunciO');
         $kunciD = $this->input->post('kunciD');
         $kunciT = $this->input->post('kunciT');
+        $nilaimax = $this->input->post('nilaimax');
         
-        
-            $data = array(
-                'id_siswa' => $id_siswa,
-                'kunciF' => $kunciF,
-                'kunciO' => $kunciO,
-                'kunciT' => $kunciT,
-                'kunciD' => $kunciD
-                );
-            $hasil = $this->db->insert('jawaban', $data);
-            echo "<script> alert ('Data Sudah Berhasil disimpan'); </script>";
-            redirect(base_url(),'refresh');
+        $data = array(
+            'id_siswa' => $id_siswa,
+            'kunciF' => $kunciF,
+            'kunciO' => $kunciO,
+            'kunciT' => $kunciT,
+            'kunciD' => $kunciD
+            );
+        $hasil = $this->db->insert('jawaban', $data);
+
+            $data2['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+            //$this->db->where('id_gaya_belajar', $nilaimax);
+            //$data2['gaya'] = 
+            $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
+            
+            echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
+            
+            $this->load->view('hasil', $data2);
+            
+            //redirect(base_url(),'refresh');
             
     }
 

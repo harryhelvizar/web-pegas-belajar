@@ -563,19 +563,19 @@ $this->load->view('front/header');
             }
 
             var max = kunciF;
-            var nilaimax = "F";
+            var nilaimax = 1;
 
             if (max < kunciO) {
                 max = kunciO;
-                nilaimax = "O";
+                nilaimax = 2;
             }
             if (max < kunciT) {
                 max = kunciT;
-                nilaimax = "T";
+                nilaimax = 3;
             }
             if (max < kunciD) {
                 max = kunciD;
-                nilaimax = "D";
+                nilaimax = 4;
             }
 
             if (max == kunciF) {
