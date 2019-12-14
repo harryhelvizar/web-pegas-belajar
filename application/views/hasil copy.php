@@ -4,6 +4,50 @@
 <section class="hasil_section">
     <?php $this->load->view('front/navbar') ?>
 
+
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_2.jpg'); background-attachment:fixed; ">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
+
+                    <div class="row mb-3" style="text-color: black;">
+                        <div class="col-md-6">
+                            <div class="card bg-primary mb-3">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>50%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-warning">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>10%</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-warning mb-3">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>20%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-warning">
+                                <h3>Divergen</h3>
+                                <h3>Feeling / Reflector</h3>
+                                <h1>20%</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -27,13 +71,13 @@
                                 <div class="col-md-6 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Kekuatan</h3>
-                                        <p><?= $gaya->kekuatan ?></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Kelemahan</h3>
-                                        <p><?= $gaya->kelemahan ?></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
 
@@ -43,7 +87,7 @@
                                 <div class="col-md-4 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Tipe Kepribadian</h3>
-                                        <p><?= $gaya->tipe_kepribadian ?></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-center mt-2">
@@ -55,7 +99,7 @@
                                 <div class="col-md-4 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Kemampuan Adaptif</h3>
-                                        <p>kemampuan_adaptif</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +108,13 @@
                                 <div class="col-md-6 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Cara Belajar</h3>
-                                        <p><?= $gaya->cara_belajar ?></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Metode Mengajar Guru Yang sesuai</h3>
-                                        <p><?= $gaya->metode_guru ?></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
                                     </div>
                                 </div>
 
