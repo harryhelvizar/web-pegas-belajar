@@ -284,14 +284,17 @@ $this->load->view('front/header');
                                                 kunciD += i;
                                         }
 
+                                        var next = 0;
                                         $('#btn1_<?= $soal->id_soal ?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "A");
 
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn2_<?= $soal->id_soal ?>').click(function() {
@@ -299,8 +302,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "B");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn3_<?= $soal->id_soal ?>').click(function() {
@@ -308,8 +313,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "C");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn4_<?= $soal->id_soal ?>').click(function() {
@@ -317,8 +324,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "D");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
                                     </script>
 
@@ -530,7 +539,7 @@ $this->load->view('front/header');
     <script src="<?= base_url('assets/template/') ?>js/bootstrap-datepicker.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/jquery.timepicker.min.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=0"></script>
     <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
@@ -547,7 +556,7 @@ $this->load->view('front/header');
         <?php
         } ?>
         $('#lanjut_22').click(function() {
-            if (i == 4) {
+            if ((i == 4) && (next==1) ) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
                 $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
@@ -559,6 +568,7 @@ $this->load->view('front/header');
                 $('#kunciT').val(kunciT);
                 $('#kunciD').val(kunciD);
                 var id_siswa = $('#id_siswa').val();
+                next = 0;
             }
 
             var max = kunciF;
