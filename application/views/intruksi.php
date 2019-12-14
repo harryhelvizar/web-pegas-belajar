@@ -27,7 +27,10 @@
                             <ul style="list-style: none;">
                                 <h5>Tes ini terdiri atas beberapa pertanyaan yang berkaitan dengan aktivitas kamu dalam belajar, sehingga jawablah sesuai dengan kondisi kamu yang sebenarnya, dengan cara:</h5>
                                 <li>
+                                    <!-- <h5>Beri jawaban dengan menekan tombol <input class="btn btn-primary" type="button" style="border-radius: 100%; width:35px;"> pada sebelah kanan pilihan jawaban, dengan ketentuan sebagai berikut:</h5> -->
+
                                     <h5>Beri jawaban dengan menekan tombol <span class="btn btn-primary ">_</span> pada sebelah kanan pilihan jawaban, dengan ketentuan sebagai berikut:</h5>
+
                                     <h5> <strong>Nilai 4</strong> pada pernyataan yang <strong>sangat sesuai</strong> dengan diri anda</h5>
                                     <h5> <strong>Nilai 3</strong> pada pernyataan yang <strong>sesuai</strong> dengan diri anda</h5>
                                     <h5> <strong>Nilai 2</strong> pada pernyataan yang <strong>agak / kurang sesuai</strong> dengan diri anda</h5>

@@ -412,8 +412,8 @@ $this->load->view('front/header');
                         <div class="row">
                             <div class="col-md-6">
                                 <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
+                                    <div class="card bg-light mb-3 border-warning">
+                                        <div class="card-header bg-warning">
                                             <h5>Kekuatan</h5>
                                         </div>
                                         <div class="card-body">
