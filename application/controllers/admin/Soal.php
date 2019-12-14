@@ -39,4 +39,42 @@ class Soal extends CI_Controller
             redirect('admin/soal');
         }
     }
+
+    public function edit($id_soal)
+    {
+        $data['title'] = 'Edit Soal';
+        $data['contents'] = 'admin/soal/edit';
+        $where = array('id_soal' => $id_soal);
+        $data['soal'] = $this->my_model->edit_soal($where, 'soal')->result();
+
+        // $data['soal'] = $this->my_model->edit_soal($where, 'soal')->results();
+        $this->load->view('admin/index', $data);
+    }
+
+    public function update()
+    {
+        $id_soal        = $this->input->post('id_soal');
+        $soal           = $this->input->post('soal');    
+        $jawab_a        = $this->input->post('jawab_a');    
+        $jawab_b        = $this->input->post('jawab_b');    
+        $jawab_c        = $this->input->post('jawab_c');    
+        $jawab_d        = $this->input->post('jawab_d');   
+        
+        
+        $data = array(
+            'soal'             => $soal,
+            'jawab_a'          => $jawab_a,
+            'jawab_b'          => $jawab_b,
+            'jawab_c'          => $jawab_c,
+            'jawab_d'          => $jawab_d
+        );
+        $where = array(
+            'id_soal'          => $id_soal
+        );
+        $this->my_model->update_soal($where, $data, 'soal');
+
+        
+        redirect('admin/soal');
+        
+    }
 }

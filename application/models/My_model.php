@@ -43,7 +43,7 @@ class My_model extends CI_Model
         $this->db->update($table,$data);
     }
 
-
+    // edit testimoni
     public function edit_testimoni($where,$table)
     {
         return $this->db->get_where($table,$where);
@@ -54,6 +54,21 @@ class My_model extends CI_Model
         $this->db->where($where);
         $this->db->update($table,$data);
     }
+    // end edit testimoni
+
+
+    // edit soal
+    public function edit_soal($where,$table)
+    {
+        return $this->db->get_where($table,$where);
+    }
+
+    public function update_soal($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table,$data);
+    }
+    // end edit soal
 
     // model hapus
     public function hapus_data($where, $table){

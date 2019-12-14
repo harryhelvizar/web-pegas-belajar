@@ -27,7 +27,7 @@
                             <td><?= $soal->jawab_c ?></td>
                             <td><?= $soal->jawab_d ?></td>
                             <td>
-                                <a href="" class="badge badge-success">edit</a>
+                                <a href="<?= base_url('admin/soal/edit/'). $soal->id_soal; ?>" class="badge badge-success">edit</a>
                                 <a href="" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
