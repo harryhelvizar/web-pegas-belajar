@@ -284,14 +284,17 @@ $this->load->view('front/header');
                                                 kunciD += i;
                                         }
 
+                                        var next = 0;
                                         $('#btn1_<?= $soal->id_soal ?>').click(function() {
                                             $(this).val(i);
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "A");
 
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn2_<?= $soal->id_soal ?>').click(function() {
@@ -299,8 +302,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "B");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn3_<?= $soal->id_soal ?>').click(function() {
@@ -308,8 +313,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "C");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
 
                                         $('#btn4_<?= $soal->id_soal ?>').click(function() {
@@ -317,8 +324,10 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "D");
                                             i--;
-                                            if (i == 0)
+                                            if (i == 0){
                                                 i = 4;
+                                                next=1;
+                                            }
                                         });
                                     </script>
 
@@ -394,121 +403,6 @@ $this->load->view('front/header');
             </div>
         </div>
 
-        <section class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <div class="col-md-12">
-                        <div class="">
-                            <div class="card bg-light mb-3">
-                                <div class="card-body text-center">
-                                    <h5>Nama Lengkap : <?= $login->nama ?> </h5>
-                                    <h5>NIS : <?= $login->nis ?> </h5>
-                                    <h5>Asal Sekolah : <?= $login->asal_sekolah ?> </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3 border-warning">
-                                        <div class="card-header bg-warning">
-                                            <h5>Kekuatan</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Kelemahan</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Tipe Kepribadian</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Tugas Yang Sesuai</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Kemampuan Adaptif</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Cara Belajar</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row ">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 ">
-                                <div class=" mt-3">
-                                    <div class="card bg-light mb-3">
-                                        <div class="card-header">
-                                            <h5>Metode Mengajar Guru Yang Sesuai</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </section>
 
     <!-- loader -->
@@ -530,7 +424,7 @@ $this->load->view('front/header');
     <script src="<?= base_url('assets/template/') ?>js/bootstrap-datepicker.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/jquery.timepicker.min.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=0"></script>
     <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
@@ -547,7 +441,7 @@ $this->load->view('front/header');
         <?php
         } ?>
         $('#lanjut_22').click(function() {
-            if (i == 4) {
+            if ((i == 4) && (next==1) ) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
                 $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
@@ -559,6 +453,7 @@ $this->load->view('front/header');
                 $('#kunciT').val(kunciT);
                 $('#kunciD').val(kunciD);
                 var id_siswa = $('#id_siswa').val();
+                next = 0;
             }
 
             var max = kunciF;
