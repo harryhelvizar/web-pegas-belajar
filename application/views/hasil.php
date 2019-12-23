@@ -2,7 +2,7 @@
 <style>
     #chart {
         margin: 0 auto;
-        max-height: 200px;
+        /* max-height: 200px; */
     }
 </style>
 <body>
@@ -10,45 +10,49 @@
         <?php $this->load->view('front/navbar') ?>
         <section class="ftco-section">
             
-        <div class="container">
+            <!-- <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-10">
                         <div class="card pl-5 pr-5">
                             <div id="chart">
-                                <canvas id="myChart" width="200" height="200"></canvas>
+                                <canvas id="myChart" width="300" height="300"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-10">
                         <div class="card pl-5 pr-5">
-                            <div class="">
-                                <table class="table table-borderless">
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>:</th>
-                                        <th><?= $login->nama ?></th>
-                                    </tr>
-                                    <tr>
-                                        <th>NIS</th>
-                                        <th>:</th>
-                                        <th><?= $login->nis ?></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Asal Sekolah</th>
-                                        <th>:</th>
-                                        <th><?= $login->asal_sekolah ?></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Gaya Belajar</th>
-                                        <th>:</th>
-                                        <th><?= $gaya->nama_gaya_belajar ?></th>
-                                    </tr>
-                                </table>
-
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <th>Nama</th>
+                                            <th>:</th>
+                                            <th><?= $login->nama ?></th>
+                                        </tr>
+                                        <tr>
+                                            <th>NIS</th>
+                                            <th>:</th>
+                                            <th><?= $login->nis ?></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Asal Sekolah</th>
+                                            <th>:</th>
+                                            <th><?= $login->asal_sekolah ?></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Gaya Belajar</th>
+                                            <th>:</th>
+                                            <th><?= $gaya->nama_gaya_belajar ?></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-4" id="chart">
+                                    <canvas id="myChart" width="100%" height="100%"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,7 +193,7 @@
         var data = {
         labels: ['Divergen', 'Asimilasi', 'Kovergen', 'Akomodasi'],
         datasets: [{
-            label: 'Person : <?= $login->nama ?>',
+            label: 'Chart',
             backgroundColor: 'rgba(0,240,0,0.5)',
             data: [<?= $kunciF ?>, <?= $kunciO ?>, <?= $kunciT ?>, <?= $kunciD ?>]
             }
