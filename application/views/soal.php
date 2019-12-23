@@ -1,3 +1,10 @@
+<style>
+    #chart {
+        margin: 0 auto;
+        max-height: 200px;
+    }
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
@@ -292,9 +299,11 @@ $this->load->view('front/header');
 
                                             i--;
                                             if (i == 0){
-                                                i = 4;
                                                 next=1;
+                                                i = 4;
                                             }
+                                            else
+                                                next=0;
                                         });
 
                                         $('#btn2_<?= $soal->id_soal ?>').click(function() {
@@ -303,9 +312,11 @@ $this->load->view('front/header');
                                             cekQuestion(<?= $soal->id_soal ?>, "B");
                                             i--;
                                             if (i == 0){
-                                                i = 4;
                                                 next=1;
+                                                i = 4;
                                             }
+                                            else
+                                                next=0;
                                         });
 
                                         $('#btn3_<?= $soal->id_soal ?>').click(function() {
@@ -314,9 +325,11 @@ $this->load->view('front/header');
                                             cekQuestion(<?= $soal->id_soal ?>, "C");
                                             i--;
                                             if (i == 0){
-                                                i = 4;
                                                 next=1;
+                                                i = 4;
                                             }
+                                            else
+                                                next=0;
                                         });
 
                                         $('#btn4_<?= $soal->id_soal ?>').click(function() {
@@ -325,9 +338,11 @@ $this->load->view('front/header');
                                             cekQuestion(<?= $soal->id_soal ?>, "D");
                                             i--;
                                             if (i == 0){
-                                                i = 4;
                                                 next=1;
+                                                i = 4;
                                             }
+                                            else
+                                                next=0;
                                         });
                                     </script>
 
@@ -350,8 +365,8 @@ $this->load->view('front/header');
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                    <div class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
-
+                    <div id="chart" class="col-md-10 ftco-animate text-center" style="margin-top: 10px !important;">
+<?php /*
                         <div class="row mb-3" style="color: black;">
                             <div class="col-md-6">
                                 <div class="card bg-warning mb-3" id="feeling">
@@ -384,6 +399,9 @@ $this->load->view('front/header');
                                 </div>
                             </div>
                         </div>
+*/ ?>                        
+                         
+                        <canvas id="myChart" width="200" height="200"></canvas>
                         <div class="row">
                             <div class="col-md-12">
                                 <form action="<?= base_url() . "front/savejwb" ?>" method="post">
@@ -399,7 +417,12 @@ $this->load->view('front/header');
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <?php /*    
+                <div id="chart" class="col-md-10 ftco-animate text-center"> 
+                    <canvas id="myChart" width="200" height="200"></canvas>
+                </div>*/ ?>
+
             </div>
         </div>
 
@@ -428,13 +451,43 @@ $this->load->view('front/header');
     <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script>
+    
+    var data = {
+        labels: ['F', 'T', 'O', 'D'],
+        datasets: [{
+            label: 'Person 1',
+            backgroundColor: 'rgba(0,240,0,0.5)',
+            data: [kunciF, kunciT, kunciO, kunciD]
+            }
+            //,
+            // {
+            // label: 'Person 2',
+            // backgroundColor: 'rgba(0,0,240,0.5)',
+            // data: [3, 2, 1, 2, 2, 1, 3, 5]
+            // }
+                    ]
+        }
+
+        var ctx = document.getElementById("myChart");
+
+        var myRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: data
+        });
+
+    </script>
+
     <script>
         <?php for ($a = 1; $a <= 21; $a++) { ?>
 
             $('#lanjut_<?= $a ?>').click(function() {
-                if (i == 4) {
+                if ((i == 4) && (next==1))  {
                     $('#soal_<?= $a ?>').hide();
                     $('#soal_<?= $a + 1 ?>').show();
+                    next = 0;
                 }
             });
 

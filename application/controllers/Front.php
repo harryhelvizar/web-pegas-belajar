@@ -52,6 +52,8 @@ class Front extends CI_Controller
 
     public function savejwb()
     {
+        
+        $data2['title'] = 'Hasil Jawab - Pegas Belajar';
         $id_siswa = $this->input->post('id_siswa');
         $kunciF = $this->input->post('kunciF');
         $id_siswa =  $this->input->post('kunciF');

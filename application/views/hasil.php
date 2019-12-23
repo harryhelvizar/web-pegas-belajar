@@ -49,7 +49,7 @@
                                 <div class="col-md-4 text-center mt-2">
                                     <div class="card bg-primary text-white">
                                         <h3>Tugas Yang Sesuai</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nesciunt</p>
+                                        <p><?= $gaya->tugas_yg_sesuai ?></p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-center mt-2">
