@@ -1,10 +1,26 @@
 <?php $this->load->view('front/header') ?>
-
+<style>
+    #chart {
+        margin: 0 auto;
+        max-height: 200px;
+    }
+</style>
 <body>
     <section class="hasil_section">
         <?php $this->load->view('front/navbar') ?>
-
         <section class="ftco-section">
+            
+        <div class="container">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-10">
+                        <div class="card pl-5 pr-5">
+                            <div id="chart">
+                                <canvas id="myChart" width="200" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-10">
@@ -25,6 +41,11 @@
                                         <th>Asal Sekolah</th>
                                         <th>:</th>
                                         <th><?= $login->asal_sekolah ?></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Gaya Belajar</th>
+                                        <th>:</th>
+                                        <th><?= $gaya->nama_gaya_belajar ?></th>
                                     </tr>
                                 </table>
 
@@ -75,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header">
@@ -144,8 +165,6 @@
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
-
-
     <script src="<?= base_url('assets/template/') ?>js/jquery.min.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/jquery-migrate-3.0.1.min.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/popper.min.js"></script>
@@ -164,7 +183,34 @@
     </script>
     <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script>
+    
+        var data = {
+        labels: ['Divergen', 'Asimilasi', 'Kovergen', 'Akomodasi'],
+        datasets: [{
+            label: 'Person : <?= $login->nama ?>',
+            backgroundColor: 'rgba(0,240,0,0.5)',
+            data: [<?= $kunciF ?>, <?= $kunciO ?>, <?= $kunciT ?>, <?= $kunciD ?>]
+            }
+            //,
+            // {
+            // label: 'Person 2',
+            // backgroundColor: 'rgba(0,0,240,0.5)',
+            // data: [3, 2, 1, 2, 2, 1, 3, 5]
+            // }
+                    ]
+        }
 
+        var ctx = document.getElementById("myChart");
+
+        var myRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: data
+        });
+
+    </script>
+    
 </body>
 
 </html>

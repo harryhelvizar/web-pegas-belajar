@@ -52,7 +52,7 @@ class Front extends CI_Controller
 
     public function savejwb()
     {
-        
+        $this->output->enable_profiler(true);
         $data2['title'] = 'Hasil Jawab - Pegas Belajar';
         $id_siswa = $this->input->post('id_siswa');
         $kunciF = $this->input->post('kunciF');
@@ -63,14 +63,15 @@ class Front extends CI_Controller
         $kunciT = $this->input->post('kunciT');
         $nilaimax = $this->input->post('nilaimax');
 
-        $data = array(
+        $data2 = array(
             'id_siswa' => $id_siswa,
             'kunciF' => $kunciF,
             'kunciO' => $kunciO,
             'kunciT' => $kunciT,
             'kunciD' => $kunciD
         );
-        $hasil = $this->db->insert('jawaban', $data);
+
+        $hasil = $this->db->insert('jawaban', $data2);
 
         $data2['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         //$this->db->where('id_gaya_belajar', $nilaimax);
