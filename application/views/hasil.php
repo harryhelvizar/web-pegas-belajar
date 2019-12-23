@@ -1,92 +1,147 @@
 <?php $this->load->view('front/header') ?>
 
 <body>
-<section class="hasil_section">
-    <?php $this->load->view('front/navbar') ?>
+    <section class="hasil_section">
+        <?php $this->load->view('front/navbar') ?>
 
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-
-                <div class="col-md-12">
-                    <div class="row">
-
-                        <div class="col-md-12 bg-light p-5 ftco-animate">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card bg-primary mb-2">
-                                        <div class="ml-3 text-center">
-                                            <h3 class="text-white">Nama : <?= $login->nama ?></h3>
-                                            <h4 class="text-white">NIS : <?= $login->nis ?></h4>
-                                            <h4 class="text-white">Asal Sekolah : <?= $login->asal_sekolah ?></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Kekuatan</h3>
-                                        <p><?= $gaya->kekuatan ?></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Kelemahan</h3>
-                                        <p><?= $gaya->kelemahan ?></p>
-                                    </div>
-                                </div>
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-10">
+                        <div class="card pl-5 pr-5">
+                            <div class="">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>:</th>
+                                        <th><?= $login->nama ?></th>
+                                    </tr>
+                                    <tr>
+                                        <th>NIS</th>
+                                        <th>:</th>
+                                        <th><?= $login->nis ?></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Asal Sekolah</th>
+                                        <th>:</th>
+                                        <th><?= $login->asal_sekolah ?></th>
+                                    </tr>
+                                </table>
 
                             </div>
-
-                            <div class="row mt-3">
-                                <div class="col-md-4 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Tipe Kepribadian</h3>
-                                        <p><?= $gaya->tipe_kepribadian ?></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Tugas Yang Sesuai</h3>
-                                        <p><?= $gaya->tugas_yg_sesuai ?></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Kemampuan Adaptif</h3>
-                                        <p>kemampuan_adaptif</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-3">
-                                <div class="col-md-6 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Cara Belajar</h3>
-                                        <p><?= $gaya->cara_belajar ?></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-center mt-2">
-                                    <div class="card bg-primary text-white">
-                                        <h3>Metode Mengajar Guru Yang sesuai</h3>
-                                        <p><?= $gaya->metode_guru ?></p>
-                                    </div>
-                                </div>
-
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center mb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Kekuatan</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->kekuatan ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Kelemahan</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->kelemahan ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center mb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Tipe Kepribadian</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->tipe_kepribadian ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Tugas Yang Sesuai</h4>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->tugas_yg_sesuai ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center mb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Kemampuan Adaptif</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->kemampuan_adaptif ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Cara Belajar Yang Sesuai</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><?= $gaya->cara_belajar ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center mb-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Metode Mengajar Guru Yang Sesuai</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><?= $gaya->metode_guru ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </section>
 
-</section>
-
     <!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
