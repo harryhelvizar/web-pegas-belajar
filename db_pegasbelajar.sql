@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Des 2019 pada 22.26
+-- Waktu pembuatan: 24 Des 2019 pada 09.53
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -94,8 +94,10 @@ CREATE TABLE `gaya_belajar` (
 --
 
 INSERT INTO `gaya_belajar` (`id_gaya_belajar`, `nama_gaya_belajar`, `title`, `karakteristik`, `icon`, `tipe_kepribadian`, `tugas_yg_sesuai`, `kemampuan_adaptif`, `kekuatan`, `kelemahan`, `cara_belajar`, `metode_guru`, `date_created`) VALUES
-(11, 'Divergen', 'Feeling / Reflector', '<p>Gaya belajar Diverger&nbsp;merupakan kombinasi dari&nbsp;Concrete experience&nbsp;dan Reflection Observation,&nbsp;yaitu gaya belajar individu yang membentuk pengalaman belajar melalui menghayati sendiri secara konkret, kemudian mentransformasikan kedalam pengamatan reflektif. Siswa dengan tipe&nbsp;Diverger&nbsp;&nbsp;unggul dalam melihat situasi konkret dari banyak sudut pandang yang berbeda kemudian menghubungkan menjadi satu pandangan yang utuh. Kutub Feeling&nbsp;individu belajar melalui perasaan dengan menekankan segi-segi pengalaman konkret, lebih mementingkan relasi dengan sesama dan kepekaan terhadap perasaan orang lain. Individu cenderung lebih terbuka dan mampu beradaptasi terhadap perubahan yang dihadapinya dalam proses belajarnya.<br />\r\nGaya belajar ini senang merenungkan pengalaman dan mengamati dari berbagai perspektif. Mengumpulkan data, baik secara langsung maupun dari orang lain, dan lebih suka memikirkannya secara menyeluruh sebelum sampai pada sebuah kesimpulan. Pengumpulan dan analisis data yang menyeluruh tentang pengalaman dan peristiwa adalah penting sehingga mereka cenderung menunda mengambil kesimpulan. Mereka adalah orang-orang yang bijaksana yang suka mempertimbangkan semua sudut pandang dan implikasi yang mungkin terjadi sebelum begerak (berhati-hati). Pendekatannya pada setiap situasi adalah dengan &quot;mengamati&quot; dan bukan &quot;bertindak&quot;.<br />\r\nSiswa dengan tipe ini lebih menyukai tugas belajar yang menuntut menghasilkan ide-ide (<em>brainstorming</em>), gagasan dan biasanya juga menyukai mengumpulkan berbagai sumber informasi. Menyukai isu yang berkaitan dengan kesusastraan, budaya, sejarah, psikologi, pengembangan diri dan ilmu-ilmu sosial lainnya. Siswa dalam belajarnya biasanya lebih banyak bertanya &quot;Mengapa (<em>Why</em>)&quot;.</p>', 'flaticon-books', 'Introvert Feeling (IF), Reflector & Feeler', 'Personal Job (tugas atau pekerjaan yang berhubungan dengan orang lain, membangun hubungan interpersonal atau relasi sosial)', '- Valuing Skill (Kemampuan menilai dari berbagai sudut pandang)\r\n- Recognizing problem (Mampu mengenali sebuah permasalahan)', '- Kekuatan terbesar terletak pada kreativitas dan kemampuan imajinatif\r\n- Unggul dalam kemampuan untuk melihat situasi konkret dari banyak perspektif dan menghasilkan banyak ide (kreatif)\r\n- Menyukai tantangan dan mempelajari hal-hal yang baru\r\n- Memiliki kemampuan dalam membangun hubungan interpersonal, terbuka, pendengar, yang baik, dan mampu memahami orang lain\r\n- Memiliki kepekaan emosi yang tinggi \r\n- Mampu membangun hubungan yang persuasif kepada orang lain \r\n- Berhati-hati serta tidak langsung pada pengambilan keputusan \r\n- Teliti dan bijaksana', '- Cenderung lambat dalam mengambil keputusan\r\n- Cepat mengalami bosan, khusus nya pada hal-hal yang membutuhkan waktu lama ', 'Cenderung belajar dengan pertanyaan \"Mengapa (Why)\", sehingga cara belajar yang efektif untuk gaya belajar divergen adalah melalui proses mendengarkan (listening), berinteraksi (interaction), bertukar pikiran (sharing) dan mengamati (observing)', 'Dalam menghadapi gaya belajar divergen, guru sebaiknya berperan sebagai motivator atau inspirator. Metode mengajar yang cocok untuk diterapkan diantaranya ceramah, diskusi, kerja kelompok dan tanya jawab.', '2019-11-15 08:24:44'),
-(12, 'Asimilasi', 'Teoritis', '<p>Gaya belajar Asimilasi, adalah kombinasi <em>Konseptualisasi Abstrak&nbsp;</em>dan <em>Observasi Reflektif </em>gaya belajar individu yang menangani pengalaman melalui konseptualisasi secara abstrak dan mentransformasi ke dalam pengamatan reflektif. Individu ini terampil dalam mengolah banyak informasi serta menempatkannya ke dalam bentuk yang pasti dan logis. Memiliki minat yang tinggi&nbsp; pada ide-ide dan konsep abstrak. Secara umum, ia lebih mementingkan keunggulan logis sebuah teori daripada nilai praktisnya. Memiliki kelebihan dalam memahami berbagai sajian informasi serta merangkumnya dalam suatu format yang logis, singkat dan jelas.</p>\r\n\r\n<p>&nbsp;</p>', 'flaticon-books', 'Introvert Intuition (li), Observer & Theorist', 'Information Job (tugas atau pekerjaan yang berhubungan informasi, konsep, teori, perhitungan dan pengolahan data)', '- Thinking Skill (Kemampuan berpikir, analisa dan konseptual)\r\n- Defining Problems (Mampu menetapkan dan menjelaskan suatu permasalahan)', '- Kekuatan terbesar terletak pada kemampuan pemahaman terhadap berbagai sajian informasi dan data.\r\n- Mampu mengembangkan sebuah konsep teori dan membuat pemetaan konsep\r\n- Mampu merangkum sebuah informasi menjadi format yang logis, singkat dan jelas ji kak', '', '', '', '2019-11-24 06:47:58');
+(1, 'Divergen', 'Feeling / Reflector', '<p>Gaya belajar Diverger&nbsp;merupakan kombinasi dari&nbsp;Concrete experience&nbsp;dan Reflection Observation,&nbsp;yaitu gaya belajar individu yang membentuk pengalaman belajar melalui menghayati sendiri secara konkret, kemudian mentransformasikan kedalam pengamatan reflektif. Siswa dengan tipe&nbsp;Diverger&nbsp;&nbsp;unggul dalam melihat situasi konkret dari banyak sudut pandang yang berbeda kemudian menghubungkan menjadi satu pandangan yang utuh. Kutub Feeling&nbsp;individu belajar melalui perasaan dengan menekankan segi-segi pengalaman konkret, lebih mementingkan relasi dengan sesama dan kepekaan terhadap perasaan orang lain. Individu cenderung lebih terbuka dan mampu beradaptasi terhadap perubahan yang dihadapinya dalam proses belajarnya.<br />\r\nGaya belajar ini senang merenungkan pengalaman dan mengamati dari berbagai perspektif. Mengumpulkan data, baik secara langsung maupun dari orang lain, dan lebih suka memikirkannya secara menyeluruh sebelum sampai pada sebuah kesimpulan. Pengumpulan dan analisis data yang menyeluruh tentang pengalaman dan peristiwa adalah penting sehingga mereka cenderung menunda mengambil kesimpulan. Mereka adalah orang-orang yang bijaksana yang suka mempertimbangkan semua sudut pandang dan implikasi yang mungkin terjadi sebelum begerak (berhati-hati). Pendekatannya pada setiap situasi adalah dengan &quot;mengamati&quot; dan bukan &quot;bertindak&quot;.<br />\r\nSiswa dengan tipe ini lebih menyukai tugas belajar yang menuntut menghasilkan ide-ide (<em>brainstorming</em>), gagasan dan biasanya juga menyukai mengumpulkan berbagai sumber informasi. Menyukai isu yang berkaitan dengan kesusastraan, budaya, sejarah, psikologi, pengembangan diri dan ilmu-ilmu sosial lainnya. Siswa dalam belajarnya biasanya lebih banyak bertanya &quot;Mengapa (<em>Why</em>)&quot;.</p>', 'flaticon-books', 'Introvert Feeling (IF), Reflector & Feeler', 'Personal Job (tugas atau pekerjaan yang berhubungan dengan orang lain, membangun hubungan interpersonal atau relasi sosial)', '- Valuing Skill (Kemampuan menilai dari berbagai sudut pandang)\r\n- Recognizing problem (Mampu mengenali sebuah permasalahan)', '- Kekuatan terbesar terletak pada kreativitas dan kemampuan imajinatif\r\n- Unggul dalam kemampuan untuk melihat situasi konkret dari banyak perspektif dan menghasilkan banyak ide (kreatif)\r\n- Menyukai tantangan dan mempelajari hal-hal yang baru\r\n- Memiliki kemampuan dalam membangun hubungan interpersonal, terbuka, pendengar, yang baik, dan mampu memahami orang lain\r\n- Memiliki kepekaan emosi yang tinggi \r\n- Mampu membangun hubungan yang persuasif kepada orang lain \r\n- Berhati-hati serta tidak langsung pada pengambilan keputusan \r\n- Teliti dan bijaksana', '- Cenderung lambat dalam mengambil keputusan\r\n- Cepat mengalami bosan, khusus nya pada hal-hal yang membutuhkan waktu lama ', 'Cenderung belajar dengan pertanyaan \"Mengapa (Why)\", sehingga cara belajar yang efektif untuk gaya belajar divergen adalah melalui proses mendengarkan (listening), berinteraksi (interaction), bertukar pikiran (sharing) dan mengamati (observing)', 'Dalam menghadapi gaya belajar divergen, guru sebaiknya berperan sebagai motivator atau inspirator. Metode mengajar yang cocok untuk diterapkan diantaranya ceramah, diskusi, kerja kelompok dan tanya jawab.', '2019-12-13 21:45:42'),
+(2, 'Asimilasi', 'Teoritis', '<p>Gaya belajar Asimilasi, adalah kombinasi <em>Konseptualisasi Abstrak&nbsp;</em>dan <em>Observasi Reflektif </em>gaya belajar individu yang menangani pengalaman melalui konseptualisasi secara abstrak dan mentransformasi ke dalam pengamatan reflektif. Individu ini terampil dalam mengolah banyak informasi serta menempatkannya ke dalam bentuk yang pasti dan logis. Memiliki minat yang tinggi&nbsp; pada ide-ide dan konsep abstrak. Secara umum, ia lebih mementingkan keunggulan logis sebuah teori daripada nilai praktisnya. Memiliki kelebihan dalam memahami berbagai sajian informasi serta merangkumnya dalam suatu format yang logis, singkat dan jelas.</p>\r\n\r\n<p>&nbsp;</p>', 'flaticon-books', 'Introvert Intuition (li), Observer & Theorist', 'Information Job (tugas atau pekerjaan yang berhubungan informasi, konsep, teori, perhitungan dan pengolahan data)', '- Thinking Skill (Kemampuan berpikir, analisa dan konseptual)\r\n- Defining Problems (Mampu menetapkan dan menjelaskan suatu permasalahan)', '- Kekuatan terbesar terletak pada kemampuan pemahaman terhadap berbagai sajian informasi dan data.\r\n- Mampu mengembangkan sebuah konsep teori dan membuat pemetaan konsep\r\n- Mampu merangkum sebuah informasi menjadi format yang logis, singkat dan jelas ji kak', '', '', '', '2019-12-13 21:45:46'),
+(3, 'Kovergen', 'Thinker / Pragmatis', '<p>-</p>', '-', '-', '-', '-', '-', '-', '-', '', '2019-12-13 22:32:15'),
+(4, 'Akomodasi', 'Doer / Theorist', '<p>-</p>', '-', '-', '-', '-', '-', '-', '-', '', '2019-12-13 22:31:27');
 
 -- --------------------------------------------------------
 
@@ -126,6 +128,65 @@ CREATE TABLE `jawaban` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `jawaban`
+--
+
+INSERT INTO `jawaban` (`id_jawaban`, `id_siswa`, `kunciF`, `kunciO`, `kunciD`, `kunciT`, `created_at`, `updated_at`) VALUES
+(6, 1, 1, 3, 2, 4, '2019-12-13 22:04:16', '2019-12-13 22:04:16'),
+(7, 1, 1, 3, 2, 4, '2019-12-13 22:05:42', '2019-12-13 22:05:42'),
+(8, 2, 2, 3, 4, 1, '2019-12-13 22:08:55', '2019-12-13 22:08:55'),
+(9, 2, 2, 3, 4, 1, '2019-12-13 22:10:48', '2019-12-13 22:10:48'),
+(10, 2, 2, 3, 4, 1, '2019-12-13 22:12:20', '2019-12-13 22:12:20'),
+(11, 2, 2, 3, 4, 1, '2019-12-13 22:13:11', '2019-12-13 22:13:11'),
+(12, 2, 2, 3, 4, 1, '2019-12-13 22:14:06', '2019-12-13 22:14:06'),
+(13, 2, 2, 3, 4, 1, '2019-12-13 22:14:51', '2019-12-13 22:14:51'),
+(14, 2, 2, 3, 4, 1, '2019-12-13 22:17:11', '2019-12-13 22:17:11'),
+(15, 2, 2, 3, 4, 1, '2019-12-13 22:18:09', '2019-12-13 22:18:09'),
+(16, 2, 2, 3, 4, 1, '2019-12-13 22:18:49', '2019-12-13 22:18:49'),
+(17, 2, 2, 3, 4, 1, '2019-12-13 22:19:12', '2019-12-13 22:19:12'),
+(18, 2, 2, 3, 4, 1, '2019-12-13 22:20:28', '2019-12-13 22:20:28'),
+(19, 2, 2, 3, 4, 1, '2019-12-13 22:23:34', '2019-12-13 22:23:34'),
+(20, 2, 2, 3, 4, 1, '2019-12-13 22:27:21', '2019-12-13 22:27:21'),
+(21, 2, 2, 3, 4, 1, '2019-12-13 22:32:36', '2019-12-13 22:32:36'),
+(22, 2, 2, 3, 4, 1, '2019-12-13 22:34:00', '2019-12-13 22:34:00'),
+(23, 2, 2, 3, 4, 1, '2019-12-13 22:34:45', '2019-12-13 22:34:45'),
+(24, 2, 2, 4, 3, 1, '2019-12-14 03:56:34', '2019-12-14 03:56:34'),
+(25, 2, 2, 3, 4, 1, '2019-12-14 04:11:43', '2019-12-14 04:11:43'),
+(26, 1, 1, 4, 3, 2, '2019-12-23 14:02:31', '2019-12-23 14:02:31'),
+(27, 1, 1, 4, 3, 2, '2019-12-23 14:04:17', '2019-12-23 14:04:17'),
+(28, 1, 1, 4, 3, 2, '2019-12-23 14:06:39', '2019-12-23 14:06:39'),
+(29, 3, 3, 1, 2, 4, '2019-12-23 14:08:30', '2019-12-23 14:08:30'),
+(30, 3, 3, 1, 2, 4, '2019-12-23 14:11:00', '2019-12-23 14:11:00'),
+(31, 47, 47, 50, 62, 61, '2019-12-23 14:22:20', '2019-12-23 14:22:20'),
+(32, 47, 47, 50, 62, 61, '2019-12-23 14:24:05', '2019-12-23 14:24:05'),
+(33, 47, 47, 50, 62, 61, '2019-12-23 14:27:07', '2019-12-23 14:27:07'),
+(34, 47, 47, 50, 62, 61, '2019-12-23 14:29:33', '2019-12-23 14:29:33'),
+(35, 47, 47, 50, 62, 61, '2019-12-23 14:31:29', '2019-12-23 14:31:29'),
+(36, 47, 47, 50, 62, 61, '2019-12-23 14:32:06', '2019-12-23 14:32:06'),
+(37, 47, 47, 50, 62, 61, '2019-12-23 14:35:59', '2019-12-23 14:35:59'),
+(38, 47, 47, 50, 62, 61, '2019-12-23 14:36:31', '2019-12-23 14:36:31'),
+(39, 47, 47, 50, 62, 61, '2019-12-23 14:38:22', '2019-12-23 14:38:22'),
+(40, 47, 47, 50, 62, 61, '2019-12-23 14:38:53', '2019-12-23 14:38:53'),
+(41, 47, 47, 50, 62, 61, '2019-12-23 14:40:11', '2019-12-23 14:40:11'),
+(42, 47, 47, 50, 62, 61, '2019-12-23 14:40:51', '2019-12-23 14:40:51'),
+(43, 47, 47, 50, 62, 61, '2019-12-23 14:42:59', '2019-12-23 14:42:59'),
+(44, 47, 47, 50, 62, 61, '2019-12-23 14:44:22', '2019-12-23 14:44:22'),
+(45, 47, 47, 50, 62, 61, '2019-12-23 14:44:36', '2019-12-23 14:44:36'),
+(46, 47, 47, 50, 62, 61, '2019-12-23 14:45:48', '2019-12-23 14:45:48'),
+(47, 47, 47, 50, 62, 61, '2019-12-23 14:46:07', '2019-12-23 14:46:07'),
+(48, 47, 47, 50, 62, 61, '2019-12-23 14:46:32', '2019-12-23 14:46:32'),
+(49, 47, 47, 50, 62, 61, '2019-12-23 14:49:35', '2019-12-23 14:49:35'),
+(50, 47, 47, 50, 62, 61, '2019-12-23 14:51:02', '2019-12-23 14:51:02'),
+(51, 47, 47, 50, 62, 61, '2019-12-23 14:52:33', '2019-12-23 14:52:33'),
+(52, 47, 47, 50, 62, 61, '2019-12-23 14:54:42', '2019-12-23 14:54:42'),
+(53, 47, 47, 50, 62, 61, '2019-12-23 14:55:02', '2019-12-23 14:55:02'),
+(54, 47, 47, 50, 62, 61, '2019-12-23 14:56:35', '2019-12-23 14:56:35'),
+(55, 47, 47, 50, 62, 61, '2019-12-23 14:57:41', '2019-12-23 14:57:41'),
+(56, 47, 47, 50, 62, 61, '2019-12-23 15:00:35', '2019-12-23 15:00:35'),
+(57, 47, 47, 50, 62, 61, '2019-12-23 15:01:53', '2019-12-23 15:01:53'),
+(58, 47, 47, 50, 62, 61, '2019-12-23 15:02:26', '2019-12-23 15:02:26');
 
 -- --------------------------------------------------------
 
@@ -436,7 +497,7 @@ ALTER TABLE `admin_role`
 -- AUTO_INCREMENT untuk tabel `gaya_belajar`
 --
 ALTER TABLE `gaya_belajar`
-  MODIFY `id_gaya_belajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_gaya_belajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `hasil`
@@ -448,7 +509,7 @@ ALTER TABLE `hasil`
 -- AUTO_INCREMENT untuk tabel `jawaban`
 --
 ALTER TABLE `jawaban`
-  MODIFY `id_jawaban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_jawaban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT untuk tabel `kabupaten`
