@@ -9,6 +9,7 @@
 			<div class="row block-9">
 				<div class="col-md-8 pr-md-5" style="margin:auto">
 					<h4 class="mb-4">Silahkan Daftar!</h4>
+					<?= $this->session->flashdata('message') ?>
 					<form action="<?= base_url('siswa/auth/register') ?>" method="post">
 						<div class="row">
 							<div class="col-md-6">
