@@ -25,11 +25,11 @@
 
                             <td><?= $testimoni->jabatan ?></td>
 
-                            <td><?= $testimoni->foto ?></td>
+                            <td><img src="<?= base_url('assets/upload/testimoni/') . $testimoni->foto ?>" alt=""></td>
                             <td><?= $testimoni->testimoni ?></td>
                             <td>
-                                <a href="<?= base_url('admin/testimoni/edit/'). $testimoni->id_testimoni?>" class="badge badge-success">edit</a>
-                                <a href="<?= base_url('admin/testimoni/hapus/'). $testimoni->id_testimoni?>" class="badge badge-danger">hapus</a>
+                                <a href="<?= base_url('admin/testimoni/edit/') . $testimoni->id_testimoni ?>" class="badge badge-success">edit</a>
+                                <a href="<?= base_url('admin/testimoni/hapus/') . $testimoni->id_testimoni ?>" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
 
@@ -55,24 +55,21 @@
             </div>
             <div class="container">
 
-                <?= form_open_multipart(base_url('admin/testimoni/tambah')) ?>    
+                <?= form_open_multipart(base_url('admin/testimoni/tambah')) ?>
 
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="jabatan" id="jabatan" placeholder="Jabatan">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="testimoni" id="testimoni" cols="30" rows="3" placeholder="Penjelasan"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="file" class="form-control" name="foto" id="foto" placeholder="Foto">
-                    </div>
-                    <div class="form-group">
-                        <input type="date" class="form-control" name="date_created" id="date_created" placeholder="tanggal update">
-                    </div> 
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="jabatan" id="jabatan" placeholder="Jabatan">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="testimoni" id="testimoni" cols="30" rows="3" placeholder="Penjelasan"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="file" class="form-control" name="foto" id="foto" placeholder="Foto">
+                </div>
 
 
             </div>
@@ -82,7 +79,7 @@
             </div>
 
             <?= form_close() ?>
-                <!-- </form> -->
+            <!-- </form> -->
         </div>
     </div>
 </div>
