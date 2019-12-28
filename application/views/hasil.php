@@ -5,11 +5,12 @@
         /* max-height: 200px; */
     }
 </style>
+
 <body>
     <section class="hasil_section">
         <?php $this->load->view('front/navbar') ?>
         <section class="ftco-section">
-            
+
             <!-- <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-10">
@@ -44,7 +45,7 @@
                                             <th><?= $login->asal_sekolah ?></th>
                                         </tr>
                                         <tr>
-                                            <th>Gaya Belajar</th>
+                                            <th>Gaya Belajar Dominan</th>
                                             <th>:</th>
                                             <th><?= $gaya->nama_gaya_belajar ?></th>
                                         </tr>
@@ -105,7 +106,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>Tugas Yang Sesuai</h4>
-                                        
+
                                     </div>
                                     <div class="card-body">
                                         <p><?= $gaya->tugas_yg_sesuai ?></p>
@@ -189,21 +190,20 @@
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script>
-    
         var data = {
-        labels: ['Divergen', 'Asimilasi', 'Kovergen', 'Akomodasi'],
-        datasets: [{
-            label: 'Chart',
-            backgroundColor: 'rgba(0,240,0,0.5)',
-            data: [<?= $kunciF ?>, <?= $kunciO ?>, <?= $kunciT ?>, <?= $kunciD ?>]
-            }
-            //,
-            // {
-            // label: 'Person 2',
-            // backgroundColor: 'rgba(0,0,240,0.5)',
-            // data: [3, 2, 1, 2, 2, 1, 3, 5]
-            // }
-                    ]
+            labels: ['Divergen', 'Asimilasi', 'Kovergen', 'Akomodasi'],
+            datasets: [{
+                    label: 'Chart',
+                    backgroundColor: 'rgba(0,240,0,0.5)',
+                    data: [<?= $kunciF ?>, <?= $kunciO ?>, <?= $kunciT ?>, <?= $kunciD ?>]
+                }
+                //,
+                // {
+                // label: 'Person 2',
+                // backgroundColor: 'rgba(0,0,240,0.5)',
+                // data: [3, 2, 1, 2, 2, 1, 3, 5]
+                // }
+            ]
         }
 
         var ctx = document.getElementById("myChart");
@@ -212,9 +212,8 @@
             type: 'radar',
             data: data
         });
-
     </script>
-    
+
 </body>
 
 </html>

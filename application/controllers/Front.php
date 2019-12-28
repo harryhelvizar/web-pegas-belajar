@@ -78,7 +78,7 @@ class Front extends CI_Controller
         //$data2['gaya'] = 
         $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
 
-        echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
+        // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
 
         $this->load->view('hasil', $data2);
 

@@ -15,34 +15,34 @@
 							<div class="col-md-6">
 
 								<div class="form-group">
-									<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
+									<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap" required>
 								</div>
 
 								<div class="form-group">
-									<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+									<input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
 								</div>
 
 								<div class="form-group">
-									<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+									<input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 								</div>
 								<div class="form-group">
-									<input type="text" name="nis" id="nis" class="form-control" placeholder="Nomor Induk Siswa">
+									<input type="text" name="nis" id="nis" class="form-control" placeholder="Nomor Induk Siswa" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 
 								<div class="form-group">
-									<input type="text" name="asal_sekolah" id="asal_sekolah" class="form-control" placeholder="Asal Sekolah">
+									<input type="text" name="asal_sekolah" id="asal_sekolah" class="form-control" placeholder="Asal Sekolah" required>
 								</div>
 
 								<div class="form-group">
-									<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="Nomor HP">
+									<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="Nomor HP" required>
 								</div>
 								<div class="form-group">
-									<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir">
+									<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir" required>
 								</div>
 								<div class="form-group">
-									<input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control" placeholder="Tanggal Lahir">
+									<input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control" placeholder="Tanggal Lahir" required>
 								</div>
 							</div>
 						</div>
