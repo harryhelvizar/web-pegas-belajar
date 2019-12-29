@@ -261,7 +261,7 @@ $this->load->view('front/header');
                                                 <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
                                             </div>
                                             <div class="col-md-2">
-                                                <button type=reset id="reset" onclick="window.location.reload(true);" class="btn btn-danger">Reset</button>
+                                                <button type=button id="reset_<?= $soal->id_soal ?>"  class="btn btn-danger">Reset</button>
                                             </div>
                                             <div class="col-md-7">
                                                 <div class="col" style="text-align: right;">
@@ -339,6 +339,8 @@ $this->load->view('front/header');
                                             else
                                                 next=0;
                                         });
+
+
                                     </script>
 
                                 </div>
@@ -460,6 +462,25 @@ $this->load->view('front/header');
 
         <?php
         } ?>
+
+        <?php for ($a = 1; $a <= 22; $a++) { ?>
+
+            $('#reset_<?= $a ?>').click(function() {
+                $('#btn1_<?= $a ?>').removeAttr('disabled');
+                $('#btn2_<?= $a ?>').removeAttr('disabled');
+                $('#btn3_<?= $a ?>').removeAttr('disabled');
+                $('#btn4_<?= $a ?>').removeAttr('disabled');
+                
+                $('#btn1_<?= $a ?>').val('_');
+                $('#btn2_<?= $a ?>').val('_');
+                $('#btn3_<?= $a ?>').val('_');
+                $('#btn4_<?= $a ?>').val('_');
+                i=4;
+            });
+
+        <?php
+        } ?>
+
         $('#lanjut_22').click(function() {
             if ((i == 4) && (next==1) ) {
                 $('.soal_section').hide();
