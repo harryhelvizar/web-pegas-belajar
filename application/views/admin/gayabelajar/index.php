@@ -5,7 +5,7 @@
             <div class="card-body">
                 <a href="<?= base_url('admin/gayabelajar/tambah') ?>" type="button" class="btn btn-primary">Tambah Data</a>
             </div>
-            <table class="table">
+            <table class="table table-responsive">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
