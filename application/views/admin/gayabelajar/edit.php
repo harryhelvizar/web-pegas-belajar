@@ -42,7 +42,7 @@
 
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="<?= base_url('admin/gayabelajar') ?>" type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
             <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
 

@@ -6,11 +6,9 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nama</th>
-                        <th scope="col">Username</th>
                         <th scope="col">Email</th>
                         <th scope="col">NIS</th>
                         <th scope="col">Asal Sekolah</th>
-                        <th scope="col">Kabupaten</th>
                         <th scope="col">Nomor Hp</th>
                         <th scope="col">Tempat Lahir</th>
                         <th scope="col">Tanggal_lahir</th>
@@ -23,11 +21,9 @@
                         <tr>
                             <th scope="row"><?= $no++ ?></th>
                             <td><?= $siswa->nama ?></td>
-                            <td><?= $siswa->username ?></td>
                             <td><?= $siswa->email ?></td>
                             <td><?= $siswa->nis ?></td>
                             <td><?= $siswa->asal_sekolah ?></td>
-                            <td><?= $siswa->kabupaten ?></td>
                             <td><?= $siswa->no_hp ?></td>
                             <td><?= $siswa->tempat_lahir ?></td>
                             <td><?= $siswa->tanggal_lahir ?></td>

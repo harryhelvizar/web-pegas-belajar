@@ -1,5 +1,3 @@
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type='text/javascript' src='<?= base_url('assets/') ?>js/jquery.js'></script>
@@ -293,12 +291,11 @@ $this->load->view('front/header');
                                             cekQuestion(<?= $soal->id_soal ?>, "A");
 
                                             i--;
-                                            if (i == 0){
-                                                next=1;
+                                            if (i == 0) {
+                                                next = 1;
                                                 i = 4;
-                                            }
-                                            else
-                                                next=0;
+                                            } else
+                                                next = 0;
                                         });
 
                                         $('#btn2_<?= $soal->id_soal ?>').click(function() {
@@ -306,12 +303,11 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "B");
                                             i--;
-                                            if (i == 0){
-                                                next=1;
+                                            if (i == 0) {
+                                                next = 1;
                                                 i = 4;
-                                            }
-                                            else
-                                                next=0;
+                                            } else
+                                                next = 0;
                                         });
 
                                         $('#btn3_<?= $soal->id_soal ?>').click(function() {
@@ -319,12 +315,11 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "C");
                                             i--;
-                                            if (i == 0){
-                                                next=1;
+                                            if (i == 0) {
+                                                next = 1;
                                                 i = 4;
-                                            }
-                                            else
-                                                next=0;
+                                            } else
+                                                next = 0;
                                         });
 
                                         $('#btn4_<?= $soal->id_soal ?>').click(function() {
@@ -332,12 +327,11 @@ $this->load->view('front/header');
                                             $(this).attr('disabled', 'disabled');
                                             cekQuestion(<?= $soal->id_soal ?>, "D");
                                             i--;
-                                            if (i == 0){
-                                                next=1;
+                                            if (i == 0) {
+                                                next = 1;
                                                 i = 4;
-                                            }
-                                            else
-                                                next=0;
+                                            } else
+                                                next = 0;
                                         });
 
 
@@ -390,13 +384,13 @@ $this->load->view('front/header');
                             </div>
                             <div class="col-md-6">
                                 <div class="card bg-warning" id="doer">
-                                    <h3>Asimilasi</h3>
+                                    <h3>Akomodasi</h3>
                                     <!-- <h3>Feeling / Reflector</h3> -->
                                     <h1 id="nilaiDoer">0%</h1>
                                 </div>
                             </div>
-                        </div>                       
-                         
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12">
                                 <form action="<?= base_url() . "front/savejwb" ?>" method="post">
@@ -412,7 +406,7 @@ $this->load->view('front/header');
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <?php /*    
                 <div id="chart" class="col-md-10 ftco-animate text-center"> 
                     <canvas id="myChart" width="200" height="200"></canvas>
@@ -425,8 +419,8 @@ $this->load->view('front/header');
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
     </div>
 
     <script src="<?= base_url('assets/template/') ?>js/jquery-migrate-3.0.1.min.js"></script>
@@ -446,14 +440,14 @@ $this->load->view('front/header');
     <script src="<?= base_url('assets/template/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/template/') ?>js/main.js"></script>
 
-    
+
 
 
     <script>
         <?php for ($a = 1; $a <= 21; $a++) { ?>
 
             $('#lanjut_<?= $a ?>').click(function() {
-                if ((i == 4) && (next==1))  {
+                if ((i == 4) && (next == 1)) {
                     $('#soal_<?= $a ?>').hide();
                     $('#soal_<?= $a + 1 ?>').show();
                     next = 0;
@@ -482,7 +476,7 @@ $this->load->view('front/header');
         } ?>
 
         $('#lanjut_22').click(function() {
-            if ((i == 4) && (next==1) ) {
+            if ((i == 4) && (next == 1)) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
                 $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
