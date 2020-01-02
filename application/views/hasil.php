@@ -162,7 +162,12 @@
                 </div>
             </div>
 
+            <div class="container text-center mt-0 mb-5">
+                <a href="" class="btn btn-secondary">Export PDF</a>
+                <a href="" class="btn btn-primary">Print</a>
+            </div>
         </section>
+
 
     </section>
 
