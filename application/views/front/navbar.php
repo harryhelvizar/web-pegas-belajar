@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Beranda</a></li>
-                <li class="nav-item"><a href="#" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Panduan</a></li>
+                <li class="nav-item"><a target="_blank" href="<?= base_url('buku-panduan-pegas-belajar.pdf') ?>" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Panduan</a></li>
                 <li class="nav-item"><a href="<?= base_url('front/tentang') ?>" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Tentang</a></li>
                 <li class="nav-item"><a href="<?= base_url('front/kontak') ?>" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Kontak</a></li>
 
