@@ -43,9 +43,10 @@ class Front extends CI_Controller
         $data['siswa'] = $this->db->get('siswa')->num_rows();
         $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         // $data['kunci'] = $this->db->get('kunci')->result();
-        $data['soal'] = $this->db->get('soal', 22)->result();
+        $data['soal'] = $this->db->get('soal', 12)->result();
         $data['gaya_belajar'] = $this->db->get('gaya_belajar')->result();
-        $data['total_soal'] = $this->db->get('soal')->num_rows();
+        // $data['total_soal'] = $this->db->get('soal')->num_rows();
+        $data['total_soal'] = 12;
 
         $this->load->view('soal', $data);
     }
