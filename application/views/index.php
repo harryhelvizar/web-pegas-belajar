@@ -18,8 +18,11 @@
                             <div class="icon d-flex justify-content-center align-items-center mb-3"><span class="<?= $gaya->icon ?>"></span>
                             </div>
                             <div class="media-body px-3">
-                                <h3 class="heading"><?= $gaya->nama_gaya_belajar ?></h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quas.</p>
+                                <h3 class="heading mb-0"><?= $gaya->nama_gaya_belajar ?></h3>
+                                <div style="margin-top: 0; padding-top:0; height: 104px; overflow: hidden;">
+
+                                    <p><?= $gaya->karakteristik ?></p>
+                                </div>
                                 <a href="<?= base_url('front/detail_gayabelajar/') . $gaya->id_gaya_belajar ?>" class="badge badge-info">Selengkapnya..</a>
 
                             </div>
