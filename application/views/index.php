@@ -44,6 +44,7 @@
                     <div class="container">
                         <div class="row justify-content-center ">
                             <div class="col-md-10">
+                                <h3 class="text-white">Telah Melayani</h3>
                                 <div class="row">
 
                                     <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
