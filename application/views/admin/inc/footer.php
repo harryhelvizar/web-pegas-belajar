@@ -1,45 +1,57 @@
-<footer class="footer text-center">
-    All Rights Reserved <?= date('Y') ?>. Designed and Developed by <a href="https://pigidev.com">PigiDev</a>.
-</footer>
-<!-- ============================================================== -->
-<!-- End footer -->
-<!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- End Page wrapper  -->
-<!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- End Wrapper -->
-<!-- ============================================================== -->
-<!-- ============================================================== -->
-<!-- All Jquery -->
-<!-- ============================================================== -->
-<script src="<?= base_url('assets/admin/') ?>assets/libs/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap tether Core JavaScript -->
-<script src="<?= base_url('assets/admin/') ?>assets/libs/popper.js/dist/umd/popper.min.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/extra-libs/sparkline/sparkline.js"></script>
-<!--Wave Effects -->
-<script src="<?= base_url('assets/admin/') ?>dist/js/waves.js"></script>
-<!--Menu sidebar -->
-<script src="<?= base_url('assets/admin/') ?>dist/js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
-<script src="<?= base_url('assets/admin/') ?>dist/js/custom.min.js"></script>
-<!--This page JavaScript -->
-<!-- <script src="<?= base_url('assets/admin/') ?>dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/excanvas.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/jquery.flot.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/jquery.flot.time.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="<?= base_url('assets/admin/') ?>assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="<?= base_url('assets/admin/') ?>dist/js/pages/chart/chart-page-init.js"></script>
+<!-- jQuery -->
+<script src="<?= base_url('assets/admin/') ?>plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= base_url('assets/admin/') ?>plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="<?= base_url('assets/admin/') ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="<?= base_url('assets/admin/') ?>plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="<?= base_url('assets/admin/') ?>plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="<?= base_url('assets/admin/') ?>plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="<?= base_url('assets/admin/') ?>plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="<?= base_url('assets/admin/') ?>plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="<?= base_url('assets/admin/') ?>plugins/moment/moment.min.js"></script>
+<script src="<?= base_url('assets/admin/') ?>plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="<?= base_url('assets/admin/') ?>plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="<?= base_url('assets/admin/') ?>plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="<?= base_url('assets/admin/') ?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="<?= base_url('assets/admin/') ?>dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="<?= base_url('assets/admin/') ?>dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="<?= base_url('assets/admin/') ?>dist/js/demo.js"></script>
+
+<script src="<?= base_url('assets/admin/') ?>plugins/datatables/jquery.dataTables.js"></script>
+<script src="<?= base_url('assets/admin/') ?>plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- AdminLTE App -->
 
 
+<!-- page script -->
+<script>
+    $(function() {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+        });
+    });
+</script>
 
 </body>
 

@@ -1,46 +1,45 @@
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
-            </div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Soal</th>
-                        <th scope="col">Jawaban A</th>
-                        <th scope="col">Jawaban B</th>
-                        <th scope="col">Jawaban C</th>
-                        <th scope="col">Jawaban D</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
+<div class="card">
+    <div class="card-header">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Soal</th>
+                    <th>Jawaban A</th>
+                    <th>Jawaban B</th>
+                    <th>Jawaban C</th>
+                    <th>Jawaban D</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
                 <?php $no = 1; ?>
                 <?php foreach ($soal as $soal) : ?>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><?= $no++ ?></th>
-                            <td><?= $soal->soal ?></td>
-                            <td><?= $soal->jawab_a ?></td>
-                            <td><?= $soal->jawab_b ?></td>
-                            <td><?= $soal->jawab_c ?></td>
-                            <td><?= $soal->jawab_d ?></td>
-                            <td>
-                                <a href="<?= base_url('admin/soal/edit/'). $soal->id_soal; ?>" class="badge badge-success">edit</a>
-                                <a href="" class="badge badge-danger">hapus</a>
-                            </td>
-                        </tr>
+                    <tr>
+                        <th><?= $no++ ?></th>
+                        <td><?= $soal->soal ?></td>
+                        <td><?= $soal->jawab_a ?></td>
+                        <td><?= $soal->jawab_b ?></td>
+                        <td><?= $soal->jawab_c ?></td>
+                        <td><?= $soal->jawab_d ?></td>
+                        <td>
+                            <a href="<?= base_url('admin/soal/edit/') . $soal->id_soal; ?>" class="badge badge-success">edit</a>
+                            <a href="" class="badge badge-danger">hapus</a>
+                        </td>
+                    </tr>
 
-                    </tbody>
                 <?php endforeach; ?>
-            </table>
-        </div>
-
+            </tbody>
+        </table>
     </div>
+    <!-- /.card-body -->
 </div>
 
-<!-- Button trigger modal -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
