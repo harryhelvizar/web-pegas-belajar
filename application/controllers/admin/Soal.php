@@ -13,7 +13,7 @@ class Soal extends CI_Controller
     {
         $data['title'] = 'Soal - Pegas Belajar';
         $data['contents'] = 'admin/soal/index';
-        $data['soal'] = $this->db->get('soal')->result();
+        $data['soal'] = $this->db->get('soal',0,12)->result();
         $this->load->view('admin/index', $data);
     }
 

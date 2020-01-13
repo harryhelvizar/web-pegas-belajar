@@ -6,11 +6,11 @@
 <script>
     $(document).ready(function() {
         //sembunyikan semua div soal
-        for (var j = 2; j <= 22; j++)
+        for (var j = 2; j <= 12; j++)
             $('#soal_' + j).hide();
 
         $('.hasil_section').hide();
-        $('#lanjut_22').val("Selesai");
+        $('#lanjut_12').val("Selesai");
     });
 
     var question = {
@@ -95,77 +95,79 @@
             "B": "F",
             "C": "O",
             "D": "D",
-        },
-
-        13: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        14: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        15: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        16: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        17: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        18: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        19: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        20: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        21: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
-        },
-
-        22: {
-            "A": "F",
-            "B": "O",
-            "C": "T",
-            "D": "D",
         }
+        
+        // ,
+
+        // 13: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 14: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 15: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 16: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 17: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 18: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 19: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 20: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 21: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // },
+
+        // 22: {
+        //     "A": "F",
+        //     "B": "O",
+        //     "C": "T",
+        //     "D": "D",
+        // }
 
     };
 
@@ -444,7 +446,7 @@ $this->load->view('front/header');
 
 
     <script>
-        <?php for ($a = 1; $a <= 21; $a++) { ?>
+        <?php for ($a = 1; $a <= 11; $a++) { ?>
 
             $('#lanjut_<?= $a ?>').click(function() {
                 if ((i == 4) && (next == 1)) {
@@ -457,7 +459,7 @@ $this->load->view('front/header');
         <?php
         } ?>
 
-        <?php for ($a = 1; $a <= 22; $a++) { ?>
+        <?php for ($a = 1; $a <= 12; $a++) { ?>
 
             $('#reset_<?= $a ?>').click(function() {
                 $('#btn1_<?= $a ?>').removeAttr('disabled');
@@ -475,14 +477,19 @@ $this->load->view('front/header');
         <?php
         } ?>
 
-        $('#lanjut_22').click(function() {
+        $('#lanjut_12').click(function() {
             if ((i == 4) && (next == 1)) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
-                $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
-                $('#nilaiObserver').text(((kunciO / 88) * 100).toFixed(0) + " %");
-                $('#nilaiThinker').text(((kunciT / 88) * 100).toFixed(0) + " %");
-                $('#nilaiDoer').text(((kunciD / 88) * 100).toFixed(0) + " %");
+                var nilai_total = kunciF+kunciO+kunciT+kunciD;
+                $('#nilaiFeeling').text(((kunciF / nilai_total) * 100).toFixed(0) + " %");
+                $('#nilaiObserver').text(((kunciO / nilai_total) * 100).toFixed(0) + " %");
+                $('#nilaiThinker').text(((kunciT / nilai_total) * 100).toFixed(0) + " %");
+                $('#nilaiDoer').text(((kunciD / nilai_total) * 100).toFixed(0) + " %");
+                // $('#nilaiFeeling').text(((kunciF / 88) * 100).toFixed(0) + " %");
+                // $('#nilaiObserver').text(((kunciO / 88) * 100).toFixed(0) + " %");
+                // $('#nilaiThinker').text(((kunciT / 88) * 100).toFixed(0) + " %");
+                // $('#nilaiDoer').text(((kunciD / 88) * 100).toFixed(0) + " %");
                 $('#kunciF').val(kunciF);
                 $('#kunciO').val(kunciO);
                 $('#kunciT').val(kunciT);
