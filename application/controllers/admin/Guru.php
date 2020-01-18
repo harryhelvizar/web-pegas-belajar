@@ -12,7 +12,7 @@ class Guru extends CI_Controller
     public function index()
     {
         $data['title'] = 'Guru - Pegas Belajar';
-        $data['contents'] = 'admin/guru/index';
+        $data['contents'] = 'admin/guru/guru';
         $data['guru'] = $this->db->get('guru')->result();
         $this->load->view('admin/index', $data);
     }

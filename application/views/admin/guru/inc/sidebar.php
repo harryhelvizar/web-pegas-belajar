@@ -22,60 +22,10 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-
-                <li class="nav-item has-treeview menu-open">
-                    <a href="<?= base_url('admin/dashboard/') ?>" class="nav-link ">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Dashboard</p>
-                    </a>
-
-                </li>
                 <li class="nav-item">
-                    <a href="<?= base_url('admin/soal/') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>Soal</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/siswa/') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>Siswa</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/gayabelajar/') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>Gaya Belajar</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/testimoni') ?>" class="nav-link">
+                    <a href="<?= base_url('guru/profile') ?>" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
-                        <p>Testimoni</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/user/') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
-                        <p>Admin</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/konfigurasi/slider') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>Slider</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="<?= base_url('admin/guru') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>Guru</p>
+                        <p>Profile</p>
                     </a>
                 </li>
 
