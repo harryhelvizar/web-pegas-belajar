@@ -28,6 +28,7 @@ class Auth extends CI_Controller
         $password = $this->input->post('password');
 
         $user = $this->db->get_where('admin', ['email' => $email])->row_array();
+        $guru = $this->db->get_where('guru', ['email' => $email])->row_array();
 
         if ($user) {
             // jika email aktif
@@ -41,6 +42,29 @@ class Auth extends CI_Controller
 
                     $this->session->set_userdata($data);
                     if ($user['role_id'] == 1) {
+                        redirect('admin/dashboard');
+                    } else {
+                        redirect('admin/auth');
+                    }
+                } else {
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
+                    redirect('admin/auth');
+                }
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This Email has not been activated!</div>');
+                redirect('admin/auth');
+            }
+        } else if ($guru) {
+            if ($guru['is_active'] == 1) {
+                // cek password
+                if (password_verify($password, $guru['password'])) {
+                    $data = [
+                        'email' => $guru['email'],
+                        'role_id' => $guru['role_id']
+                    ];
+
+                    $this->session->set_userdata($data);
+                    if ($guru['role_id'] == 2) {
                         redirect('admin/dashboard');
                     } else {
                         redirect('admin/auth');
