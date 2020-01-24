@@ -27,10 +27,11 @@
 
 						<div class="form-group">
 							<input type="submit" value="Masuk" class="btn btn-primary py-3 px-5">
+
 						</div>
 					</form>
 
-					<p>Belum punya akun ? Silahkan <a href="<?= base_url('siswa/auth/register') ?>">Daftar</a></p>
+					<p>Belum punya akun ? Silahkan <a href="<?= base_url('siswa/auth/register') ?>">Daftar</a> atau <a href="<?= base_url('guru/register') ?>">Daftar Sebagai Guru</a></p>
 				</div>
 
 

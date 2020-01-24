@@ -65,7 +65,7 @@ class Auth extends CI_Controller
 
                     $this->session->set_userdata($data);
                     if ($guru['role_id'] == 2) {
-                        redirect('guru/guru');
+                        redirect('guru/profile');
                     } else {
                         redirect('admin/auth');
                     }

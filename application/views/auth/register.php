@@ -15,33 +15,41 @@
 							<div class="col-md-6">
 
 								<div class="form-group">
-									<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap" required>
+									<label for="nama">Nama Lengkap :</label>
+									<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Anda" required>
 								</div>
 
 								<div class="form-group">
+									<label for="">Email :</label>
 									<input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
 								</div>
 
 								<div class="form-group">
+									<label for="">Password :</label>
 									<input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 								</div>
 								<div class="form-group">
+									<label for="" class="form-label">Nomor Induk :</label>
 									<input type="text" name="nis" id="nis" class="form-control" placeholder="Nomor Induk Siswa" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 
 								<div class="form-group">
+									<label for="">Asal Sekolah :</label>
 									<input type="text" name="asal_sekolah" id="asal_sekolah" class="form-control" placeholder="Asal Sekolah" required>
 								</div>
 
 								<div class="form-group">
-									<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="Nomor HP" required>
+									<label for="">Nomor Hp :</label>
+									<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="+62" required>
 								</div>
 								<div class="form-group">
+									<label for="">Tempat Lahir :</label>
 									<input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir" required>
 								</div>
 								<div class="form-group">
+									<label for="">Tanggal Lahir :</label>
 									<input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control" placeholder="Tanggal Lahir" required>
 								</div>
 							</div>

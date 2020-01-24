@@ -71,6 +71,7 @@ class Auth extends CI_Controller
         $password = $this->input->post('password');
 
         $siswa = $this->db->get_where('siswa', ['email' => $email])->row_array();
+        $guru = $this->db->get_where('guru', ['email' => $email])->row_array();
 
         if ($siswa) {
             if (password_verify($password, $siswa['password'])) {
@@ -81,6 +82,29 @@ class Auth extends CI_Controller
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password Salah!</div>');
                 redirect('siswa/auth');
+            }
+        } else if ($guru) {
+            if ($guru['is_active'] == 1) {
+                // cek password
+                if (password_verify($password, $guru['password'])) {
+                    $data = [
+                        'email' => $guru['email'],
+                        'role_id' => $guru['role_id']
+                    ];
+
+                    $this->session->set_userdata($data);
+                    if ($guru['role_id'] == 2) {
+                        redirect('guru/profile');
+                    } else {
+                        redirect('admin/auth');
+                    }
+                } else {
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
+                    redirect('admin/auth');
+                }
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This Email has not been activated!</div>');
+                redirect('admin/auth');
             }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email Tidak Terdaftar!</div>');

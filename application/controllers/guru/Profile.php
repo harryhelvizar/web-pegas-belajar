@@ -13,7 +13,7 @@ class Profile extends CI_Controller
     {
         $data['title'] = 'Profile Guru - Pegas Belajar';
         $data['contents'] = 'admin/guru/profile';
-        $data['guru'] = $this->db->get('guru')->result();
+        $data['guru'] = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('admin/guru/index', $data);
     }
 }

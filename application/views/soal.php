@@ -96,7 +96,7 @@
             "C": "O",
             "D": "D",
         }
-        
+
         // ,
 
         // 13: {
@@ -187,6 +187,7 @@ $this->load->view('front/header');
 
     <section class="soal_section">
         <div class="container">
+
             <div class="row justify-content-center">
                 <div class="col-md-10">
 
@@ -196,7 +197,10 @@ $this->load->view('front/header');
                             <div id="soal_<?= $soal->id_soal ?>">
                                 <div class="col-md-12 bg-light p-5 ftco-animate">
                                     <div class="row pb-5">
-                                        <div class="col-12" style="text-align: right;">
+                                        <div class="col-6">
+                                            <h3 class="ml-3"><?= $login->nama ?></h3>
+                                        </div>
+                                        <div class="col-6" style="text-align: right;">
                                             <a href="<?= base_url() ?>" class="btn btn-danger">Keluar</a>
                                         </div>
                                     </div>
@@ -261,7 +265,7 @@ $this->load->view('front/header');
                                                 <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
                                             </div>
                                             <div class="col-md-2">
-                                                <button type=button id="reset_<?= $soal->id_soal ?>"  class="btn btn-danger">Reset</button>
+                                                <button type=button id="reset_<?= $soal->id_soal ?>" class="btn btn-danger">Reset</button>
                                             </div>
                                             <div class="col-md-7">
                                                 <div class="col" style="text-align: right;">
@@ -335,8 +339,6 @@ $this->load->view('front/header');
                                             } else
                                                 next = 0;
                                         });
-
-
                                     </script>
 
                                 </div>
@@ -466,12 +468,12 @@ $this->load->view('front/header');
                 $('#btn2_<?= $a ?>').removeAttr('disabled');
                 $('#btn3_<?= $a ?>').removeAttr('disabled');
                 $('#btn4_<?= $a ?>').removeAttr('disabled');
-                
+
                 $('#btn1_<?= $a ?>').val('_');
                 $('#btn2_<?= $a ?>').val('_');
                 $('#btn3_<?= $a ?>').val('_');
                 $('#btn4_<?= $a ?>').val('_');
-                i=4;
+                i = 4;
             });
 
         <?php
@@ -481,7 +483,7 @@ $this->load->view('front/header');
             if ((i == 4) && (next == 1)) {
                 $('.soal_section').hide();
                 $('.hasil_section').show();
-                var nilai_total = kunciF+kunciO+kunciT+kunciD;
+                var nilai_total = kunciF + kunciO + kunciT + kunciD;
                 $('#nilaiFeeling').text((Math.round((kunciF / nilai_total) * 100)).toFixed(0) + " %");
                 $('#nilaiObserver').text((Math.round((kunciO / nilai_total) * 100)).toFixed(0) + " %");
                 $('#nilaiThinker').text((Math.round((kunciT / nilai_total) * 100)).toFixed(0) + " %");

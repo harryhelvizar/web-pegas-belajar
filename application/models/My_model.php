@@ -32,46 +32,47 @@ class My_model extends CI_Model
         return $result['kabupatens'];
     }
 
-    public function edit_gaya($where,$table)
+    public function edit_gaya($where, $table)
     {
-        return $this->db->get_where($table,$where);
+        return $this->db->get_where($table, $where);
     }
 
     public function update_gaya($where, $data, $table)
     {
         $this->db->where($where);
-        $this->db->update($table,$data);
+        $this->db->update($table, $data);
     }
 
     // edit testimoni
-    public function edit_testimoni($where,$table)
+    public function edit_testimoni($where, $table)
     {
-        return $this->db->get_where($table,$where);
+        return $this->db->get_where($table, $where);
     }
 
     public function update_testimoni($where, $data, $table)
     {
         $this->db->where($where);
-        $this->db->update($table,$data);
+        $this->db->update($table, $data);
     }
     // end edit testimoni
 
 
     // edit soal
-    public function edit_soal($where,$table)
+    public function edit_soal($where, $table)
     {
-        return $this->db->get_where($table,$where);
+        return $this->db->get_where($table, $where);
     }
 
     public function update_soal($where, $data, $table)
     {
         $this->db->where($where);
-        $this->db->update($table,$data);
+        $this->db->update($table, $data);
     }
     // end edit soal
 
     // model hapus
-    public function hapus_data($where, $table){
+    public function hapus_data($where, $table)
+    {
         $this->db->where($where);
         $this->db->delete($table);
     }

@@ -8,14 +8,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-                <img src="<?= base_url('assets/admin/') ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-            </div>
-            <div class="info">
-                <a href="#" class="d-block"><?= $this->session->userdata('email') ?></a>
-            </div>
-        </div>
+
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -26,6 +19,13 @@
                     <a href="<?= base_url('guru/profile') ?>" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>Profile</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/kelas/tambah') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>Tambah Kelas</p>
                     </a>
                 </li>
 

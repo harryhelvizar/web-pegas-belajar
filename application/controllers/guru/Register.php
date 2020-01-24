@@ -1,31 +1,26 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Guru extends CI_Controller
+class Register extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        is_logged_in();
+        // is_logged_in();
     }
 
     public function index()
     {
-        $data['title'] = 'Guru - Pegas Belajar';
-        $data['contents'] = 'admin/guru/daftar-guru';
-        $data['guru'] = $this->db->get('guru')->result();
-        $this->load->view('admin/index', $data);
-    }
-
-    public function tambah()
-    {
         $this->form_validation->set_rules('nama_guru', 'Nama Guru', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Guru - Pegas Belajar';
-            $data['contents'] = 'admin/guru/tambah';
-            $data['guru'] = $this->db->get('guru')->result();
-            $this->load->view('admin/index', $data);
+
+            $data['title'] = 'Register Guru - Pegas Belajar';
+            // $data['contents'] = 'auth/register-guru';
+            // $data['guru'] = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row_array();
+            // $data['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+            $this->session->set_userdata($data);
+            $this->load->view('auth/register-guru', $data);
         } else {
             $data = [
                 'nama_guru' => $this->input->post('nama_guru'),
@@ -43,7 +38,7 @@ class Guru extends CI_Controller
 
             $this->db->insert('guru', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Guru baru telah ditambahkan!</div>');
-            redirect('admin/guru');
+            redirect('front');
         }
     }
 }
