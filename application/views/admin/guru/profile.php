@@ -7,7 +7,7 @@
                 <div class="card card-primary card-outline">
                     <div class="card-body box-profile">
                         <div class="text-center">
-                            <img class="profile-user-img img-fluid img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+                            <img class="profile-user-img img-fluid img-circle" src="<?= base_url('assets/admin/') ?>dist/img/user4-128x128.jpg" alt="User profile picture">
                         </div>
 
                         <h3 class="profile-username text-center"><?= $guru['nama_guru'] ?></h3>

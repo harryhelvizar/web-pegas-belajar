@@ -23,7 +23,7 @@ class Kelas extends CI_Controller
         $this->form_validation->set_rules('kode_kelas', 'Kode Kelas', 'trim|required');
 
         // $guru = $this->db->get('guru')->row();
-        $data['id_guru'] = $this->db->get_where('guru', ['id_guru' => $this->session->userdata('id_guru')])->row_array();
+        // $data['id_guru'] = $this->db->get_where('guru', ['id_guru' => $this->session->userdata('id_guru')])->row_array();
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Kelas - Pegas Belajar';
@@ -34,8 +34,8 @@ class Kelas extends CI_Controller
             $data = [
                 'nama_kelas' => htmlspecialchars($this->input->post('nama_kelas'), true),
                 'kode_kelas' => htmlspecialchars($this->input->post('email'), true),
-                // 'id_siswa' => 1,
-                'id_guru' => $data['id_guru'],
+                'id_siswa' => 1,
+                'id_guru' => $this->session->userdata('id_guru'),
                 'date_created' => time("Y/m/d H:iP")
             ];
 
