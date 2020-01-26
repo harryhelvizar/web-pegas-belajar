@@ -22,21 +22,22 @@ class Kelas extends CI_Controller
         $this->form_validation->set_rules('nama_kelas', 'Nama Kelas', 'trim|required');
         $this->form_validation->set_rules('kode_kelas', 'Kode Kelas', 'trim|required');
 
-        // $guru = $this->db->get('guru')->row();
-        // $data['id_guru'] = $this->db->get_where('guru', ['id_guru' => $this->session->userdata('id_guru')])->row_array();
+
+        $guru = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row_array();
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Kelas - Pegas Belajar';
             $data['contents'] = 'admin/kelas/tambah';
             $data['kelas'] = $this->db->get('kelas')->result();
+            $data['total_kelas'] = $this->db->get('kelas')->row();
             $this->load->view('admin/guru/index', $data);
         } else {
             $data = [
                 'nama_kelas' => htmlspecialchars($this->input->post('nama_kelas'), true),
-                'kode_kelas' => htmlspecialchars($this->input->post('email'), true),
+                'kode_kelas' => htmlspecialchars($this->input->post('kode_kelas'), true),
                 'id_siswa' => 1,
-                'id_guru' => $this->session->userdata('id_guru'),
-                'date_created' => time("Y/m/d H:iP")
+                'id_guru' => $guru['id_guru'],
+                'date_created' => time('Y/m/d H:iP')
             ];
 
             $this->db->insert('kelas', $data);

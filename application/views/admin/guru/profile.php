@@ -16,7 +16,7 @@
 
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                                <b>Kelas</b> <a class="float-right">1,322</a>
+                                <b>Kelas</b> <a class="float-right"><?= $total_kelas ?></a>
                             </li>
                             <li class="list-group-item">
                                 <b>Siswa</b> <a class="float-right">543</a>
@@ -39,9 +39,18 @@
                         <h4>Biodata Guru</h4>
                     </div>
                     <div class="card-body">
-                        <h5><b>Asal Sekolah :</b> <?= $guru['asal_sekolah'] ?></h5>
-                        <h5><b>Nomor Hp :</b> <?= $guru['no_hp'] ?></h5>
-                        <h5><b>Tempat Lahir :</b> <?= $guru['tempat_lahir'] ?></h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Asal Sekolah </h5>
+                                <h5>Nomor HP </h5>
+                                <h5>Tempat Lahir </h5>
+                            </div>
+                            <div class="col-md-5">
+                                <h5>: <?= $guru['asal_sekolah'] ?></h5>
+                                <h5>: <?= $guru['no_hp'] ?></h5>
+                                <h5>: <?= $guru['tempat_lahir'] ?></h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.nav-tabs-custom -->
