@@ -1,3 +1,9 @@
+<?php
+
+// $id_guru = $this->session->userdata('id_guru');
+// $kelas = $this->My_model->listKelas($id_guru);
+// echo print_r($id_guru);
+?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">

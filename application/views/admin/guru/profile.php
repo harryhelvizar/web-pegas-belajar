@@ -16,7 +16,7 @@
 
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                                <b>Kelas</b> <a class="float-right"><?= $total_kelas ?></a>
+                                <b>Kelas</b> <a class="float-right"><?php echo $total_kelas ?></a>
                             </li>
                             <li class="list-group-item">
                                 <b>Siswa</b> <a class="float-right">543</a>

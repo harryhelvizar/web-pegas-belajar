@@ -13,7 +13,7 @@ class Soal extends CI_Controller
     {
         $data['title'] = 'Soal - Pegas Belajar';
         $data['contents'] = 'admin/soal/index';
-        $data['soal'] = $this->db->get('soal',0,12)->result();
+        $data['soal'] = $this->db->get('soal', 0, 12)->result();
         $this->load->view('admin/index', $data);
     }
 
@@ -54,13 +54,13 @@ class Soal extends CI_Controller
     public function update()
     {
         $id_soal        = $this->input->post('id_soal');
-        $soal           = $this->input->post('soal');    
-        $jawab_a        = $this->input->post('jawab_a');    
-        $jawab_b        = $this->input->post('jawab_b');    
-        $jawab_c        = $this->input->post('jawab_c');    
-        $jawab_d        = $this->input->post('jawab_d');   
-        
-        
+        $soal           = $this->input->post('soal');
+        $jawab_a        = $this->input->post('jawab_a');
+        $jawab_b        = $this->input->post('jawab_b');
+        $jawab_c        = $this->input->post('jawab_c');
+        $jawab_d        = $this->input->post('jawab_d');
+
+
         $data = array(
             'soal'             => $soal,
             'jawab_a'          => $jawab_a,
@@ -73,8 +73,7 @@ class Soal extends CI_Controller
         );
         $this->my_model->update_soal($where, $data, 'soal');
 
-        
+
         redirect('admin/soal');
-        
     }
 }

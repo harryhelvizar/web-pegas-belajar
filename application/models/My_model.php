@@ -64,5 +64,11 @@ class My_model extends CI_Model
         $this->db->delete($table);
     }
 
-    
+    public function listKelas($id_guru)
+    {
+        $this->db->select('*')
+            ->from('kelas')
+            ->where('id_guru', $id_guru);
+        $this->db->get()->result();
+    }
 }

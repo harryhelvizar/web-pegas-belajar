@@ -60,6 +60,7 @@ class Auth extends CI_Controller
                 if (password_verify($password, $guru['password'])) {
                     $data = [
                         'email' => $guru['email'],
+                        'id_guru' => $guru['id_guru'],
                         'role_id' => $guru['role_id']
                     ];
 

@@ -26,10 +26,13 @@ class Kelas extends CI_Controller
         $guru = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row_array();
 
         if ($this->form_validation->run() == false) {
+            $id_guru = $this->session->userdata('id_guru');
+
             $data['title'] = 'Kelas - Pegas Belajar';
             $data['contents'] = 'admin/kelas/tambah';
-            $data['kelas'] = $this->db->get('kelas')->result();
-            $data['total_kelas'] = $this->db->get('kelas')->row();
+            $data['guru'] = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row_array();
+            $data['kelas'] = $this->db->get_where('kelas', ['id_guru' => $id_guru])->result();
+            $data['total_kelas'] = $this->db->get_where('kelas', ['id_guru' => $id_guru])->num_rows();
             $this->load->view('admin/guru/index', $data);
         } else {
             $data = [
