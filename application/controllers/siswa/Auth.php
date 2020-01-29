@@ -53,10 +53,13 @@ class Auth extends CI_Controller
                 'no_hp' => htmlspecialchars($this->input->post('no_hp', true)),
                 'tempat_lahir' => htmlspecialchars($this->input->post('tempat_lahir', true)),
                 'tanggal_lahir' => htmlspecialchars($this->input->post('tanggal_lahir', true)),
+                'kode_kelas' => htmlspecialchars($this->input->post('kode_kelas', true)),
                 'foto' => 'deafult.jpg',
                 'date_created' => time("Y/m/d H:iP")
 
             ];
+
+
 
             // menambahkan data ke tabel user
             $this->db->insert('siswa', $data);

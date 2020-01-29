@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row block-9">
 				<div class="col-md-8 pr-md-5" style="margin:auto">
-					<h4 class="mb-4">Silahkan Daftar!</h4>
+					<h4 class="mb-4">Silahkan Daftar Siswa!</h4>
 					<?= $this->session->flashdata('message') ?>
 					<form action="<?= base_url('siswa/auth/register') ?>" method="post">
 						<div class="row">
@@ -54,6 +54,14 @@
 								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="">Kode Kelas :</label>
+									<input type="text" name="kode_kelas" id="kode_kelas" autocomplete="on" class="form-control" placeholder="Masukkan Kode Kelas" required>
+								</div>
+							</div>
+						</div>
 						<div class="form-group">
 							<input type="submit" value="Daftar" class="btn btn-primary py-3 px-5">
 						</div>
@@ -61,8 +69,6 @@
 
 					<p>Sudah punya akun ? Silahkan <a href="<?= base_url('siswa/auth') ?>">Masuk</a></p>
 				</div>
-
-
 
 			</div>
 		</div>
