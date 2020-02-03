@@ -14,8 +14,14 @@
                 <li class="nav-item"><a href="<?= base_url('front/kontak') ?>" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'">Kontak</a></li>
 
                 <?php if ($login) { ?>
-                    <li class="nav-item"><a href="#" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'"><?= $login->nama ?></a></li>
-                    <li class="nav-item"><a href="<?= base_url('siswa/auth/logout') ?>" class="nav-link" style="color: #E36C0A">Keluar</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'"><?= $login->nama ?></a>
+                        <div class="dropdown-menu">
+                            <a href="<?= base_url('siswa/profile') ?>" class="dropdown-item">Profile</a>
+                            <a href="<?= base_url('siswa/auth/logout') ?>" class="dropdown-item" style="color: #E36C0A">Keluar</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item"><a href="">Keluar</a></li> -->
                 <?php } else { ?>
                     <li class="nav-item"><a href="<?= base_url('siswa/auth') ?>" class="nav-link" style="color: #E36C0A">Masuk</a></li>
                 <?php } ?>
