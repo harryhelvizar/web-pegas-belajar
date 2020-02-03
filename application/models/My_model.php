@@ -67,7 +67,7 @@ class My_model extends CI_Model
     public function listKelas($id_guru, $id)
     {
         $this->db->select('kelas.kode_kelas, kelas.id_guru, siswa.nama AS nama, siswa.tempat_lahir, siswa.tanggal_lahir AS ttl, siswa.id_siswa, siswa.email, siswa.nis, siswa.asal_sekolah, siswa.no_hp, kelas.id_kelas ')
-            ->where("kelas.id_kelas = $id AND kelas.id_guru = $id_guru " )
+            ->where("kelas.id_kelas = $id AND kelas.id_guru = $id_guru ")
             ->join('siswa', 'siswa.kode_kelas = kelas.kode_kelas')
             // ->join('guru', 'siswa.kode_kelas = kelas.kode_kelas')
             ->from('kelas');

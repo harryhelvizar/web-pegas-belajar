@@ -10,7 +10,7 @@
                             <img class="profile-user-img img-fluid img-circle" src="<?= base_url('assets/admin/') ?>dist/img/user4-128x128.jpg" alt="User profile picture">
                         </div>
 
-                        <h3 class="profile-username text-center"><?= $guru['id_guru'] ?></h3>
+                        <h3 class="profile-username text-center"><?= $guru['nama_guru'] ?></h3>
 
                         <p class="text-muted text-center"><?= $guru['email'] ?></p>
 
