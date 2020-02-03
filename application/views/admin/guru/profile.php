@@ -10,7 +10,7 @@
                             <img class="profile-user-img img-fluid img-circle" src="<?= base_url('assets/admin/') ?>dist/img/user4-128x128.jpg" alt="User profile picture">
                         </div>
 
-                        <h3 class="profile-username text-center"><?= $guru['nama_guru'] ?></h3>
+                        <h3 class="profile-username text-center"><?= $guru['id_guru'] ?></h3>
 
                         <p class="text-muted text-center"><?= $guru['email'] ?></p>
 
@@ -50,6 +50,10 @@
                                 <h5>: <?= $guru['no_hp'] ?></h5>
                                 <h5>: <?= $guru['tempat_lahir'] ?></h5>
                             </div>
+
+                        </div>
+                        <div class="row">
+                            <a href="<?= base_url('admin/kelas/tambah') ?>" class="btn btn-small btn-success">Tambah</a>
                         </div>
                     </div>
                 </div>

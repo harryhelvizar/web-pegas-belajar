@@ -64,11 +64,21 @@ class My_model extends CI_Model
         $this->db->delete($table);
     }
 
-    public function listKelas($id_guru)
+    public function listKelas($id_guru, $id)
     {
-        $this->db->select('*')
-            ->from('kelas')
-            ->where('id_guru', $id_guru);
-        $this->db->get()->result();
+        $this->db->select('kelas.kode_kelas, kelas.id_guru, siswa.nama AS nama, siswa.tempat_lahir, siswa.tanggal_lahir AS ttl, siswa.id_siswa, siswa.email, siswa.nis, siswa.asal_sekolah, siswa.no_hp, kelas.id_kelas ')
+            ->where("kelas.id_kelas = $id AND kelas.id_guru = $id_guru " )
+            ->join('siswa', 'siswa.kode_kelas = kelas.kode_kelas')
+            // ->join('guru', 'siswa.kode_kelas = kelas.kode_kelas')
+            ->from('kelas');
+        return $this->db->get();
     }
+
+    // public function get_by_kode_kelas()
+    // {
+    //     $this->db->select('*')
+    //         ->from('kelas')
+    //         ->where('id_guru', $id_guru);
+    //     $this->db->get()->result();
+    // }
 }

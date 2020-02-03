@@ -48,7 +48,9 @@
 
                         <?php foreach ($kelas as $kelas) : ?>
                             <li class="nav-item">
-                                <a href="<?= base_url('guru/daftarsiswa') ?>" class="nav-link">
+                           
+                                <a href="<?= base_url("guru/daftarsiswa/index/$kelas->id_kelas") ?>" class="nav-link">
+                                    
                                     <p><?= $kelas->nama_kelas ?></p>
                                 </a>
                             </li>

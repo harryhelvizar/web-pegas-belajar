@@ -16,15 +16,16 @@
             </thead>
             <tbody>
                 <?php $no = 1 ?>
-                <?php foreach ($siswa as $siswa) : ?>
+               
+                <?php foreach ($siswa as $row) : ?>
                     <tr>
                         <th><?= $no++ ?></th>
-                        <td><?= $siswa->nama ?></td>
-                        <td><?= $siswa->email ?></td>
-                        <td><?= $siswa->asal_sekolah ?></td>
-                        <td><?= $siswa->no_hp ?></td>
-                        <td><?= $siswa->tempat_lahir ?></td>
-                        <td><?= $siswa->tanggal_lahir ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['email'] ?></td>
+                        <td><?= $row['asal_sekolah'] ?></td>
+                        <td><?= $row['no_hp'] ?></td>
+                        <td><?= $row['tempat_lahir'] ?></td>
+                        <td><?= $row['ttl'] ?></td>
                         <td>
                             <a href="" class="badge badge-success">edit</a>
                             <a href="" class="badge badge-danger">hapus</a>

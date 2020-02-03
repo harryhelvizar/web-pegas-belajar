@@ -11,17 +11,6 @@
         <?php $this->load->view('front/navbar') ?>
         <section class="ftco-section">
 
-            <!-- <div class="container">
-                <div class="row justify-content-center mb-3">
-                    <div class="col-md-10">
-                        <div class="card pl-5 pr-5">
-                            <div id="chart">
-                                <canvas id="myChart" width="300" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-10">
@@ -163,7 +152,7 @@
             </div>
 
             <div class="container text-center mt-0 mb-5">
-                <a href="" class="btn btn-secondary">Export PDF</a>
+                <a href="<?= base_url('data/print/' . $gaya->id_gaya_belajar. '/I')  ?>" class="btn btn-secondary">Export PDF</a>
                 <a href="" class="btn btn-primary">Print</a>
             </div>
         </section>

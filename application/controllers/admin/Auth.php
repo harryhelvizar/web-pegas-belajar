@@ -63,6 +63,7 @@ class Auth extends CI_Controller
                         'id_guru' => $guru['id_guru'],
                         'role_id' => $guru['role_id']
                     ];
+                    
 
                     $this->session->set_userdata($data);
                     if ($guru['role_id'] == 2) {

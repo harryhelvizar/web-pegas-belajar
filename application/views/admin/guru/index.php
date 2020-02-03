@@ -34,6 +34,7 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+        
         <footer class="main-footer">
             <strong>Copyright &copy; <?= date('Y') ?> <a href="http://pegasbelajar.com">Pegas Belajar</a>.</strong>
             All rights reserved.

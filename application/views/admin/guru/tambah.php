@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
+        <?= $this->session->flashdata('error');?>
+        
             <form role="form" method="post" action="<?= base_url('admin/guru/tambah') ?>">
                 <div class="card-body">
 
