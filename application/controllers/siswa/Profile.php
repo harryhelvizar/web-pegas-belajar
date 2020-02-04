@@ -8,6 +8,8 @@ class Profile extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        // is_logged_in();
+        siswa_login();
         $this->load->model('My_model');
     }
 

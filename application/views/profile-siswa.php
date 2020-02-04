@@ -4,16 +4,26 @@
 
     <?php $this->load->view('front/navbar') ?>
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed; max-height: 300px; ">
-        <div class="overlay"></div>
-        <div class="container ">
-            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                <div class="col-md-8 ftco-animate text-center" style="margin-top: 10px !important;">
-                    <h1 class="bread">Tentang Kami</h1>
+    <section class="ftco-section">
+
+        <div class="container">
+            <div class="">
+                <div class="">
+                    <div class="container">
+                        <div class="row bg-light">
+                            <div class="col-md-4 mt-5">
+                                <h2>Haloo</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="<?= base_url('assets/template/') ?>images/pegasbelajar.jpg" height="255" width="250" class="mb-5" style="border-radius: 50%">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="ftco-section">
         <div class="container">
