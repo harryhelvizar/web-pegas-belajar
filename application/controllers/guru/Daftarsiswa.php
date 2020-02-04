@@ -25,8 +25,10 @@ class Daftarsiswa extends CI_Controller
         // die;
         // $kode_kelas = $this->db->get('kelas')->
         $data['title'] = 'Daftar Siswa - Pegas Belajar';
-        $data['siswa'] = $this->my_model->listKelas($id_guru,$id_kelas)->result_array();
+        $data['siswa'] = $this->my_model->listKelas($id_guru,$id_kelas)->result();
         ;
+
+        
 
 
 
