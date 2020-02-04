@@ -131,306 +131,54 @@ class Data extends CI_Controller {
     public function print($tipebelajar, $tipepdf)
 
     {
-         
 
       $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-      $pdf->setPrintFooter(false);
-      $pdf->setPrintHeader(false);
+      // $pdf->setPrintFooter(false);
+      // $pdf->setPrintHeader(false);
       $pdf->SetAutoPageBreak(true, PDF_MARGIN_BOTTOM);
       $pdf->AddPage('');
-      $pdf->Write(0, 'Simpan ke PDF - Pegasbelajar.com', '', 0, 'L', true, 0, false, false, 0);
+      // $pdf->Write(0, 'Hasil Tes - Pegasbelajar.com', '', 0, 'L', true, 0, false, false, 0);
       $pdf->SetFont('');
       
+      // set header and footer fonts
+      $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+      $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 
       $login = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
       $gaya = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $tipebelajar])->row();
      
-     
-      // $stringHTML = "
-      //       <body>
-      //       <section class='hasil_section'>
-      //             <section class='ftco-section'>
-      //                   <div class='container'>
-      //                   <div class='row justify-content-center mb-3'>
-      //                         <div class='col-md-10'>
-      //                               <div class='card pl-5 pr-5'>
-      //                               <div class='row'>
-      //                                     <div class='col-md-8'>
-      //                                           <table class='table table-borderless'>
-      //                                           <tr>
-      //                                                 <th>Nama</th>
-      //                                                 <th>:</th>
-      //                                                 <th>". $login->nama . "</th>
-      //                                           </tr>
-      //                                           <tr>
-      //                                                 <th>NIS</th>
-      //                                                 <th>:</th>
-      //                                                 <th>". $login->nis . "</th>
-      //                                           </tr>
-      //                                           <tr>
-      //                                                 <th>Asal Sekolah</th>
-      //                                                 <th>:</th>
-      //                                                 <th>" . $login->asal_sekolah . "</th>
-      //                                           </tr>
-      //                                           <tr>
-      //                                                 <th>Gaya Belajar Dominan</th>
-      //                                                 <th>:</th>
-      //                                                 <th>" . $gaya->nama_gaya_belajar  . "</th>
-      //                                           </tr>
-      //                                           </table>
-      //                                     </div>
-      //                               </div>
-      //                               </div>
-      //                         </div>
-      //                   </div>
-      //                   </div>
-      //                   <div class='container'>
-      //                   <div class='row justify-content-center'>
-      //                         <div class='col-md-10 text-center mb-3'>
-      //                               <div class='row'>
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                           <h4>Kekuatan</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                           <p>". $gaya->kekuatan  . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                           <h4>Kelemahan</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                           <p>".  $gaya->kelemahan . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-      //                               </div>
-      //                         </div>
-      //                   </div>
-      //                   </div>
-      //                   <div class='container'>
-      //                   <div class='row justify-content-center'>
-      //                         <div class='col-md-10 text-center mb-3'>
-      //                               <div class='row'>
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                           <h4>Tipe Kepribadian</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                           <p>" . $gaya->tipe_kepribadian . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-
-
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                                 <h4>Tugas Yang Sesuai</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                                 <p>" . $gaya->tugas_yg_sesuai . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-      //                               </div>
-      //                         </div>
-      //                   </div>
-      //                   </div>
-
-
-      //                   <div class='container'>
-      //                   <div class='row justify-content-center'>
-      //                         <div class='col-md-10 text-center mb-3'>
-      //                               <div class='row'>
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                           <h4>Kemampuan Adaptif</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                                 <p>" . $gaya->kemampuan_adaptif . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-      //                               <div class='col-md-6'>
-      //                                     <div class='card'>
-      //                                           <div class='card-header'>
-      //                                                 <h4>Cara Belajar Yang Sesuai</h4>
-      //                                           </div>
-      //                                           <div class='card-body'>
-      //                                                 <p>" .  $gaya->cara_belajar . "</p>
-      //                                           </div>
-      //                                     </div>
-      //                               </div>
-      //                               </div>
-      //                         </div>
-      //                   </div>
-      //                   </div>
-
-
-      //                   <div class='container'>
-      //                   <div class='row justify-content-center'>
-      //                         <div class='col-md-10 text-center mb-5'>
-      //                               <div class='card'>
-      //                               <div class='card-header'>
-      //                                     <h4>Metode Mengajar Guru Yang Sesuai</h4>
-      //                               </div>
-      //                               <div class='card-body'>
-      //                                     <p>" . $gaya->metode_guru . "</p>
-      //                               </div>
-      //                               </div>
-      //                         </div>
-      //                   </div>
-      //                   </div>
-      //             </section>
-
-
-
-
-      //       </section>
-
-
-      //       <!-- loader -->
-      //       <div id='ftco-loader' class='show fullscreen'><svg class='circular' width='48px' height='48px'>
-      //                   <circle class='path-bg' cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee' />
-      //                   <circle class='path' cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00' /></svg></div>
-
-
-
-      //       </body>
-
-
-      //       </html>
-
-      // ";
-
+      $gayabelajar = ['Divergen', 'Asimilasi', 'Kovergen', 'Akomodasi'];
+      
       $stringHTML = "
-<html>
-      <head>
-              <title>CSS Template</title>
-              <meta charset='utf-8'>
-              <meta name='viewport' content='width=device-width, initial-scale=1'>
-              <style>
-              * {
-                box-sizing: border-box;
-              }
-              
-              body {
-                font-family: Arial, Helvetica, sans-serif;
-              }
-              
-              /* Style the header */
-              header {
-                background-color: #666;
-                padding: 30px;
-                text-align: center;
-                font-size: 35px;
-                color: white;
-              }
-              
-              /* Create two columns/boxes that floats next to each other */
-              nav {
-                float: left;
-                width: 30%;
-                height: 300px; /* only for demonstration, should be removed */
-                background: #ccc;
-                padding: 20px;
-              }
-              
-              /* Style the list inside the menu */
-              nav ul {
-                list-style-type: none;
-                padding: 0;
-              }
-              
-              article {
-                padding: 20px 10% 30px 10% ;
-                width: 100%;
-                
-              }
-
-              article table{
-                      padding: 20px;
-              }
-
-              td{
-                      padding : 20px;
-              }
-              
-              /* Clear floats after the columns */
-              section:after {
-                content: '';
-                display: table;
-                clear: both;
-              }
-              
-              /* Style the footer */
-              footer {
-                background-color: #777;
-                padding: 10px;
-                text-align: center;
-                color: white;
-              }
-              p{
-                      text-align: justify;
-              }
-              
-              /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-              @media (max-width: 600px) {
-                nav, article {
-                  width: 100%;
-                  height: auto;
-                }
-              }
-              </style>
-      </head>
-
-      <body>
-            <header style='background-color: #666;padding: 30px;text-align: center;font-size: 35px;color: white;'>
-                  <h2>Hasil Tes Pegas Belajar</h2>
-            </header>
-            <section>
-                  <article>
-                        <table>
+      <html>
+            <body>
+                  <center><h1 align=center>". $login->nama . "</h1>
+                              <p> ". $login->nis . ", ". $login->asal_sekolah . "</p> 
+                              <h4>Tipe Belajar : ". $gaya->nama_gaya_belajar . "(". $gaya->title . ")</h4>
+                              <h4>Kepribadian : ". $gaya->tipe_kepribadian . "(". $gaya->title . ")</h4></center>
+                              <p><b> Karakteristik : </b>". $gaya->karakteristik . "</p>
+                  <table>
                         <tr>
-                        <td colspan='2'>
-                                <!-- <table>
-                                    <tr class=''>
-                                            <td>Nama </td>
-                                            <td>".  $login->nama . "</td>
-                                    </tr>
-                                    <tr>
-                                            <td>NIS </td>
-                                            <td>" .  $login->nis . "</td>
-                                    </tr>
-                                    <tr>
-                                            <td>Asal Sekolah </td>
-                                            <td>" . $login->asal_sekolah . " </td>
-                                    </tr>
-                                </table> -->
-                                <center><h1>".  $login->nama . "</h1>
-                                      <p></p> " .  $login->nis . ", ". $login->asal_sekolah . "</p>  </h5>
-                                <h4>Tipe Belajar : </h4></center>
-                        </td>
-                </tr>
-                        </table>
-                  </article>
-            </section>
-
-      </body>
-</html>
-      ";
-
+                              <td><p><b>Tugas Yang Sesuai : </b>". $gaya->tugas_yg_sesuai . "</p><br></td>
+                              <td><p><b>Kemampuan Adaptif : </b>". $gaya->kemampuan_adaptif . "</p><br></td>
+                        </tr>
+                        <tr>
+                              <td><p><b>Kekuatan : </b>". $gaya->kekuatan . "</p><br></td>
+                              <td><p><b>Kelemahan : </b>". $gaya->kelemahan . "</p><br></td>
+                        </tr>
+                        <tr>
+                              <td><p><b>Cara Belajar : </b>". $gaya->cara_belajar . "</p><br></td>
+                              <td><p><b>Metode Guru : </b>". $gaya->metode_guru . "</p><br></td>
+                        </tr>
+                  </table>
+                  Waktu tes : ". date("Y-m-d H:i:s") ." : <i>pegasbelajar.com</i>
+            </body>
+      </html>
+      " ;
 
       $pdf->writeHTML($stringHTML);
 
-      $pdf->Output('file-pdf-codeigniter.pdf', $tipepdf);
+      $pdf->Output('hasiltes-'. $login->nama .'-pegasbelajar.com.pdf', $tipepdf);
 
     }
 
