@@ -27,8 +27,14 @@
 
                 <div class="col-md-10 pl-md-5 ftco-animate karakteristik">
                     <?php
-                    echo ("<h2>" . $gaya->title . "</h2>");
-                    echo ($gaya->karakteristik);
+                        echo ("<h2>" . $gaya->title . "</h2>");
+                    ?>
+                    <div>
+                        <img style="height: 200px;" class="img-fluid" src="<?= base_url('./assets/upload/gayabelajar/'). $gaya->gambar?>" alt="">
+                    </div>
+
+                    <?php
+                        echo ($gaya->karakteristik);
                     ?>
                 </div>
             </div>

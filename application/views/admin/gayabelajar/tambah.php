@@ -1,7 +1,8 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <form role="form" method="post" action="<?= base_url('admin/gayabelajar/tambah') ?>">
+            <?php echo form_open_multipart('admin/gayabelajar/tambah')?>
+            <!-- <form role="form" method="post" action="<?= base_url('admin/gayabelajar/tambah') ?>"> -->
                 <div class="card-body">
                     <div class="form-group">
                         <label for="nama_gaya_belajar">Nama Gaya Belajar</label>
@@ -10,6 +11,11 @@
                     <div class="form-group">
                         <label>Title</label>
                         <input type="text" name="title" id="title" placeholder="Title" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gambar</label>
+                        <input type="file" name="gambar" id="gambar" placeholder="gambar" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -58,7 +64,7 @@
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-            </form>
+            <?php echo form_close()?>
         </div>
 
     </div>

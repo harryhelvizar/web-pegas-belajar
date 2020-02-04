@@ -33,9 +33,40 @@ class Gayabelajar extends CI_Controller
             
             $this->load->view('admin/index', $data);
         }else {
+            
+            $config['upload_path']      = './assets/upload/gayabelajar/';
+            $config['allowed_types']    = 'gif|jpg|png|jpeg';
+            $config['max_size']         = '5000';
+            $config['max_width']        = '5000';
+            $config['max_height']       = '5000';
+            
+            $this->load->library('upload', $config);
+            
+            if ( ! $this->upload->do_upload('gambar')){
+                $data['title']          = 'Gaya Belajar - Pegas Belajar';
+                $data['contents']       = 'admin/gayabelajar/tambah';
+                $data['gaya_belajar']   = $this->db->get('gaya_belajar')->result();
+                
+                $this->load->view('admin/index', $data);
+            }
+            else{
+                $data_gambar = array('upload_data' => $this->upload->data());
+                // thumbnail gambar
+                $config['image_library']        = 'gd2';
+                $config['source_image']         = './assets/upload/gayabelajar/thumbs/' . $data_gambar['upload_data']['file_name'];
+                $config['create_thumb']         = TRUE;
+                $config['maintain_ratio']       = TRUE;
+                $config['width']                = 250;
+                $config['height']               = 250;
+
+                $this->load->library('image_lib', $config);
+
+                $this->image_lib->resize();
+
             $data = [
                 'nama_gaya_belajar'     => $this->input->post('nama_gaya_belajar'),
                 'title'                 => $this->input->post('title'),
+                'gambar'                => $data_gambar['upload_data']['file_name'],
                 'karakteristik'         => $this->input->post('karakteristik'),
                 'icon'                  => $this->input->post('icon'),
                 'tipe_kepribadian'      => $this->input->post('tipe_kepribadian'),
@@ -53,6 +84,7 @@ class Gayabelajar extends CI_Controller
             redirect('admin/gayabelajar');
         }}
 
+    }
     public function edit($id_gaya_belajar)
     {
         $data['title'] = 'Edit Gaya Belajar';
