@@ -74,11 +74,11 @@ class My_model extends CI_Model
         return $this->db->get();
     }
 
-    // public function get_by_kode_kelas()
-    // {
-    //     $this->db->select('*')
-    //         ->from('kelas')
-    //         ->where('id_guru', $id_guru);
-    //     $this->db->get()->result();
-    // }
+    public function get_hasil_by_id($id_siswa)
+    {
+        $this->db->select('*')
+            ->where('id_siswa', $id_siswa)
+            ->from('jawaban');
+        return $this->db->get();
+    }
 }
