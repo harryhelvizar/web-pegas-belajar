@@ -128,4 +128,12 @@ class Gayabelajar extends CI_Controller
         $this->my_model->update_gaya($where, $data, 'gaya_belajar');
         redirect('admin/gayabelajar');
     }
+
+    public function hapus($id_gaya_belajar)
+    {
+        $where = array('id_gaya_belajar' => $id_gaya_belajar);
+        $this->my_model->hapus_data($where, 'gaya_belajar');
+
+        redirect('admin/gayabelajar');
+    }
 }

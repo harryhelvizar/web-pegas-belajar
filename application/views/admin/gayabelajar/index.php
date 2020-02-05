@@ -24,7 +24,7 @@
 
                         <td>
                             <a href="<?= base_url('admin/gayabelajar/edit/') . $gaya_belajar->id_gaya_belajar ?>" class="badge badge-success">edit</a>
-                            <a href="" class="badge badge-danger">hapus</a>
+                            <a href="<?= base_url('admin/gayabelajar/hapus/') . $gaya_belajar->id_gaya_belajar ?>" class="badge badge-danger">hapus</a>
                         </td>
                     </tr>
 
