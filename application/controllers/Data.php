@@ -131,10 +131,14 @@ class Data extends CI_Controller {
     public function print($tipebelajar, $tipepdf)
 
     {
+      
 
       $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
       // $pdf->setPrintFooter(false);
       // $pdf->setPrintHeader(false);
+      
+            
+      
       $pdf->SetAutoPageBreak(true, PDF_MARGIN_BOTTOM);
       $pdf->AddPage('');
       // $pdf->Write(0, 'Hasil Tes - Pegasbelajar.com', '', 0, 'L', true, 0, false, false, 0);

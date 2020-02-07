@@ -12,7 +12,7 @@ class pdf {
         //Page header
         public function Header() {
             // Logo
-            $image_file = base_url(). '\assets\template\images\pegas-02-01.png';
+            $image_file = base_url(). '\assets\template\images\pegas-02-01.jpg';
             $this->Image($image_file, 10, 10, 15, '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
             // Set font
             $this->SetFont('helvetica', 'B', 20);
