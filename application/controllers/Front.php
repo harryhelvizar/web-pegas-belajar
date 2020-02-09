@@ -78,6 +78,7 @@ class Front extends CI_Controller
         //$this->db->where('id_gaya_belajar', $nilaimax);
         //$data2['gaya'] = 
         $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
+        $data2['title']     = '';
 
         // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
 
@@ -94,80 +95,77 @@ class Front extends CI_Controller
         // $this->output->enable_profiler(true);
         $data2['title'] = 'Hasil Jawab - Pegas Belajar';
         $id_siswa = $this->uri->segment(3);
-        
-        
+
+
         $jawaban = $this->my_model->get_hasil_by_id($id_siswa)->row();
         // var_dump($jawaban);
         // var_dump($kunciF);
         // die;
-        
+
         // $id_kelas = $jawaban->$id_kelas;
-        
-        if ($jawaban != NULL) { 
+
+        if ($jawaban != NULL) {
             // $kunciF = $jawaban->kunciF;
-        $id_siswa =  $jawaban->id_siswa;
-        $kunciF = $jawaban->kunciF;
-        $kunciO = $jawaban->kunciO;
-        $kunciD = $jawaban->kunciD;
-        $kunciT = $jawaban->kunciT;
-        $max = 0;
-        $nilaimax = 0;
+            $id_siswa =  $jawaban->id_siswa;
+            $kunciF = $jawaban->kunciF;
+            $kunciO = $jawaban->kunciO;
+            $kunciD = $jawaban->kunciD;
+            $kunciT = $jawaban->kunciT;
+            $max = 0;
+            $nilaimax = 0;
 
-        if ($max > $kunciF){
-            $max = $kunciF;
-            $nilaimax = 1;
-        }
-        elseif ($max > $kunciO){
-            $max = $kunciO;
-            $nilaimax = 2;
-        }
-        elseif ($max > $kunciD){
-            $max = $kunciD;
-            $nilaimax = 3;
-        }
-        elseif ($max > $kunciT){
-            $max = $kunciT;
-            $nilaimax = 4;
-        }
+            if ($max > $kunciF) {
+                $max = $kunciF;
+                $nilaimax = 1;
+            } elseif ($max > $kunciO) {
+                $max = $kunciO;
+                $nilaimax = 2;
+            } elseif ($max > $kunciD) {
+                $max = $kunciD;
+                $nilaimax = 3;
+            } elseif ($max > $kunciT) {
+                $max = $kunciT;
+                $nilaimax = 4;
+            }
 
-        $data2 = array(
-            'id_siswa' => $id_siswa,
-            'kunciF' => $kunciF,
-            'kunciO' => $kunciO,
-            'kunciT' => $kunciT,
-            'kunciD' => $kunciD
-        );
+            $data2 = array(
+                'id_siswa' => $id_siswa,
+                'kunciF' => $kunciF,
+                'kunciO' => $kunciO,
+                'kunciT' => $kunciT,
+                'kunciD' => $kunciD
+            );
 
-        // $hasil = $this->db->insert('jawaban', $data2);
+            // $hasil = $this->db->insert('jawaban', $data2);
 
-        $data2['login'] = $this->db->get_where('siswa', ['id_siswa' =>  $jawaban->id_siswa])->row();
-        //$this->db->where('id_gaya_belajar', $nilaimax);
-        //$data2['gaya'] = 
-        $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
+            $data2['login'] = $this->db->get_where('siswa', ['id_siswa' =>  $jawaban->id_siswa])->row();
+            //$this->db->where('id_gaya_belajar', $nilaimax);
+            //$data2['gaya'] = 
+            $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
 
-        // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
+            // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
 
-        $kelas = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row();
+            $kelas = $this->db->get_where('guru', ['email' => $this->session->userdata('email')])->row();
 
-        $data2['contents']   = 'hasil';
-        $data2['title']     = 'Detail Siswa';
-        $data2['kelas'] = $this->db->get_where('kelas', ['id_guru' => $kelas->id_guru])->result();
-        $data2['total_kelas'] = $this->db->get_where('kelas', ['id_guru' => $kelas->id_guru])->num_rows();
-        // var_dump($kelas->id_guru);
-        // die;
-        $this->load->view('admin/guru/index', $data2);
+            $data2['contents']   = 'hasil';
+            $data2['title']     = 'Detail Siswa';
+            $data2['kelas'] = $this->db->get_where('kelas', ['id_guru' => $kelas->id_guru])->result();
+            $data2['total_kelas'] = $this->db->get_where('kelas', ['id_guru' => $kelas->id_guru])->num_rows();
+            // var_dump($kelas->id_guru);
+            // die;
+            $this->load->view('admin/guru/index', $data2);
 
-        //redirect(base_url(),'refresh');
+            //redirect(base_url(),'refresh');
         }
         // else {
         //     $this->session->set_flashdata('error', 'maaf, peserta belum melakukan tes');
-            
+
         //     redirect(base_url("guru/daftarsiswa/index/$id_kelas"),'refresh');
-            
-            
+
+
         // }
 
-        
+
 
     }
 

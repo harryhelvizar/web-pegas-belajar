@@ -16,7 +16,7 @@
                 <?php if ($login) { ?>
                     <li class="nav-item dropdown"><a href="#" class="nav-link" onMouseOver="this.style.color='#E36C0A'" onMouseOut="this.style.color='#55688b'"><?= $login->nama ?></a>
                         <div class="dropdown-menu">
-                            <a href="<?= base_url('siswa/profile') ?>" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Profile</a>
                             <a href="<?= base_url('siswa/auth/logout') ?>" class="dropdown-item" style="color: #E36C0A">Keluar</a>
                         </div>
                     </li>

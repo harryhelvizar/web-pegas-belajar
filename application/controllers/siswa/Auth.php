@@ -59,12 +59,17 @@ class Auth extends CI_Controller
 
             ];
 
+            $kode_kelas = $this->db->get_where('kelas', ['kode_kelas' => $this->input->post('kode_kelas')])->row();
 
-
-            // menambahkan data ke tabel user
-            $this->db->insert('siswa', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Selamat, akun anda berhasil terdaftar!</div>');
-            redirect('siswa/auth');
+            if ($kode_kelas != NULL) {
+                // menambahkan data ke tabel user
+                $this->db->insert('siswa', $data);
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Selamat, akun anda berhasil terdaftar!</div>');
+                redirect('siswa/auth');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Kode Kelaas Tidak Terdaftar</div>');
+                redirect('siswa/auth/register');
+            }
         }
     }
 
