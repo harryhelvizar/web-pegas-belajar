@@ -218,7 +218,7 @@ $this->load->view('front/header');
 
                                     <div class="container" style="text-align: center;">
                                         <div class="card bg-warning pl-1 pt-2 pb-2">
-                                            <h3><?= $soal->soal ?></h3>
+                                            <h3 style="font-size: 20px;"><?= $soal->soal ?></h3>
                                         </div>
                                     </div>
 
@@ -228,7 +228,7 @@ $this->load->view('front/header');
                                                 <input class="btn btn-primary" name="jawaban[]" type="button" id="btn1_<?= $soal->id_soal ?>" <?php $jawab[0] = ['name="btn1"'] ?> value="_ ">
                                             </div>
                                             <div class="col-10">
-                                                <h5><?= $soal->jawab_a ?></h5>
+                                                <h5 style="font-size: 16px;"><?= $soal->jawab_a ?></h5>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -236,7 +236,7 @@ $this->load->view('front/header');
                                                 <input class="btn btn-primary" name="jawaban[]" type="button" id="btn2_<?= $soal->id_soal ?>" <?php $jawab[1] = ['name="btn2"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
-                                                <h5><?= $soal->jawab_b ?></h5>
+                                                <h5 style="font-size: 16px;"><?= $soal->jawab_b ?></h5>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -244,7 +244,7 @@ $this->load->view('front/header');
                                                 <input class="btn btn-primary" name="jawaban[]" type="button" id="btn3_<?= $soal->id_soal ?>" <?php $jawab[2] = ['name="btn3"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
-                                                <h5><?= $soal->jawab_c ?></h5>
+                                                <h5 style="font-size: 16px;"><?= $soal->jawab_c ?></h5>
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -252,7 +252,7 @@ $this->load->view('front/header');
                                                 <input class="btn btn-primary" name="jawaban[]" type="button" id="btn4_<?= $soal->id_soal ?>" <?php $jawab[3] = ['name="btn4"'] ?> value=" _ ">
                                             </div>
                                             <div class="col-10">
-                                                <h5><?= $soal->jawab_d ?></h5>
+                                                <h5 style="font-size: 16px;"><?= $soal->jawab_d ?></h5>
                                             </div>
                                         </div>
                                         <br>
