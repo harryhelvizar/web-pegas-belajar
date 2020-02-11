@@ -81,4 +81,11 @@ class My_model extends CI_Model
             ->from('jawaban');
         return $this->db->get();
     }
+
+    public function get_nilai_max()
+    {
+        $this->db->select('max("kunciF, kunciO, kunciD, kunciT") ')
+            ->FROM('jawaban');
+        return $this->db->get();
+    }
 }
