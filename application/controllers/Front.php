@@ -113,22 +113,24 @@ class Front extends CI_Controller
         $max = 0;
         $nilaimax = 0;
 
-        if ($max > $kunciF){
+        if ($max < $kunciF){
             $max = $kunciF;
             $nilaimax = 1;
         }
-        elseif ($max > $kunciO){
+        elseif ($max < $kunciO){
             $max = $kunciO;
             $nilaimax = 2;
         }
-        elseif ($max > $kunciD){
+        elseif ($max < $kunciD){
             $max = $kunciD;
             $nilaimax = 3;
         }
-        elseif ($max > $kunciT){
+        elseif ($max < $kunciT){
             $max = $kunciT;
             $nilaimax = 4;
         }
+
+        
 
         $data2 = array(
             'id_siswa' => $id_siswa,
