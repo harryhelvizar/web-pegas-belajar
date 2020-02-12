@@ -189,7 +189,7 @@ $this->load->view('front/header');
         <div class="container">
 
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-6 col-xd-12">
 
                     <div class="soal">
 
@@ -261,12 +261,12 @@ $this->load->view('front/header');
 
 
                                             </div>
-                                            <div class="col-md-2">
-                                                <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
-                                            </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-4">
+                                                <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'> 
+                                                
                                                 <button type=button id="reset_<?= $soal->id_soal ?>" class="btn btn-danger">Reset</button>
                                             </div>
+                                            
                                             <div class="col-md-7">
                                                 <div class="col" style="text-align: right;">
                                                     <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
@@ -274,7 +274,7 @@ $this->load->view('front/header');
                                             </div>
                                         </div>
                                     </form>
-
+                                    
                                     <script>
                                         var i = 4;
 

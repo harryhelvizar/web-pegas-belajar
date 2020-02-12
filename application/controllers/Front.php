@@ -57,8 +57,6 @@ class Front extends CI_Controller
         $data2['title'] = 'Hasil Jawab - Pegas Belajar';
         $id_siswa = $this->input->post('id_siswa');
         $kunciF = $this->input->post('kunciF');
-        $id_siswa =  $this->input->post('kunciF');
-        $kunciF = $this->input->post('kunciF');
         $kunciO = $this->input->post('kunciO');
         $kunciD = $this->input->post('kunciD');
         $kunciT = $this->input->post('kunciT');
@@ -107,32 +105,36 @@ class Front extends CI_Controller
 
         if ($jawaban != NULL) {
             // $kunciF = $jawaban->kunciF;
+
         $id_siswa =  $jawaban->id_siswa;
         $kunciF = $jawaban->kunciF;
         $kunciO = $jawaban->kunciO;
         $kunciD = $jawaban->kunciD;
         $kunciT = $jawaban->kunciT;
-        $max = 0;
+        $max = max(array( $kunciF=> 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT'));
+
         $nilaimax = 0;
 
-        if ($max < $kunciF){
-            $max = $kunciF;
+        
+        if ($max == 'kunciF'){
+            
             $nilaimax = 1;
         }
-        elseif ($max < $kunciO){
-            $max = $kunciO;
+        elseif ($max == 'kunciO'){
+            
             $nilaimax = 2;
         }
-        elseif ($max < $kunciD){
-            $max = $kunciD;
+        elseif ($max == 'kunciD'){
+            
             $nilaimax = 3;
         }
-        elseif ($max < $kunciT){
-            $max = $kunciT;
+        elseif ($max == 'kunciT'){
+            
             $nilaimax = 4;
         }
-
         
+        
+        // var_dump($nilaimax);die;
 
         $data2 = array(
             'id_siswa' => $id_siswa,
@@ -141,6 +143,7 @@ class Front extends CI_Controller
             'kunciT' => $kunciT,
             'kunciD' => $kunciD
         );
+
 
             // $data2 = array(
             //     'id_siswa' => $id_siswa,
@@ -159,8 +162,8 @@ class Front extends CI_Controller
 
             $data3['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
 
-            var_dump($nilaimax);
-            die;
+            // var_dump($nilaimax);
+            // die;
             // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
 
 
