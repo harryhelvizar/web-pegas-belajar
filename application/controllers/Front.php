@@ -111,24 +111,27 @@ class Front extends CI_Controller
         $kunciO = $jawaban->kunciO;
         $kunciD = $jawaban->kunciD;
         $kunciT = $jawaban->kunciT;
-        $max = max(array( $kunciF=> 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT'));
+        // $nama_kunci =
+        // $max = max([$kunciF => 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT']);
+        $max = max(['kunciF' => $kunciF,'kunciO' => $kunciO, 'kunciD' => $kunciD ,'kunciT' => $kunciT]);
+    
 
         $nilaimax = 0;
 
         
-        if ($max == 'kunciF'){
+        if ($max == $kunciF){
             
             $nilaimax = 1;
         }
-        elseif ($max == 'kunciO'){
+        elseif ($max == $kunciO){
             
             $nilaimax = 2;
         }
-        elseif ($max == 'kunciD'){
+        elseif ($max == $kunciD){
             
             $nilaimax = 3;
         }
-        elseif ($max == 'kunciT'){
+        elseif ($max == $kunciT){
             
             $nilaimax = 4;
         }
