@@ -500,9 +500,13 @@ $this->load->view('front/header');
                 next = 0;
             }
 
-            var max = kunciF;
-            var nilaimax = 1;
+            var max = 0;
+            var nilaimax = 0;
 
+            if (max < kunciF) {
+                max = kunciF;
+                nilaimax = 1;
+            }
             if (max < kunciO) {
                 max = kunciO;
                 nilaimax = 2;

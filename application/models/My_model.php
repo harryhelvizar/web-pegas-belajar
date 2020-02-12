@@ -88,4 +88,15 @@ class My_model extends CI_Model
             ->FROM('jawaban');
         return $this->db->get();
     }
+
+    public function get_total_kelas($id_guru)
+    {
+        $this->db->select('siswa.id_siswa, siswa.nama, siswa.kode_kelas, kelas.id_guru')
+                 ->where("id_guru = $id_guru")
+                 ->from('siswa')
+                 ->join('kelas', 'siswa.kode_kelas = kelas.kode_kelas');
+        return $this->db->get();
+    }
+
+  
 }

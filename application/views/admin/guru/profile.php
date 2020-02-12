@@ -19,7 +19,7 @@
                                 <b>Kelas</b> <a class="float-right"><?php echo $total_kelas ?></a>
                             </li>
                             <li class="list-group-item">
-                                <b>Siswa</b> <a class="float-right">543</a>
+                                <b>Siswa</b> <a class="float-right"><?php echo $total_siswa ?></a>
                             </li>
 
                         </ul>

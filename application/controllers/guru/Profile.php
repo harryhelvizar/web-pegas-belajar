@@ -7,6 +7,7 @@ class Profile extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+        $this->load->model('my_model');
     }
 
     public function index()
@@ -20,6 +21,7 @@ class Profile extends CI_Controller
         $data['kelas'] = $this->db->get_where('kelas', ['id_guru' => $id_guru])->result();
 
         $data['total_kelas'] = $this->db->get_where('kelas', ['id_guru' => $id_guru])->num_rows();
+        $data['total_siswa'] = $this->my_model->get_total_kelas($id_guru)->num_rows();
         // var_dump($id_guru); die;
         $this->load->view('admin/guru/index', $data);
     }

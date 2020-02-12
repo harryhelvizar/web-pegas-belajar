@@ -55,12 +55,12 @@ class Front extends CI_Controller
     {
         // $this->output->enable_profiler(true);
         $data2['title'] = 'Hasil Jawab - Pegas Belajar';
-        $id_siswa = $this->input->post('id_siswa');
-        $kunciF = $this->input->post('kunciF');
-        $kunciO = $this->input->post('kunciO');
-        $kunciD = $this->input->post('kunciD');
-        $kunciT = $this->input->post('kunciT');
-        $nilaimax = $this->input->post('nilaimax');
+        $id_siswa       = $this->input->post('id_siswa');
+        $kunciF         = $this->input->post('kunciF');
+        $kunciO         = $this->input->post('kunciO');
+        $kunciD         = $this->input->post('kunciD');
+        $kunciT         = $this->input->post('kunciT');
+        $nilaimax       = $this->input->post('nilaimax');
 
         $data = array(
             'id_siswa' => $id_siswa,
@@ -72,15 +72,16 @@ class Front extends CI_Controller
 
         $hasil = $this->db->insert('jawaban', $data);
 
-        $data2['login'] = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
+        $data2['login']     = $this->db->get_where('siswa', ['email' => $this->session->userdata('email')])->row();
         $this->db->where('id_gaya_belajar', $nilaimax);
         //$data2['gaya'] = 
-        $data2['gaya'] = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
+        $data2['gaya']      = $this->db->get_where('gaya_belajar', ['id_gaya_belajar' => $nilaimax])->row();
         $data2['title']     = '';
 
         // echo "<script> alert ('Data Sudah Berhasil disimpan $nilaimax '); </script>";
 
         $this->load->view('hasil', $data2);
+        // var_dump($nilaimax);die;
 
         //redirect(base_url(),'refresh');
 
@@ -113,29 +114,44 @@ class Front extends CI_Controller
         $kunciT = $jawaban->kunciT;
         // $nama_kunci =
         // $max = max([$kunciF => 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT']);
-        $max = max(['kunciF' => $kunciF,'kunciO' => $kunciO, 'kunciD' => $kunciD ,'kunciT' => $kunciT]);
-    
-
-        $nilaimax = 0;
-
-        
-        if ($max == $kunciF){
+        // $max = max(['kunciF' => $kunciF,'kunciO' => $kunciO, 'kunciD' => $kunciD ,'kunciT' => $kunciT]);
+        // $nilaimax = 0;
+        // if ($max == $kunciF){
             
+        //     $nilaimax = 1;
+        // }
+        // elseif ($max == $kunciO){
+            
+        //     $nilaimax = 2;
+        // }
+        // elseif ($max == $kunciD){
+            
+        //     $nilaimax = 3;
+        // }
+        // elseif ($max == $kunciT){
+            
+        //     $nilaimax = 4;
+        // }
+
+
+        $max = 0;
+        $nilaimax = 0;
+        if ($max < $kunciF) {
+            $max = $kunciF;
             $nilaimax = 1;
         }
-        elseif ($max == $kunciO){
-            
+        if ($max < $kunciO) {
+            $max = $kunciO;
             $nilaimax = 2;
         }
-        elseif ($max == $kunciD){
-            
+        if ($max < $kunciT) {
+           $max = $kunciT;
             $nilaimax = 3;
         }
-        elseif ($max == $kunciT){
-            
+        if ($max < $kunciD) {
+            $max = $kunciD;
             $nilaimax = 4;
         }
-        
         
         // var_dump($nilaimax);die;
 
