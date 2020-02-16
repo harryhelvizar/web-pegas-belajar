@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/reset.css">
     <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/template/') ?>css/animate.css">
 
