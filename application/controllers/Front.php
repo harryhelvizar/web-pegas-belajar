@@ -107,61 +107,61 @@ class Front extends CI_Controller
         if ($jawaban != NULL) {
             // $kunciF = $jawaban->kunciF;
 
-        $id_siswa =  $jawaban->id_siswa;
-        $kunciF = $jawaban->kunciF;
-        $kunciO = $jawaban->kunciO;
-        $kunciD = $jawaban->kunciD;
-        $kunciT = $jawaban->kunciT;
-        // $nama_kunci =
-        // $max = max([$kunciF => 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT']);
-        // $max = max(['kunciF' => $kunciF,'kunciO' => $kunciO, 'kunciD' => $kunciD ,'kunciT' => $kunciT]);
-        // $nilaimax = 0;
-        // if ($max == $kunciF){
-            
-        //     $nilaimax = 1;
-        // }
-        // elseif ($max == $kunciO){
-            
-        //     $nilaimax = 2;
-        // }
-        // elseif ($max == $kunciD){
-            
-        //     $nilaimax = 3;
-        // }
-        // elseif ($max == $kunciT){
-            
-        //     $nilaimax = 4;
-        // }
+            $id_siswa =  $jawaban->id_siswa;
+            $kunciF = $jawaban->kunciF;
+            $kunciO = $jawaban->kunciO;
+            $kunciD = $jawaban->kunciD;
+            $kunciT = $jawaban->kunciT;
+            // $nama_kunci =
+            // $max = max([$kunciF => 'kunciF',$kunciO => 'kunciO', $kunciD => 'kunciD' ,$kunciT => 'kunciT']);
+            // $max = max(['kunciF' => $kunciF,'kunciO' => $kunciO, 'kunciD' => $kunciD ,'kunciT' => $kunciT]);
+            // $nilaimax = 0;
+            // if ($max == $kunciF){
+
+            //     $nilaimax = 1;
+            // }
+            // elseif ($max == $kunciO){
+
+            //     $nilaimax = 2;
+            // }
+            // elseif ($max == $kunciD){
+
+            //     $nilaimax = 3;
+            // }
+            // elseif ($max == $kunciT){
+
+            //     $nilaimax = 4;
+            // }
 
 
-        $max = 0;
-        $nilaimax = 0;
-        if ($max < $kunciF) {
-            $max = $kunciF;
-            $nilaimax = 1;
-        }
-        if ($max < $kunciO) {
-            $max = $kunciO;
-            $nilaimax = 2;
-        }
-        if ($max < $kunciT) {
-           $max = $kunciT;
-            $nilaimax = 3;
-        }
-        if ($max < $kunciD) {
-            $max = $kunciD;
-            $nilaimax = 4;
-        }
-        
-        // var_dump($nilaimax);die;
+            $max = 0;
+            $nilaimax = 0;
+            if ($max < $kunciF) {
+                $max = $kunciF;
+                $nilaimax = 1;
+            }
+            if ($max < $kunciO) {
+                $max = $kunciO;
+                $nilaimax = 2;
+            }
+            if ($max < $kunciT) {
+                $max = $kunciT;
+                $nilaimax = 3;
+            }
+            if ($max < $kunciD) {
+                $max = $kunciD;
+                $nilaimax = 4;
+            }
 
-        $data2 = array(
-            'id_siswa' => $id_siswa,
-            'kunciF' => $kunciF,
-            'kunciO' => $kunciO,
-            'kunciT' => $kunciT,
-            'kunciD' => $kunciD
-        );
+            // var_dump($nilaimax);die;
+
+            $data2 = array(
+                'id_siswa' => $id_siswa,
+                'kunciF' => $kunciF,
+                'kunciO' => $kunciO,
+                'kunciT' => $kunciT,
+                'kunciD' => $kunciD
+            );
 
 
             // $data2 = array(
