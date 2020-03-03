@@ -5,12 +5,12 @@
     <?php $this->load->view('front/navbar') ?>
 
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed; max-height: 300px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/template/') ?>images/bg_3.jpg'); background-attachment:fixed; max-height: 180px;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
                 <div class="col-md-10 ftco-animate text-center">
-                    <h1 class="mb-3 bread">Petunjuk Mengerjakan Tes</h1>
+                    <h1 class="mb-4 bread">Petunjuk Mengerjakan Tes</h1>
                 </div>
             </div>
         </div>
@@ -64,12 +64,12 @@
 
 
                             </ol> -->
-                            <ol type="1">
+                            <ul type="1">
                                 <li>
-                                    <h5><b> Simak Pertanyaan </b> Pada tes ini anda akan menemukan 12 pernyataan. Setiap pernyataan dilengkapi dengan empat (4) jawaban.</h5>
+                                    <h5><b> Simak Pertanyaan </b> <br> Pada tes ini anda akan menemukan 12 pernyataan. Setiap pernyataan dilengkapi dengan empat (4) jawaban.</h5>
                                 </li>
                                 <li>
-                                    <h5><b> Beri nilai pada setiap pilihan jawaban. </b> Beri nilai pada setiap jawaban dengan menekan tombol <span class="btn btn-primary ">_</span> yang ada pada sebelah kanan pilihan jawaban, dimana masing-masing nilai menunjukkan:</h5>
+                                    <h5><b> Beri nilai pada setiap pilihan jawaban. </b> <br> Beri nilai pada setiap jawaban dengan menekan tombol <span class="btn btn-primary ">_</span> yang ada pada sebelah kanan pilihan jawaban, dimana masing-masing nilai menunjukkan:</h5>
                                     <ul>
                                         <li>
                                             <h5> <strong>Nilai 4</strong> pada pernyataan yang <strong>sangat sesuai</strong> dengan diri anda</h5>
@@ -87,12 +87,13 @@
                                 </li>
 
                                 <li>
-                                    <h5><b>Mengerjakan Tes.</b> Selesaikan semua pernyataan yang ada, dengan menekan tombol <strong class="badge badge-success">Lanjutkan</strong> untuk melanjutkan tes berikutnya, tombol <strong class="badge badge-danger">Reset</strong> untuk mengulang pilihan jawaban, tombol <strong class="badge badge-danger">Keluar</strong> untuk keluar dari sesi tes dan setelah selesai mengerjakan tes, tekan tombol <strong class="badge badge-suceess">Selesai</strong>.</h5>
+                                    <h5><b>Mengerjakan Tes.</b> <br> Selesaikan semua pernyataan yang ada, dengan menekan tombol <strong class="badge badge-success">Lanjutkan</strong> untuk melanjutkan tes berikutnya, tombol <strong class="badge badge-danger">Reset</strong> untuk mengulang pilihan jawaban, tombol <strong class="badge badge-danger">Keluar</strong> untuk keluar dari sesi tes dan setelah selesai mengerjakan tes, tekan tombol <strong class="badge badge-suceess">Selesai</strong>.</h5>
                                 </li>
                                 <li>
-                                    <h5><b>Lihat Karakteristik Gaya Belajar Anda.</b> Setelah Anda menyelesaikan tes, akan muncul empat (4) gaya belajar, gaya belajar dengan nilai tertinggi adalah gaya belajar dominan anda. tekan tombol lihat karakteristik gaya belajar untuk melihat karakteristik gaya belajar anda.</h5>
+                                    <h5><b>Lihat Karakteristik Gaya Belajar Anda.</b> <br> Setelah Anda menyelesaikan tes, akan muncul empat (4) gaya belajar, gaya belajar dengan nilai tertinggi adalah gaya belajar dominan anda. tekan tombol lihat karakteristik gaya belajar untuk melihat karakteristik gaya belajar anda.</h5>
                                 </li>
                                 <br>
+
                                 <form action="">
 
                                     <div class="row">
@@ -104,7 +105,7 @@
                                 </form>
 
 
-                            </ol>
+                            </ul>
                         </div>
                     </div>
                 </div>

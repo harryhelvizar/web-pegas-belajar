@@ -262,11 +262,11 @@ $this->load->view('front/header');
 
                                             </div>
                                             <div class="col-md-4">
-                                                <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'> 
-                                                
+                                                <input type="button" class="btn btn-success" id="lanjut_<?= $soal->id_soal ?>" value='Lanjutkan'>
+
                                                 <button type=button id="reset_<?= $soal->id_soal ?>" class="btn btn-danger">Reset</button>
                                             </div>
-                                            
+
                                             <div class="col-md-7">
                                                 <div class="col" style="text-align: right;">
                                                     <p class="badge badge-warning" style="padding:10px;">Soal ke: <?= $soal->id_soal ?> - <?= $total_soal; ?></p>
@@ -274,7 +274,7 @@ $this->load->view('front/header');
                                             </div>
                                         </div>
                                     </form>
-                                    
+
                                     <script>
                                         var i = 4;
 
@@ -404,7 +404,7 @@ $this->load->view('front/header');
                                     <input type="hidden" id="kunciT" name="kunciT">
                                     <input type="hidden" id="nilaimax" name="nilaimax">
                                     <input type="hidden" id="id_siswa" name="id_siswa" value=<?= $login->id_siswa ?>>
-                                    <button type="submit" name="" id="" class="btn btn-primary btn-large">Simpan</button>
+                                    <button type="submit" name="" id="" class="btn btn-primary btn-large">Lihat Deskripsi</button>
                                     <a name="" id="" class="btn btn-warning" href="<?= base_url() . "front/soal" ?>" role="button">Ulangi</a>
                                 </form>
                             </div>
